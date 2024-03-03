@@ -1,0 +1,135 @@
+#root {
+  /*max-width: 1280px;*/
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 2em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo.react {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+a {
+  display: inline;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+}
+
+li {
+  display: inline;
+}
+
+.window {
+  width: 65%;
+  margin: auto;
+}
+
+.window-heading {
+  background-color: rgba(256, 256, 256, 0.80);
+  border-radius: 15px 15px 0px 0px;
+}
+
+.main-content {
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 15px 15px;
+  min-height: 50%;
+}
+
+.nav-bar {
+  background-color: rgba(256, 256, 256, 0.80);
+  border-radius: 0px 0px 10px 10px;
+  overflow: auto;
+  box-sizing: inherit;
+}
+
+.footer {
+  background-color: rgba(256, 256, 256, 0.80);
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  bottom: 0px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.extra-padding {
+  padding-top: 1.2vw;
+  padding-bottom: 1.2vw;
+  padding-left: 1.5vw;
+}
+
+.nav-image {
+  vertical-align: middle;
+}
+
+.right-align {
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+.center {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  float: left;
+}
+
+/*
+ * NOTE: This is just for initial creation of the colored variation of this website
+*/
+.title-colors {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 500px) {
+  .nav-bar a {
+    float: none;
+    display: block;
+  }
+}
