@@ -51,6 +51,20 @@ li {
   display: inline;
 }
 
+/* AppFolder.jsx Component Styles */
+.app-folder {
+  text-align: center;
+  max-width: 8%;
+  margin-bottom: 2%;
+}
+
+.app-folder-text {
+  color: #FFFFFF;
+  filter: drop-shadow(0 0 4px #777777);
+  margin-top: 0;
+}
+
+/* Window.jsx Component Styles */
 .window {
   width: 65%;
   margin: auto;
@@ -64,9 +78,10 @@ li {
 .main-content {
   background-color: #FFFFFF;
   border-radius: 0px 0px 15px 15px;
-  min-height: 50%;
+  height: 50%;
 }
 
+/* NavBar.jsx Component Styles */
 .nav-bar {
   background-color: rgba(256, 256, 256, 0.80);
   border-radius: 0px 0px 10px 10px;
@@ -74,6 +89,7 @@ li {
   box-sizing: inherit;
 }
 
+/* Footer.jsx Component Styles */
 .footer {
   background-color: rgba(256, 256, 256, 0.80);
   border-radius: 10px 10px 0px 0px;

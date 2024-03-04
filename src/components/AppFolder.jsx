@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import '/src/index.css';
 
 /**
  * Represents an App Folder in the home screen
@@ -14,10 +15,10 @@ export default function AppFolder({icon, text, window}) {
         window: PropTypes.string.isRequired
     }
 
-    return (<div className='app-folder' style={{textAlign: 'center', maxWidth: '10%', marginBottom: '2%'}}>
+    return (<div className='app-folder'>
         <a href={window}>
             <img src={icon} alt={text + ' image'} style={{maxWidth: '70%'}}/>
         </a>
-        <h3 style={{color: '#FFFFFF', filter: 'drop-shadow(0 0 4px #777777)', marginTop: '0'}}>{text.toString()}</h3>
+        <h3 className='app-folder-text'>{text.toString()}</h3>
     </div>);
 }
