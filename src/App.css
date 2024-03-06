@@ -108,7 +108,7 @@ li {
   background-color: rgba(256, 256, 256, 0.80);
   border-radius: 10px 10px 0 0;
   width: 100%;
-  bottom: 0px;
+  bottom: 0;
   position: absolute;
   display: flex;
   flex-direction: row;
