@@ -67,24 +67,38 @@ li {
 /* Window.jsx Component Styles */
 .window {
   width: 65%;
-  margin: auto;
+  margin: 3.5% auto auto;
+  display: flex;
+  flex-direction: column;
+  /* filter: drop-shadow(0px 0px 0.1mm #6D6D6D); */
 }
 
 .window-heading {
-  background-color: rgba(256, 256, 256, 0.80);
-  border-radius: 15px 15px 0px 0px;
+  background-color: rgba(256, 256, 256, 0.70);
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.window-heading-text {
+  color: #000000
 }
 
 .main-content {
   background-color: #FFFFFF;
-  border-radius: 0px 0px 15px 15px;
+  border-radius: 0 0 10px 10px;
   height: 50%;
+}
+
+.icon-button {
+  display: inline-flex;
+  background-color: rgba(0, 0, 0, 0);
+  color: #000000;
 }
 
 /* NavBar.jsx Component Styles */
 .nav-bar {
   background-color: rgba(256, 256, 256, 0.80);
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0 0 10px 10px;
   overflow: auto;
   box-sizing: inherit;
 }
@@ -92,7 +106,7 @@ li {
 /* Footer.jsx Component Styles */
 .footer {
   background-color: rgba(256, 256, 256, 0.80);
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   width: 100%;
   bottom: 0px;
   position: absolute;
