@@ -48,21 +48,17 @@ function Window({ isClassic, isVisible, type, expandLink, func }) {
     }
 
     return (
-    <div className='window' style={isVisible ? {visibility: 'visible'} : {visibility: 'hidden'}}>
-        <div className='window-heading'>
-            <div>
+        <div className='window' style={isVisible ? {visibility: 'visible'} : {visibility: 'hidden'}}>
+            <div className='window-heading'>
+                <h2 className='window-heading-text'>{text.title}</h2>
                 <button className='icon-button' id='close' style={{float: 'right'}} onClick={handleClick}>X</button>
                 <button className='icon-button' style={{float: 'right'}} onClick={handleClick}>
                     <img src='src/assets/Expand Arrows.svg' alt='Expand'/>
                 </button>
             </div>
-            <h2 className='window-heading-text'>{text.title}</h2>
-        </div>
-
-        <div className='main-content' style={{height: '60vh', marginTop: '0'}}>
-            <h3 className='window-heading-text'>{text.body}</h3>
-        </div>
-
+            <div className='main-content' style={{height: '60vh', marginTop: '0'}}>
+                <h3 className='window-heading-text'>{text.body}</h3>
+            </div>
     </div>
     );
 }

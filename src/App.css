@@ -80,7 +80,9 @@ li {
 }
 
 .window-heading-text {
-  color: #000000
+  color: #000000;
+  display: contents;
+  justify-self: center;
 }
 
 .main-content {
@@ -100,6 +102,8 @@ li {
   background-color: rgba(256, 256, 256, 0.80);
   border-radius: 0 0 10px 10px;
   overflow: auto;
+  display: inline-block;
+  width: 100%;
   box-sizing: inherit;
 }
 
@@ -128,6 +132,31 @@ li {
 .nav-image {
   vertical-align: middle;
 }
+
+/*.nav-image-colored {*/
+/*  vertical-align: middle;*/
+/*  background-image: url("assets/cu.png");*/
+/*  background-size: cover;*/
+/*  width: 100px;*/
+/*  height: 100px;*/
+/*  float: left;*/
+/*}*/
+
+/*.nav-image-grayscale {*/
+/*  vertical-align: middle;*/
+/*}*/
+
+/*.nav-image-colored:hover {*/
+/*  vertical-align: middle;*/
+/*  background-image: url("assets/cf.png");*/
+/*  background-size: cover;*/
+/*  width: 100px;*/
+/*  height: 100px;*/
+/*}*/
+
+/*.nav-image-grayscale:hover {*/
+/*  background-image: url("assets/gf.png");*/
+/*}*/
 
 .right-align {
   float: right;
