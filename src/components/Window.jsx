@@ -44,17 +44,20 @@ function Window({ isClassic, isVisible, type, expandLink, func }) {
      * Sets the visibility of the window to hidden when the Close button is clicked.
      */
     const handleClick = (event) => {
-        func(event)
-    }
+        func(event);
+    };
 
     return (
-        <div className='window' style={isVisible ? {visibility: 'visible'} : {visibility: 'hidden'}}>
+        <div className='window' style={isVisible ? {visibility: 'visible', filter: 'drop-shadow(1, 1, 1, 4)'}
+            : {visibility: 'hidden'}}>
             <div className='window-heading'>
                 <h2 className='window-heading-text'>{text.title}</h2>
                 <button className='icon-button' id='close' style={{float: 'right'}} onClick={handleClick}>X</button>
-                <button className='icon-button' style={{float: 'right'}} onClick={handleClick}>
-                    <img src='src/assets/Expand Arrows.svg' alt='Expand'/>
-                </button>
+                <a href={type !== "Home" ? type.toLowerCase() : "/"}>
+                    <button className='icon-button' style={{float: 'right'}}>
+                        <img src='src/assets/Expand Arrows.svg' alt='Expand'/>
+                    </button>
+                </a>
             </div>
             <div className='main-content' style={{height: '60vh', marginTop: '0'}}>
                 <h3 className='window-heading-text'>{text.body}</h3>
