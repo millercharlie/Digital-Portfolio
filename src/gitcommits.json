@@ -1,0 +1,553 @@
+[
+  {
+    "x": 27,
+    "y": 120,
+    "x2": 77,
+    "y2": 170,
+    "type": "line",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 170,
+    "x2": 77,
+    "y2": 350,
+    "type": "line",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 350,
+    "x2": 27,
+    "y2": 400,
+    "type": "line",
+    "color": "secondary"
+  },
+  {
+    "x": 27,
+    "y": 400,
+    "x2": 77,
+    "y2": 450,
+    "type": "line",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 450,
+    "x2": 77,
+    "y2": 570,
+    "type": "line",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 570,
+    "x2": 27,
+    "y2": 620,
+    "type": "line",
+    "color": "secondary"
+  },
+  {
+    "x": 27,
+    "y": 620,
+    "x2": 77,
+    "y2": 670,
+    "type": "line",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 670,
+    "x2": 77,
+    "y2": 790,
+    "type": "line",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 790,
+    "x2": 27,
+    "y2": 840,
+    "type": "line",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 890,
+    "x2": 127,
+    "y2": 940,
+    "type": "line",
+    "color": "tertiary"
+  },
+  {
+    "x": 127,
+    "y": 940,
+    "x2": 127,
+    "y2": 1060,
+    "type": "line",
+    "color": "tertiary"
+  },
+  {
+    "x": 127,
+    "y": 1060,
+    "x2": 77,
+    "y2": 1110,
+    "type": "line",
+    "color": "tertiary"
+  },
+  {
+    "x": 77,
+    "y": 1110,
+    "x2": 587,
+    "y2": 1110,
+    "type": "line",
+    "color": "quaternary"
+  },
+  {
+    "x": 587,
+    "y": 1110,
+    "x2": 587,
+    "y2": 1330,
+    "type": "line",
+    "color": "quaternary"
+  },
+  {
+    "x": 587,
+    "y": 1330,
+    "x2": 77,
+    "y2": 1330,
+    "type": "line",
+    "color": "quaternary"
+  },
+  {
+    "x": 77,
+    "y": 1110,
+    "x2": 127,
+    "y2": 1160,
+    "type": "line",
+    "color": "tertiary"
+  },
+  {
+    "x": 127,
+    "y": 1160,
+    "x2": 127,
+    "y2": 1280,
+    "type": "line",
+    "color": "tertiary"
+  },
+  {
+    "x": 127,
+    "y": 1280,
+    "x2": 77,
+    "y2": 1330,
+    "type": "line",
+    "color": "tertiary"
+  },
+  {
+    "x": 27,
+    "y": 840,
+    "x2": 77,
+    "y2": 890,
+    "type": "line",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 890,
+    "x2": 77,
+    "y2": 1450,
+    "type": "line",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 1450,
+    "x2": 27,
+    "y2": 1500,
+    "type": "line",
+    "color": "secondary"
+  },
+  {
+    "x": 27,
+    "y": 0,
+    "x2": 27,
+    "y2": 1500,
+    "type": "line",
+    "color": "primary"
+  },
+
+
+
+
+
+  {
+    "x": 77,
+    "y": 170,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 230,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 290,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 350,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 450,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 510,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 570,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 670,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 730,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 790,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 127,
+    "y": 940,
+    "type": "circle",
+    "color": "tertiary"
+  },
+  {
+    "x": 127,
+    "y": 1000,
+    "type": "circle",
+    "color": "tertiary"
+  },
+  {
+    "x": 127,
+    "y": 1060,
+    "type": "circle",
+    "color": "tertiary"
+  },
+  {
+    "x": 587,
+    "y": 1110,
+    "type": "circle",
+    "color": "quaternary"
+  },
+  {
+    "x": 587,
+    "y": 1183,
+    "type": "circle",
+    "color": "quaternary"
+  },
+  {
+    "x": 587,
+    "y": 1256,
+    "type": "circle",
+    "color": "quaternary"
+  },
+  {
+    "x": 587,
+    "y": 1330,
+    "type": "circle",
+    "color": "quaternary"
+  },
+  {
+    "x": 127,
+    "y": 1160,
+    "type": "circle",
+    "color": "tertiary"
+  },
+  {
+    "x": 127,
+    "y": 1220,
+    "type": "circle",
+    "color": "tertiary"
+  },
+  {
+    "x": 127,
+    "y": 1280,
+    "type": "circle",
+    "color": "tertiary"
+  },
+  {
+    "x": 77,
+    "y": 890,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 1110,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 1330,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 1390,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 1450,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 27,
+    "y": 60,
+    "type": "circle",
+    "color": "primary"
+  },
+  {
+    "x": 27,
+    "y": 120,
+    "type": "circle",
+    "color": "primary"
+  },
+  {
+    "x": 27,
+    "y": 400,
+    "type": "circle",
+    "color": "primary"
+  },
+  {
+    "x": 27,
+    "y": 620,
+    "type": "circle",
+    "color": "primary"
+  },
+  {
+    "x": 27,
+    "y": 840,
+    "type": "circle",
+    "color": "primary"
+  },
+  {
+    "x": 27,
+    "y": 1500,
+    "type": "circle",
+    "color": "primary"
+  },
+
+
+  {
+    "x": 90,
+    "y": 175,
+    "text": "Split branch \"Background\" from \"main\"",
+    "type": "text"
+  },
+  {
+    "x": 90,
+    "y": 235,
+    "text": "From: Los Angeles, California",
+    "type": "text"
+  },
+  {
+  "x": 90,
+  "y": 295,
+  "text": "School: Northeastern University",
+    "type": "text"
+  },
+  {
+    "x": 90,
+    "y": 355,
+    "text": "Major: Computer Science and Design",
+    "type": "text"
+  },
+  {
+    "x": 90,
+    "y": 455,
+    "text": "Split branch \"WorkExperience\" from \"main\"",
+    "type": "text"
+  },
+  {
+    "x": 90,
+    "y": 515,
+    "text": "Code Coach — theCoderSchool",
+    "type": "text"
+  },
+  {
+    "x": 90,
+    "y": 575,
+    "text": "Human-Computer Interaction Engineer",
+    "type": "text"
+  },
+  {
+    "x": 90,
+    "y": 675,
+    "text": "Split branch \"JobPreference\" from \"main\"",
+    "type": "text"
+  },
+  {
+    "x": 90,
+    "y": 735,
+    "text": "Front-End Web/Application Development",
+    "type": "text"
+  },
+  {
+    "x": 90,
+    "y": 795,
+    "text": "Software Engineering",
+    "type": "text"
+  },
+  {
+    "x": 140,
+    "y": 945,
+    "text": "Split branch \"Technology\" from \"PassionsAndHobbies\"",
+    "type": "text"
+  },
+  {
+    "x": 140,
+    "y": 1005,
+    "text": "Consumer Electronics/Software",
+    "type": "text"
+  },
+  {
+    "x": 140,
+    "y": 1065,
+    "text": "Eco-Friendly Innovations",
+    "type": "text"
+  },
+  {
+    "x": 0,
+    "y": 0,
+    "text": "",
+    "type": "text"
+  },
+  {
+    "x": 0,
+    "y": 0,
+    "text": "",
+    "type": "text"
+  },
+  {
+    "x": 0,
+    "y": 0,
+    "text": "",
+    "type": "text"
+  },
+  {
+  "x": 0,
+  "y": 0,
+  "text": "",
+    "type": "text"
+  },
+
+  {
+    "x": 140,
+    "y": 1165,
+    "text": "Split branch \"History\" from \"PassionsAndHobbies\"",
+    "type": "text"
+  },
+  {
+    "x": 140,
+    "y": 1225,
+    "text": "1492-1921",
+    "type": "text"
+  },
+  {
+    "x": 140,
+    "y": 1285,
+    "text": "Interwar Period (WW1-WW2)",
+    "type": "text"
+  },
+  {
+    "x": 90,
+    "y": 895,
+    "text": "Split branch \"PassionsAndHobbies\" from \"main\"",
+    "type": "text"
+  },
+  {
+    "x": 40,
+    "y": 65,
+    "text": "First Commit",
+    "type": "text"
+  },
+  {
+    "x": 40,
+    "y": 125,
+    "text": "Second Commit",
+    "type": "text"
+  },
+
+  {
+    "x": 600,
+    "y": 1115,
+    "text": "Split Branch \"UrbanDesign\" from \"PassionsAndHobbies\"",
+    "type": "text"
+  },
+  {
+    "x": 600,
+    "y": 1188,
+    "text": "Public Transportation",
+    "type": "text"
+  },
+  {
+    "x": 600,
+    "y": 1261,
+    "text": "Smart Cities",
+    "type": "text"
+  },
+  {
+    "x": 600,
+    "y": 1335,
+    "text": "Walkable Areas and Transit-Oriented Development",
+    "type": "text"
+  },
+  {
+    "x": 90,
+    "y": 1395,
+    "text": "Astronomy",
+    "type": "text"
+  },
+  {
+    "x": 90,
+    "y": 1455,
+    "text": "Geography",
+    "type": "text"
+  },
+  {
+    "x": 12,
+    "y": 1525,
+    "text": "main",
+    "type": "text"
+  }
+]

@@ -23,6 +23,9 @@ export default function Home() {
         }
     }
 
+    // TODO: Window Crashes Occasionally because 'type' variable is undefined. Fix this.
+       // It seems to be when you switch too quickly
+
     useEffect(() => {
         setWindow(<Window isVisible={visible} type={type} func={handleClick}/>);
     }, [visible, type]);
@@ -30,7 +33,7 @@ export default function Home() {
     return (
         <>
             <div>
-                <NavBar type={'colored'}/>
+                <NavBar type={'colored'} background='FFFFFF'/>
             </div>
             <div className='center'>
                 {window}

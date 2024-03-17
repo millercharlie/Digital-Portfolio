@@ -99,7 +99,7 @@ li {
 
 /* NavBar.jsx Component Styles */
 .nav-bar {
-  border-radius: 0 0 10px 10px;
+  /* border-radius: 0 0 10px 10px; */
   overflow: auto;
   display: inline-block;
   width: 100%;
