@@ -498,13 +498,13 @@
   {
     "x": 40,
     "y": 65,
-    "text": "First Commit",
+    "text": "Welcome to the About page!",
     "type": "text"
   },
   {
     "x": 40,
     "y": 125,
-    "text": "Second Commit",
+    "text": "This page is intended to give you a little introduction of myself. Below, you will find information about me!",
     "type": "text"
   },
 

@@ -45,6 +45,7 @@ a {
   display: inline;
   padding-left: 1.5vw;
   padding-right: 1.5vw;
+  color: rgba(0, 0, 0, 0.80);
 }
 
 li {
@@ -102,9 +103,42 @@ li {
   /* border-radius: 0 0 10px 10px; */
   overflow: auto;
   display: inline-block;
+  align-items: center;
   width: 100%;
   box-sizing: inherit;
 }
+
+.nav-image-hover-colored {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 0;
+  right: 0;
+  left: 1.5vw;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.nav-image-hover-colored:hover {
+  opacity: 1;
+}
+
+h4 {
+  display: inline-block;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+h4:hover {
+  border-bottom: 3px solid #7DD6D1;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+h4:after {
+  transition: width .5s ease, background-color .5s ease;
+}
+
 
 /* Footer.jsx Component Styles */
 .footer {

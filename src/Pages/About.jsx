@@ -67,7 +67,7 @@ export default function About({mode}) {
     return (
         <div className={'about-' + mode}>
             <div>
-                <NavBar type='colored' background='606060'/>
+                <NavBar type='colored' background=''/>
             </div>
             <svg height='1600px' width='100%'>
                 {git.map((commit) => {
