@@ -12,6 +12,7 @@ import {useState} from "react";
 export default function About( { mode } ) {
 
     const [colorway, setColorway] = useState(mode);
+    const [toggle, setToggle] = useState('src/assets/brew-icon.png')
 
     const randomBytes = () => {
         let bytes = []
@@ -92,9 +93,11 @@ export default function About( { mode } ) {
         switch (colorway) {
             case 'light':
                 setColorway('brew');
+                setToggle('src/assets/sun-icon.png');
                 break;
             default:
                 setColorway('light');
+                setToggle('src/assets/brew-icon.png');
                 break;
         }
     }
@@ -108,7 +111,7 @@ export default function About( { mode } ) {
                     })}
                 </ul>
             </div>
-            <NavBar type='colored' background='' text={getColors('nav')} fun={colorModeSwitch} icons={''}/>
+            <NavBar type='colored' background='' text={getColors('nav')} fun={colorModeSwitch} icon={toggle}/>
             <svg height='1600px' width='100%'>
                 {git.map((commit, index) => {
                     switch (commit.type) {

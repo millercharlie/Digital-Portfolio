@@ -1,10 +1,11 @@
 # Charlie Miller's Digital Portfolio
 
-[![React](https://img.shields.io/badge/React-Library-007FA6?logo=react)](https://react.dev/)
+[![React](https://img.shields.io/badge/React-007FA6?logo=react)](https://react.dev/)
 [![NPM Version](https://img.shields.io/badge/npm-v1.2.6-CB0200?logo=npm)](https://www.npmjs.com/)
 [![Vite Version](https://img.shields.io/badge/Vite-v4.2.1-white?logo=vite&logoColor=FFFFFF)](https://vitejs.dev/)
-[![Git](https://img.shields.io/badge/git-Version&nbsp;Control-287D4A?logo=git&logoColor=287D4A)](https://git-scm.com/)
-[![GitHub](https://img.shields.io/badge/GitHub-Host-BBA5F7?logo=github&logoColor=BBA5F7)](https://github.com/millercharlie/Digital-Portfolio)
+[![Git](https://img.shields.io/badge/git-Version&nbsp;Control-287D4A?logo=git)](https://git-scm.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-BBA5F7?logo=github&logoColor=FFFFFF)](https://github.com/millercharlie/Digital-Portfolio)
+![Charlie Miller](https://img.shields.io/badge/Charlie&nbsp;Miller-FFFFFF?logo=c&logoColor=000000)
 
 ## Introduction
 

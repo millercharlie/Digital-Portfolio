@@ -5,8 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  /*background-color: #242424;*/
-  background-image: url('./assets/init-wallpaper.jpg');
+  background-color: #C3F1FF;
   background-repeat: no-repeat;
   background-size: auto 100vw;
 
@@ -22,6 +21,14 @@
   --homebrew-color-blue: #5B32F2;
 }
 
+/* Home Page Modern Styles */
+.home-colored {
+  background-image: url("assets/init-wallpaper.jpg");
+  background-size: 100vw 100vh;
+  width: 100vw;
+  height: 100vh;
+}
+
 /* About Page Light Styles */
 .about-light {
   background-color: #FFFFFF;
@@ -31,7 +38,6 @@
 .about-brew {
   background-color: #000000;
   color: var(--homebrew-color-green);
-
 }
 
 .about-main-branch {
@@ -88,7 +94,7 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  /*padding: 0.6em 1.2em;*/
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -112,7 +118,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 

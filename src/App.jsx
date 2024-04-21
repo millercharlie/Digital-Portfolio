@@ -4,7 +4,6 @@ import Home from "./Pages/Home.jsx";
 import Projects from "./Pages/Projects.jsx";
 import About from "./Pages/About.jsx";
 import Contact from "./Pages/Contact.jsx";
-import ReactDOM from "react-dom/client";
 
 /**
  * The App Component of this portfolio. This acts as the entry point for the user.
@@ -16,7 +15,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='projects' element={<Projects/>}/>
-                <Route path='about' element={<About mode='brew'/>}/>
+                <Route path='about' element={<About mode='light'/>}/>
                 <Route path='contact' element={<Contact/>}/>
             </Routes>
         </BrowserRouter>
@@ -24,6 +23,3 @@ function App() {
 }
 
 export default App;
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App/>)

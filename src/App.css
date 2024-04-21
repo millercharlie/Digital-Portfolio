@@ -10,6 +10,11 @@
   transition: filter 300ms;
 }
 
+h3 {
+  font-family: 'Ubuntu', serif;
+  font-size: 16px;
+}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -78,12 +83,21 @@ li {
   background-color: rgba(256, 256, 256, 0.70);
   border-radius: 10px 10px 0 0;
   width: 100%;
+  align-items: center;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
 .window-heading-text {
-  color: #000000;
-  display: contents;
-  justify-self: center;
+  margin: 0.5rem 1rem;
+  display: flex;
+  width: 50%;
+}
+
+.window-heading-icons {
+  float: right;
+  margin-right: 1rem;
+
 }
 
 .main-content {
@@ -95,16 +109,37 @@ li {
 .icon-button {
   display: inline-flex;
   background-color: rgba(0, 0, 0, 0);
+  margin: 0.7rem 0 0.7rem 0;
   color: #000000;
+  cursor: pointer;
+}
+
+/* TODO: Fix a {} padding to not apply to every link */
+.window-link {
+  margin: 0.7rem 0;
+}
+
+.icon-image {
+  max-width: 1.2rem;
+}
+
+.icon-image-minimize {
+  max-width: 1.2rem;
+  margin-bottom: 0;
+}
+
+.window-main-text {
+  padding: 0 1rem;
+  text-align: left;
+  line-height: 24px;
 }
 
 /* NavBar.jsx Component Styles */
 .nav-bar {
   /* border-radius: 0 0 10px 10px; */
   overflow: auto;
-  display: inline-flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   box-sizing: inherit;
 }
 
@@ -129,13 +164,22 @@ li {
   vertical-align: middle;
 }
 
+.nav-right {
+  float: right;
+  vertical-align: middle;
+  align-content: center;
+}
+
 .nav-darktoggle {
   vertical-align: middle;
-  max-width: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  max-width: 25px;
+  transition-duration: 0.3s;
+  padding: 0.6em;
 }
 
 .nav-darktoggle:hover {
-  transform: scale(115%) rotate(70deg);
+  transform: scale(115%);
 }
 
 
