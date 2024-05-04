@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "title": "Projects",
+    "body": "Welcome to the projects window! I am passionate about many things, and enjoy leveraging' my knowledge of both computer science and design to create projects that are functional, beautiful, and serve a particular purpose. I have decided to showcase three of my recent' projects in this portfolio, which each have icons below. The first is my congress.gov website redesign concept. The second is my ___, and finally the third is ___. When you click on one of the icons, it will take you directly to your chosen project's respective section in the \"Projects\" page. If you'd prefer the full experience of the projects page, click the square icon in the menu bar of this window!"
+  },
+  "about": {
+    "title": "About Me",
+    "body": "o canada"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "body": "aint no way"
+  },
+  "empty": {
+    "title": "",
+    "body": ""
+  }
+}

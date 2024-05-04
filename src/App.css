@@ -1,116 +1,136 @@
 #root {
-  /*max-width: 1280px;*/
   margin: 0;
   padding: 0;
 }
 
+/* Logo Styles */
 .logo {
   height: 2em;
   will-change: filter;
   transition: filter 300ms;
 }
-
-h3 {
-  font-family: 'Ubuntu', serif;
-  font-size: 16px;
-}
-
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* HTML Styling Overrides */
+body {
+  margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .logo.react {
-    animation: logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
 }
-
-.card {
-  padding: 2em;
+h3 {
+  font-family: 'Ubuntu', serif;
+  font-size: 16px;
 }
-
-.read-the-docs {
-  color: #888;
+h4 {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
 }
-
+h4:hover {
+  color: #F2873B!important;
+}
+h4::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  background-color: #7DD6D1;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+h4:hover::before {
+  transform: scaleX(1);
+}
 a {
   display: inline;
   padding-left: 1.5vw;
   padding-right: 1.5vw;
-  color: rgba(0, 0, 0, 0.80);
+  color: rgba(0, 0, 0, 0.60);
 }
-
 li {
+  position: relative;
   display: inline;
+  float: left;
+}
+ul {
+  margin: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  transition: border-color 0.25s;
+  cursor: pointer;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
 /* AppFolder.jsx Component Styles */
 .app-folder {
-  text-align: center;
   max-width: 8%;
   margin-bottom: 2%;
+  text-align: center;
 }
-
 .app-folder-text {
+  margin-top: 0;
   color: #FFFFFF;
   filter: drop-shadow(0 0 4px #777777);
-  margin-top: 0;
 }
 
 /* Window.jsx Component Styles */
 .window {
-  width: 65%;
-  margin: 3.5% auto auto;
   display: flex;
   flex-direction: column;
+  width: 65%;
+  margin: 3.5% auto auto;
   /* filter: drop-shadow(0px 0px 0.1mm #6D6D6D); */
 }
-
 .window-heading {
-  background-color: rgba(256, 256, 256, 0.70);
-  border-radius: 10px 10px 0 0;
-  width: 100%;
   align-items: center;
   display: inline-flex;
   justify-content: space-between;
+  width: 100%;
+  background-color: rgba(256, 256, 256, 0.70);
+  border-radius: 10px 10px 0 0;
 }
-
 .window-heading-text {
-  margin: 0.5rem 1rem;
   display: flex;
   width: 50%;
+  margin: 0.5rem 1rem;
+  color: rgba(0, 0, 0, 0.70);
 }
-
 .window-heading-icons {
   float: right;
   margin-right: 1rem;
-
 }
 
 .main-content {
+  height: 50%;
   background-color: #FFFFFF;
   border-radius: 0 0 10px 10px;
-  height: 50%;
 }
 
 .icon-button {
   display: inline-flex;
-  background-color: rgba(0, 0, 0, 0);
   margin: 0.7rem 0 0.7rem 0;
   color: #000000;
+  background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
 }
 
@@ -129,145 +149,87 @@ li {
 }
 
 .window-main-text {
-  padding: 0 1rem;
   text-align: left;
   line-height: 24px;
+  padding: 0 1rem;
+  color: #000000;
 }
 
 /* NavBar.jsx Component Styles */
 .nav-bar {
-  /* border-radius: 0 0 10px 10px; */
-  overflow: auto;
+  position: relative;
   align-items: center;
   width: 100vw;
   box-sizing: inherit;
+  overflow: auto;
+  z-index: 999;
 }
-
 .nav-image-hover-colored {
   position: absolute;
+  object-fit: contain;
   width: 70px;
   height: 70px;
   top: 0;
   right: 0;
   left: 1.5vw;
   bottom: 0;
-  object-fit: contain;
   opacity: 0;
   transition: opacity .2s;
 }
-
 .nav-image-hover-colored:hover {
   opacity: 1;
 }
-
 .nav-image {
   vertical-align: middle;
 }
-
 .nav-right {
   float: right;
   vertical-align: middle;
   align-content: center;
 }
-
 .nav-darktoggle {
   vertical-align: middle;
-  background-color: rgba(0, 0, 0, 0);
   max-width: 25px;
-  transition-duration: 0.3s;
   padding: 0.6em;
+  transition-duration: 0.3s;
 }
-
 .nav-darktoggle:hover {
   transform: scale(115%);
 }
 
-
 /* Footer.jsx Component Styles */
 .footer {
-  background-color: rgba(256, 256, 256, 0.80);
-  border-radius: 10px 10px 0 0;
-  width: 100%;
-  bottom: 0;
-  position: absolute;
   display: flex;
   flex-direction: row;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(256, 256, 256, 0.80);
+  border-radius: 10px 10px 0 0;
 }
-
 .row {
   width: 100%;
   margin: 0 auto;
 }
-
 .extra-padding {
   padding-top: 1.2vw;
   padding-bottom: 1.2vw;
   padding-left: 1.5vw;
 }
-
-/*.nav-image-colored {*/
-/*  vertical-align: middle;*/
-/*  background-image: url("assets/cu.png");*/
-/*  background-size: cover;*/
-/*  width: 100px;*/
-/*  height: 100px;*/
-/*  float: left;*/
-/*}*/
-
-/*.nav-image-grayscale {*/
-/*  vertical-align: middle;*/
-/*}*/
-
-/*.nav-image-colored:hover {*/
-/*  vertical-align: middle;*/
-/*  background-image: url("assets/cf.png");*/
-/*  background-size: cover;*/
-/*  width: 100px;*/
-/*  height: 100px;*/
-/*}*/
-
-/*.nav-image-grayscale:hover {*/
-/*  background-image: url("assets/gf.png");*/
-/*}*/
-
 .right-align {
   float: right;
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-}
-
 .center {
-  align-items: center;
-  text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
 .background-container {
+  display: block;
   position: absolute;
   top: 0;
-  display: block;
-}
-
-li {
-  position: relative;
-}
-
-@keyframes background-bytes{
-  from {
-    top: -50px;
-  }
-  to {
-    top: 1000px;
-  }
-}
-
-li {
-  float: left;
+  z-index: 0;
 }
 
 /*
@@ -277,9 +239,28 @@ li {
   color: rgba(0, 0, 0, 0.5);
 }
 
+/* Animations */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes background-bytes{
+  from {
+    top: -50px;
+  }
+  to {
+    top: 1000px;
+  }
+}
+
+/* Mobile Styling */
 @media screen and (max-width: 500px) {
   .nav-bar a {
-    float: none;
     display: block;
+    float: none;
   }
 }

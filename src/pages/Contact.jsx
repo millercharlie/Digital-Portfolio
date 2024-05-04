@@ -4,7 +4,7 @@ export default function Contact() {
     return (
         <>
             <div>
-                <NavBar type={'colored'}/>
+                <NavBar mode={'colored'}/>
             </div>
             <div>
                 <h2>Contact Page Under Construction</h2>

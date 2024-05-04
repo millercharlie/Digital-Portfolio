@@ -1,18 +1,18 @@
 :root {
+  /* Typography */
   font-family: 'JetBrains Mono', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #C3F1FF;
-  background-repeat: no-repeat;
-  background-size: auto 100vw;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Color Schema */
+  color-scheme: light dark;
+  background-repeat: no-repeat;
+  background-size: auto 100vw;
 
   /* Homebrew Color Scheme */
   --homebrew-color-green: #2AFE14;
@@ -21,7 +21,7 @@
   --homebrew-color-blue: #5B32F2;
 }
 
-/* Home Page Modern Styles */
+/* Home Page Styles */
 .home-colored {
   background-image: url("assets/init-wallpaper.jpg");
   background-size: 100vw 100vh;
@@ -29,23 +29,19 @@
   height: 100vh;
 }
 
-/* About Page Light Styles */
+/* About Page Styles */
 .about-light {
   background-color: #FFFFFF;
 }
-
-/* About Page Homebrew Styles */
 .about-brew {
   background-color: #000000;
   color: var(--homebrew-color-green);
 }
-
 .about-main-branch {
   background-color: var(--homebrew-color-red);
   width: 0.5vw;
   height: 250vh;
 }
-
 .about-commit {
   width: 20px;
   height: 20px;
@@ -53,63 +49,6 @@
   background-color: var(--homebrew-color-red);
   position: absolute;
   border: 3px solid #000000;
-}
-
-h4 {
-  display: inline-block;
-  position: relative;
-  color: rgba(0, 0, 0, 0.80);
-  text-decoration: none;
-}
-
-h4:hover {
-  color: #F2873B;
-}
-
-h4::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  bottom: 0;
-  background-color: #7DD6D1;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-  border-radius: 10px;
-}
-
-h4:hover::before {
-  transform: scaleX(1);
-}
-
-body {
-  margin: 0;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  /*padding: 0.6em 1.2em;*/
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-/*button:hover {*/
-/*  border-color: #646cff;*/
-/*}*/
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
@@ -120,9 +59,4 @@ button:focus-visible {
   button {
     background-color: rgba(0, 0, 0, 0);
   }
-}
-
-.center {
-  align-items: center;
-  text-align: center;
 }

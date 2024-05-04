@@ -1,169 +1,169 @@
 [
   {
     "x": 27,
-    "y": 120,
+    "y": 180,
     "x2": 77,
-    "y2": 170,
+    "y2": 230,
     "type": "line",
     "color": "secondary"
   },
   {
     "x": 77,
-    "y": 170,
+    "y": 230,
     "x2": 77,
-    "y2": 350,
+    "y2": 410,
     "type": "line",
     "color": "secondary"
   },
   {
     "x": 77,
-    "y": 350,
+    "y": 410,
     "x2": 27,
-    "y2": 400,
+    "y2": 460,
     "type": "line",
     "color": "secondary"
   },
   {
     "x": 27,
-    "y": 400,
+    "y": 460,
     "x2": 77,
-    "y2": 450,
+    "y2": 510,
     "type": "line",
     "color": "secondary"
   },
   {
     "x": 77,
-    "y": 450,
+    "y": 510,
     "x2": 77,
-    "y2": 570,
+    "y2": 630,
     "type": "line",
     "color": "secondary"
   },
   {
     "x": 77,
-    "y": 570,
+    "y": 630,
     "x2": 27,
-    "y2": 620,
+    "y2": 680,
     "type": "line",
     "color": "secondary"
   },
   {
     "x": 27,
-    "y": 620,
+    "y": 680,
     "x2": 77,
-    "y2": 670,
+    "y2": 730,
     "type": "line",
     "color": "secondary"
   },
   {
     "x": 77,
-    "y": 670,
+    "y": 730,
     "x2": 77,
-    "y2": 790,
+    "y2": 850,
     "type": "line",
     "color": "secondary"
   },
   {
     "x": 77,
-    "y": 790,
+    "y": 850,
     "x2": 27,
-    "y2": 840,
+    "y2": 900,
     "type": "line",
     "color": "secondary"
   },
   {
     "x": 77,
-    "y": 890,
+    "y": 950,
     "x2": 127,
-    "y2": 940,
+    "y2": 1000,
     "type": "line",
     "color": "tertiary"
   },
   {
     "x": 127,
-    "y": 940,
+    "y": 1000,
     "x2": 127,
-    "y2": 1060,
+    "y2": 1120,
     "type": "line",
     "color": "tertiary"
   },
   {
     "x": 127,
-    "y": 1060,
+    "y": 1120,
     "x2": 77,
-    "y2": 1110,
+    "y2": 1170,
     "type": "line",
     "color": "tertiary"
   },
   {
     "x": 77,
-    "y": 1110,
+    "y": 1170,
     "x2": 587,
-    "y2": 1110,
+    "y2": 1170,
     "type": "line",
     "color": "quaternary"
   },
   {
     "x": 587,
-    "y": 1110,
+    "y": 1170,
     "x2": 587,
-    "y2": 1330,
+    "y2": 1400,
     "type": "line",
     "color": "quaternary"
   },
   {
     "x": 587,
-    "y": 1330,
+    "y": 1400,
     "x2": 77,
-    "y2": 1330,
+    "y2": 1400,
     "type": "line",
     "color": "quaternary"
   },
   {
     "x": 77,
-    "y": 1110,
+    "y": 1170,
     "x2": 127,
-    "y2": 1160,
+    "y2": 1220,
     "type": "line",
     "color": "tertiary"
   },
   {
     "x": 127,
-    "y": 1160,
+    "y": 1220,
     "x2": 127,
-    "y2": 1280,
+    "y2": 1340,
     "type": "line",
     "color": "tertiary"
   },
   {
     "x": 127,
-    "y": 1280,
+    "y": 1340,
     "x2": 77,
-    "y2": 1330,
+    "y2": 1390,
     "type": "line",
     "color": "tertiary"
   },
   {
     "x": 27,
-    "y": 840,
+    "y": 900,
     "x2": 77,
-    "y2": 890,
+    "y2": 950,
     "type": "line",
     "color": "secondary"
   },
   {
     "x": 77,
-    "y": 890,
+    "y": 950,
     "x2": 77,
-    "y2": 1450,
+    "y2": 1510,
     "type": "line",
     "color": "secondary"
   },
   {
     "x": 77,
-    "y": 1450,
+    "y": 1510,
     "x2": 27,
-    "y2": 1500,
+    "y2": 1560,
     "type": "line",
     "color": "secondary"
   },
@@ -171,7 +171,7 @@
     "x": 27,
     "y": 0,
     "x2": 27,
-    "y2": 1500,
+    "y2": 1560,
     "type": "line",
     "color": "primary"
   },
@@ -180,12 +180,6 @@
 
 
 
-  {
-    "x": 77,
-    "y": 170,
-    "type": "circle",
-    "color": "secondary"
-  },
   {
     "x": 77,
     "y": 230,
@@ -206,7 +200,7 @@
   },
   {
     "x": 77,
-    "y": 450,
+    "y": 410,
     "type": "circle",
     "color": "secondary"
   },
@@ -224,7 +218,7 @@
   },
   {
     "x": 77,
-    "y": 670,
+    "y": 630,
     "type": "circle",
     "color": "secondary"
   },
@@ -241,10 +235,10 @@
     "color": "secondary"
   },
   {
-    "x": 127,
-    "y": 940,
+    "x": 77,
+    "y": 850,
     "type": "circle",
-    "color": "tertiary"
+    "color": "secondary"
   },
   {
     "x": 127,
@@ -259,34 +253,34 @@
     "color": "tertiary"
   },
   {
-    "x": 587,
-    "y": 1110,
-    "type": "circle",
-    "color": "quaternary"
-  },
-  {
-    "x": 587,
-    "y": 1183,
-    "type": "circle",
-    "color": "quaternary"
-  },
-  {
-    "x": 587,
-    "y": 1256,
-    "type": "circle",
-    "color": "quaternary"
-  },
-  {
-    "x": 587,
-    "y": 1330,
-    "type": "circle",
-    "color": "quaternary"
-  },
-  {
     "x": 127,
-    "y": 1160,
+    "y": 1120,
     "type": "circle",
     "color": "tertiary"
+  },
+  {
+    "x": 587,
+    "y": 1170,
+    "type": "circle",
+    "color": "quaternary"
+  },
+  {
+    "x": 587,
+    "y": 1243,
+    "type": "circle",
+    "color": "quaternary"
+  },
+  {
+    "x": 587,
+    "y": 1316,
+    "type": "circle",
+    "color": "quaternary"
+  },
+  {
+    "x": 587,
+    "y": 1390,
+    "type": "circle",
+    "color": "quaternary"
   },
   {
     "x": 127,
@@ -301,32 +295,38 @@
     "color": "tertiary"
   },
   {
+    "x": 127,
+    "y": 1340,
+    "type": "circle",
+    "color": "tertiary"
+  },
+  {
     "x": 77,
-    "y": 890,
+    "y": 950,
     "type": "circle",
     "color": "secondary"
   },
   {
     "x": 77,
-    "y": 1110,
+    "y": 1170,
     "type": "circle",
     "color": "secondary"
   },
   {
     "x": 77,
-    "y": 1330,
-    "type": "circle",
-    "color": "secondary"
-  },
-  {
-    "x": 77,
-    "y": 1390,
+    "y": 1400,
     "type": "circle",
     "color": "secondary"
   },
   {
     "x": 77,
     "y": 1450,
+    "type": "circle",
+    "color": "secondary"
+  },
+  {
+    "x": 77,
+    "y": 1510,
     "type": "circle",
     "color": "secondary"
   },
@@ -344,154 +344,137 @@
   },
   {
     "x": 27,
-    "y": 400,
+    "y": 180,
     "type": "circle",
     "color": "primary"
   },
   {
     "x": 27,
-    "y": 620,
+    "y": 460,
     "type": "circle",
     "color": "primary"
   },
   {
     "x": 27,
-    "y": 840,
+    "y": 680,
     "type": "circle",
     "color": "primary"
   },
   {
     "x": 27,
-    "y": 1500,
+    "y": 900,
     "type": "circle",
     "color": "primary"
   },
+  {
+    "x": 27,
+    "y": 1560,
+    "type": "circle",
+    "color": "primary"
+  },
+
 
 
   {
     "x": 90,
-    "y": 175,
+    "y": 235,
     "text": "Split branch \"Background\" from \"main\"",
     "type": "text"
   },
   {
     "x": 90,
-    "y": 235,
+    "y": 295,
     "text": "From: Los Angeles, California",
     "type": "text"
   },
   {
   "x": 90,
-  "y": 295,
+  "y": 355,
   "text": "School: Northeastern University",
     "type": "text"
   },
   {
     "x": 90,
-    "y": 355,
+    "y": 415,
     "text": "Major: Computer Science and Design",
     "type": "text"
   },
   {
     "x": 90,
-    "y": 455,
+    "y": 515,
     "text": "Split branch \"WorkExperience\" from \"main\"",
     "type": "text"
   },
   {
     "x": 90,
-    "y": 515,
+    "y": 575,
     "text": "Code Coach — theCoderSchool",
     "type": "text"
   },
   {
     "x": 90,
-    "y": 575,
+    "y": 635,
     "text": "Human-Computer Interaction Engineer",
     "type": "text"
   },
   {
     "x": 90,
-    "y": 675,
+    "y": 735,
     "text": "Split branch \"JobPreference\" from \"main\"",
     "type": "text"
   },
   {
     "x": 90,
-    "y": 735,
+    "y": 795,
     "text": "Front-End Web/Application Development",
     "type": "text"
   },
   {
     "x": 90,
-    "y": 795,
+    "y": 855,
     "text": "Software Engineering",
     "type": "text"
   },
   {
     "x": 140,
-    "y": 945,
+    "y": 1005,
     "text": "Split branch \"Technology\" from \"PassionsAndHobbies\"",
     "type": "text"
   },
   {
     "x": 140,
-    "y": 1005,
+    "y": 1065,
     "text": "Consumer Electronics/Software",
     "type": "text"
   },
   {
     "x": 140,
-    "y": 1065,
+    "y": 1125,
     "text": "Eco-Friendly Innovations",
-    "type": "text"
-  },
-  {
-    "x": 0,
-    "y": 0,
-    "text": "",
-    "type": "text"
-  },
-  {
-    "x": 0,
-    "y": 0,
-    "text": "",
-    "type": "text"
-  },
-  {
-    "x": 0,
-    "y": 0,
-    "text": "",
-    "type": "text"
-  },
-  {
-  "x": 0,
-  "y": 0,
-  "text": "",
     "type": "text"
   },
 
   {
     "x": 140,
-    "y": 1165,
+    "y": 1225,
     "text": "Split branch \"History\" from \"PassionsAndHobbies\"",
     "type": "text"
   },
   {
     "x": 140,
-    "y": 1225,
+    "y": 1285,
     "text": "1492-1921",
     "type": "text"
   },
   {
     "x": 140,
-    "y": 1285,
+    "y": 1345,
     "text": "Interwar Period (WW1-WW2)",
     "type": "text"
   },
   {
     "x": 90,
-    "y": 895,
+    "y": 955,
     "text": "Split branch \"PassionsAndHobbies\" from \"main\"",
     "type": "text"
   },
@@ -504,49 +487,55 @@
   {
     "x": 40,
     "y": 125,
-    "text": "This page is intended to give you a little introduction of myself. Below, you will find information about me!",
+    "text": "This page is intended to give you a little introduction of myself.",
+    "type": "text"
+  },
+  {
+    "x": 40,
+    "y": 185,
+    "text": "Click on the hamburger menu next to each commit to read more about it!",
     "type": "text"
   },
 
   {
     "x": 600,
-    "y": 1115,
+    "y": 1175,
     "text": "Split Branch \"UrbanDesign\" from \"PassionsAndHobbies\"",
     "type": "text"
   },
   {
     "x": 600,
-    "y": 1188,
+    "y": 1248,
     "text": "Public Transportation",
     "type": "text"
   },
   {
     "x": 600,
-    "y": 1261,
+    "y": 1321,
     "text": "Smart Cities",
     "type": "text"
   },
   {
     "x": 600,
-    "y": 1335,
+    "y": 1395,
     "text": "Walkable Areas and Transit-Oriented Development",
     "type": "text"
   },
   {
     "x": 90,
-    "y": 1395,
+    "y": 1455,
     "text": "Astronomy",
     "type": "text"
   },
   {
     "x": 90,
-    "y": 1455,
+    "y": 1515,
     "text": "Geography",
     "type": "text"
   },
   {
     "x": 12,
-    "y": 1525,
+    "y": 1585,
     "text": "main",
     "type": "text"
   }

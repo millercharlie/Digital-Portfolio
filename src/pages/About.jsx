@@ -1,19 +1,23 @@
 import NavBar from "../components/NavBar.jsx";
 import PropTypes from "prop-types";
-import git from '../gitcommits.json';
+import git from '../utilities/gitcommits.json';
 import {useState} from "react";
 
 /**
  * Represents the About page of this website. This page is meant to look like a Git repository with branches
- *     representing each piece of personal information.
+ *   representing each piece of personal information.
  * @param mode {string} The mode of this About page (either light or homebrew)
  * @returns {JSX.Element} About page
  */
-export default function About( { mode } ) {
+export default function About( { mode = 'light' } ) {
 
     const [colorway, setColorway] = useState(mode);
     const [toggle, setToggle] = useState('src/assets/brew-icon.png')
 
+    /**
+     * Creates an unordered list of random bytes (0 or 1) that float down the screen.
+     * @returns {string[]} array of bytes
+     */
     const randomBytes = () => {
         let bytes = []
         for (let i = 0; i < 120; i++) {
@@ -22,9 +26,14 @@ export default function About( { mode } ) {
         return bytes;
     }
 
+    /**
+     * Sets the animation and colorway for all bytes in the unordered list.
+     * @returns {{color: string, animationDelay: string, fontSize: number, opacity: number, animation: string}}
+     */
     const handleStyle = () => {
         return {
             "color": getColors('text'),
+            "cursor": 'default',
             "fontSize": Math.floor(Math.random() * 25) + 8,
             "opacity": Math.floor(Math.random() * 55) + 10,
             "animation": "background-bytes " + Math.floor(Math.random() * 50 + 15) + "s forwards infinite",
@@ -32,9 +41,6 @@ export default function About( { mode } ) {
         };
     }
 
-    About.propTypes = {
-        mode: PropTypes.string.isRequired
-    }
     // Each circle is 60px apart, with each branch going out by 50px in each direction
 
     /**
@@ -66,6 +72,8 @@ export default function About( { mode } ) {
                         return '#FFFFFF';
                     case 'nav':
                         return '#646cff';
+                    case 'background':
+                        return '#FFFFFF';
                 }
                 break;
             case 'brew':
@@ -84,6 +92,8 @@ export default function About( { mode } ) {
                         return '#000000';
                     case 'nav':
                         return '#FFFFFF';
+                    case 'background':
+                        return '#000000';
                 }
                 break;
         }
@@ -102,8 +112,18 @@ export default function About( { mode } ) {
         }
     }
 
+    About.propTypes = {
+        mode: PropTypes.string
+    }
+
     return (
         <div className={'about-' + colorway}>
+            <NavBar mode='colored'
+                    background={getColors('background')}
+                    fun={colorModeSwitch}
+                    icon={toggle}
+                    textColor={getColors('nav')}
+            />
             <div className='background-container'>
                 <ul>
                     {randomBytes().map((byte, index) => {
@@ -111,7 +131,6 @@ export default function About( { mode } ) {
                     })}
                 </ul>
             </div>
-            <NavBar type='colored' background='' text={getColors('nav')} fun={colorModeSwitch} icon={toggle}/>
             <svg height='1600px' width='100%'>
                 {git.map((commit, index) => {
                     switch (commit.type) {

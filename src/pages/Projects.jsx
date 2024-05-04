@@ -5,24 +5,17 @@ import {useEffect, useState} from "react";
 
 export default function Projects() {
 
-    const [scrollY, setScrollY] = useState(0);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrollY(window.scrollY);
-        };
-        handleScroll();
-
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    /**
+     * Handles randomization of background
+     */
+    const randomizeSetting = () => {
+        // nah bro
+    }
 
     return (
-        <div>
+        <div style={{backgroundColor: '#C3F1FF'}}>
             <div>
-                <NavBar type={'colored'}/>
+                <NavBar type='colored' mode='colored' background='FFFFFF' />
             </div>
             <div>
                 <h2>Projects Page Under Construction</h2>
