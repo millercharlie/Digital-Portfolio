@@ -50,6 +50,9 @@
   position: absolute;
   border: 3px solid #000000;
 }
+.bytes-ul {
+  max-height: 70px;
+}
 
 @media (prefers-color-scheme: light) {
   :root {

@@ -20,7 +20,7 @@ export default function About( { mode = 'light' } ) {
      */
     const randomBytes = () => {
         let bytes = []
-        for (let i = 0; i < 120; i++) {
+        for (let i = 0; i < 300; i++) {
             bytes.push(Math.round(Math.random()));
         }
         return bytes;
@@ -32,7 +32,7 @@ export default function About( { mode = 'light' } ) {
      */
     const handleStyle = () => {
         return {
-            "color": getColors('text'),
+            "color": getColors('byte'),
             "cursor": 'default',
             "fontSize": Math.floor(Math.random() * 25) + 8,
             "opacity": Math.floor(Math.random() * 55) + 10,
@@ -72,8 +72,8 @@ export default function About( { mode = 'light' } ) {
                         return '#FFFFFF';
                     case 'nav':
                         return '#646cff';
-                    case 'background':
-                        return '#FFFFFF';
+                    case 'byte':
+                        return '#000000';
                 }
                 break;
             case 'brew':
@@ -92,8 +92,8 @@ export default function About( { mode = 'light' } ) {
                         return '#000000';
                     case 'nav':
                         return '#FFFFFF';
-                    case 'background':
-                        return '#000000';
+                    case 'byte':
+                        return 'rgba(42, 254, 20, 0.50)'
                 }
                 break;
         }
@@ -125,7 +125,7 @@ export default function About( { mode = 'light' } ) {
                     textColor={getColors('nav')}
             />
             <div className='background-container'>
-                <ul>
+                <ul className='bytes-ul'>
                     {randomBytes().map((byte, index) => {
                         return (<li key={'item ' + index} style={handleStyle()}>{byte}</li>);
                     })}
