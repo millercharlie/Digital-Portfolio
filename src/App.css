@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.no-overscroll {
+  overscroll-behavior: none;
+}
+
 /* Logo Styles */
 .logo {
   height: 2em;
@@ -157,14 +161,14 @@ button:focus-visible {
 
 /* NavBar.jsx Component Styles */
 .nav-bar {
-  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
   align-items: center;
   width: 100vw;
-  box-sizing: inherit;
-  overflow: auto;
+  position: relative;
   z-index: 999;
 }
-.nav-image-hover-colored {
+.nav-image-hover {
   position: absolute;
   object-fit: contain;
   width: 70px;
@@ -176,7 +180,7 @@ button:focus-visible {
   opacity: 0;
   transition: opacity .2s;
 }
-.nav-image-hover-colored:hover {
+.nav-image-hover:hover {
   opacity: 1;
 }
 .nav-image {
@@ -189,7 +193,7 @@ button:focus-visible {
 }
 .nav-darktoggle {
   vertical-align: middle;
-  max-width: 25px;
+  max-width: 30px;
   padding: 0.6em;
   transition-duration: 0.3s;
 }
@@ -230,13 +234,6 @@ button:focus-visible {
   position: absolute;
   top: 0;
   z-index: 0;
-}
-
-/*
- * NOTE: This is just for initial creation of the colored variation of this website
-*/
-.title-colors {
-  color: rgba(0, 0, 0, 0.5);
 }
 
 /* Animations */

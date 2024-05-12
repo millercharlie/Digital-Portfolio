@@ -11,7 +11,7 @@ import AppFolder from '../components/AppFolder.jsx';
 export default function Home() {
     const [visible, setVisible] = useState(false);
     const [mode, setMode] = useState('empty');
-    const [window, setWindow] = useState(<></>);
+    const [windowContent, setWindowContent] = useState(<></>);
     const [toggle, setToggle] = useState('src/assets/moon-icon.png')
 
     const handleClick = (event) => {
@@ -24,25 +24,38 @@ export default function Home() {
         }
     }
 
-    // TODO: This method
-    const handleToggle = (event) => {
-        setToggle('src/assets/sun-icon.png');
+    /**
+     * Switches the global variable and changes the toggle icon
+     */
+    const handleToggle = () => {
+        if (window.colorMode === 'one') {
+            window.colorMode = 'two';
+            setToggle('src/assets/sun-icon.png');
+        }
+        else {
+            window.colorMode = 'one';
+            setToggle('src/assets/moon-icon.png')
+        }
     }
 
     // TODO: Window Crashes Occasionally because 'type' variable is undefined. Fix this.
        // It seems to be when you switch too quickly
 
     useEffect(() => {
-        setWindow(<Window isVisible={visible} mode={mode} func={handleClick}/>);
+        setWindowContent(<Window isVisible={visible} mode={mode} func={handleClick}/>);
     }, [visible, mode]);
 
     return (
-        <div className='home-colored'>
+        <div className='home-one'>
             <div>
-                <NavBar mode='colored' background='FFFFFF' icon={toggle} fun={handleToggle}/>
+                <NavBar background='#FFFFFF'
+                        icon={toggle}
+                        fun={handleToggle}
+                        textColor='#000000'
+                />
             </div>
             <div className='center'>
-                {window}
+                {windowContent}
             </div>
             <div style={{position: 'absolute', marginTop: '-38vh', marginLeft: '2vw'}}>
                 <AppFolder icon='src/assets/work-icon-new.png' text='Projects' window='projects' func={handleClick}/>

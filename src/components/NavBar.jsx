@@ -1,20 +1,20 @@
-import CULogo from '../assets/cu.png';
-import GULogo from '../assets/gu.png';
-import CFLogo from '../assets/cf.png';
-import GFLogo from '../assets/cf.png';
+import CULogo from '../assets/navbar_icons/cu.png';
+import GULogo from '../assets/navbar_icons/gu.png';
+import CFLogo from '../assets/navbar_icons/cf.png';
+import GFLogo from '../assets/navbar_icons/gf.png';
 import PropTypes from 'prop-types';
 
 /**
  * Represents a navigation bar to be displayed on all pages.
  *
- * @param mode {string} Color mode of this navigation bar
  * @param background {string} Background color of this navigation bar
  * @param fun {function} Callback function to handle various styling in different Components
- * @param icon {string[]} Array with two elements - first one being the dark mode toggle with the second being the light mode toggle
+ * @param icon {string} String with an icon to be rendered
+ * @param textColor {string} Color of the navigation bar's text
  *
  * @returns {JSX.Element} Navigation Bar.
  */
-function NavBar({ mode, background, fun, icon, textColor }) {
+function NavBar({ background, fun, icon, textColor }) {
 
     /**
      * Handles the style of the text and logo image.
@@ -22,19 +22,19 @@ function NavBar({ mode, background, fun, icon, textColor }) {
      */
     const handleStyles = () => {
         let styles = {};
-        if (mode === 'colored') {
+        if (window.colorMode === 'one') {
             styles = {
                 'logo': {
-                    "unfilled": CULogo,
-                    "filled": CFLogo
+                    'unfilled': CULogo,
+                    'filled': CFLogo
                 },
             };
         }
         else {
             styles = {
                 'logo': {
-                    "unfilled": GULogo,
-                    "filled": GFLogo
+                    'unfilled': GULogo,
+                    'filled': GFLogo
                 },
             };
         }
@@ -42,7 +42,6 @@ function NavBar({ mode, background, fun, icon, textColor }) {
     }
 
     NavBar.propTypes = {
-        mode: PropTypes.string.isRequired,
         background: PropTypes.string,
         fun: PropTypes.func.isRequired,
         icon: PropTypes.string.isRequired,
@@ -50,14 +49,14 @@ function NavBar({ mode, background, fun, icon, textColor }) {
     }
 
     return (
-        <div className='nav-bar'>
-            <nav className='title-colors' style={background === '' ? {backgroundColor: 'rgba(256, 256, 256, 0)'}
-                : {backgroundColor: ('#' + background)}}>
-                <a href="/">
+        <nav className='nav-bar' style={background === '' ? {backgroundColor: 'rgba(256, 256, 256, 0)'}
+            : {backgroundColor: (background)}}>
+            <div className='navbar-left'>
+                <a href='/'>
                     <img src={handleStyles().logo.unfilled} style={{maxWidth: '70px'}} className='nav-image'
-                         alt={'nav-image-' + mode}/>
-                    <img src={handleStyles().logo.filled} className={'nav-image-hover-' + mode}
-                         alt={'nav-image-hover-' + mode}/>
+                         alt={'nav-image-' + window.colorMode}/>
+                    <img src={handleStyles().logo.filled} className={'nav-image-hover'}
+                         alt={'nav-image-hover'}/>
                 </a>
                 <a href='projects'>
                     <h4 style={{color: textColor || 'rgba(0, 0, 0, 0.70)'}}>Projects</h4>
@@ -71,11 +70,11 @@ function NavBar({ mode, background, fun, icon, textColor }) {
                 <a>
                     <h4 style={{color: textColor || 'rgba(0, 0, 0, 0.70)', cursor: 'pointer'}}>Resume</h4>
                 </a>
-                <button onClick={fun} className='nav-right'>
-                    <img src={icon} alt={'Colorway Toggle'} className='nav-darktoggle'/>
-                </button>
-            </nav>
-        </div>);
+            </div>
+            <button onClick={fun} className='nav-right'>
+                <img src={icon} alt={'Colorway Toggle'} className='nav-darktoggle'/>
+            </button>
+        </nav>);
 }
 
 export default NavBar;

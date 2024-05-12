@@ -22,7 +22,7 @@
 }
 
 /* Home Page Styles */
-.home-colored {
+.home-one {
   background-image: url("assets/init-wallpaper.jpg");
   background-size: 100vw 100vh;
   width: 100vw;
@@ -30,10 +30,10 @@
 }
 
 /* About Page Styles */
-.about-light {
+.about-one {
   background-color: #FFFFFF;
 }
-.about-brew {
+.about-two {
   background-color: #000000;
   color: var(--homebrew-color-green);
 }
@@ -52,6 +52,79 @@
 }
 .bytes-ul {
   max-height: 70px;
+}
+
+/* Project Page Styles */
+.pillars {
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  max-height: 300px;
+}
+
+.trees {
+  display: inline-flex;
+}
+
+.background-trees {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.middleground-trees {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  z-index: 2;
+}
+
+.foreground-trees {
+  position: absolute;
+  bottom: 0;
+  z-index: 4;
+}
+
+.bullet-train {
+  display: inline-flex;
+}
+
+.train-car {
+  max-height: 50px;
+}
+
+.front-car {
+  max-height: 50px;
+}
+
+/*.front-car {*/
+/*  display: block;*/
+/*  margin-left: auto;*/
+/*  margin-right: auto;*/
+/*  width: 50%;*/
+/*  max-height: 50px;*/
+/*  border: 1px solid green;*/
+/*}*/
+
+.sticky-parent {
+  height: 500vh;
+}
+
+.sticky-content {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.scroll-section {
+  position: absolute;
+  bottom: 0;
+  width: 500vw;
+  will-change: transform;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (prefers-color-scheme: light) {

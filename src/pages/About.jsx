@@ -1,17 +1,17 @@
-import NavBar from "../components/NavBar.jsx";
-import PropTypes from "prop-types";
+import NavBar from '../components/NavBar.jsx';
+import PropTypes from 'prop-types';
 import git from '../utilities/gitcommits.json';
-import {useState} from "react";
+import { useState } from 'react';
 
 /**
  * Represents the About page of this website. This page is meant to look like a Git repository with branches
  *   representing each piece of personal information.
- * @param mode {string} The mode of this About page (either light or homebrew)
+ *
  * @returns {JSX.Element} About page
  */
-export default function About( { mode = 'light' } ) {
+export default function About() {
 
-    const [colorway, setColorway] = useState(mode);
+    const [colorway, setColorway] = useState(window.colorMode);
     const [toggle, setToggle] = useState('src/assets/brew-icon.png')
 
     /**
@@ -26,18 +26,20 @@ export default function About( { mode = 'light' } ) {
         return bytes;
     }
 
+    // TODO: Add support for multiple screen sizes
+
     /**
      * Sets the animation and colorway for all bytes in the unordered list.
      * @returns {{color: string, animationDelay: string, fontSize: number, opacity: number, animation: string}}
      */
     const handleStyle = () => {
         return {
-            "color": getColors('byte'),
-            "cursor": 'default',
-            "fontSize": Math.floor(Math.random() * 25) + 8,
-            "opacity": Math.floor(Math.random() * 55) + 10,
-            "animation": "background-bytes " + Math.floor(Math.random() * 50 + 15) + "s forwards infinite",
-            "animationDelay": "-" + Math.floor(Math.random() * 40) + "s"
+            'color': getColors('byte'),
+            'cursor': 'default',
+            'fontSize': Math.floor(Math.random() * 25) + 8,
+            'opacity': Math.floor(Math.random() * 55) + 10,
+            'animation': 'background-bytes ' + Math.floor(Math.random() * 50 + 15) + 's forwards infinite',
+            'animationDelay': '-' + Math.floor(Math.random() * 40) + 's'
         };
     }
 
@@ -56,7 +58,7 @@ export default function About( { mode = 'light' } ) {
      */
     const getColors = (type) => {
         switch(colorway) {
-            case 'light':
+            case 'one':
                 switch (type) {
                     case 'text':
                         return '#000000';
@@ -76,7 +78,7 @@ export default function About( { mode = 'light' } ) {
                         return '#000000';
                 }
                 break;
-            case 'brew':
+            case 'two':
                 switch (type) {
                     case 'text':
                         return '#2AFE14';
@@ -101,12 +103,14 @@ export default function About( { mode = 'light' } ) {
 
     const colorModeSwitch = () => {
         switch (colorway) {
-            case 'light':
-                setColorway('brew');
+            case 'one':
+                setColorway('two');
+                window.colorMode = 'two'
                 setToggle('src/assets/sun-icon.png');
                 break;
             default:
-                setColorway('light');
+                setColorway('one');
+                window.colorMode = 'one'
                 setToggle('src/assets/brew-icon.png');
                 break;
         }
@@ -118,8 +122,7 @@ export default function About( { mode = 'light' } ) {
 
     return (
         <div className={'about-' + colorway}>
-            <NavBar mode='colored'
-                    background={getColors('background')}
+            <NavBar background={getColors('background')}
                     fun={colorModeSwitch}
                     icon={toggle}
                     textColor={getColors('nav')}
@@ -141,7 +144,7 @@ export default function About( { mode = 'light' } ) {
                             return (<circle cx={commit.x} cy={commit.y} r='8px' fill={getColors(commit.color)}
                                             stroke={getColors('stroke')} strokeWidth='3' key={index}/>);
                         case 'text':
-                            return (<text x={commit.x} y={commit.y} fontSize="14" fill={getColors("text")}
+                            return (<text x={commit.x} y={commit.y} fontSize='14' fill={getColors('text')}
                                           key={index}>{commit.text}</text>);
                     }
                 })}
