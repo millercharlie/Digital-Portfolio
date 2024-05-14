@@ -1,11 +1,12 @@
 import NavBar from '../components/NavBar.jsx';
-import Pillars from '../assets/project_assets/Pillars.png';
 import react from '../assets/navbar_icons/react.svg'
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
+import Window from "../components/Window.jsx";
 
 export default function Projects() {
 
     // TODO: Add support for multiple screen sizes
+    const [windowVisibility, setWindowVisibility] = useState(false);
 
     /**
     * Sets the animation and colorway for all trees in the scene.
@@ -45,9 +46,23 @@ export default function Projects() {
             }
 
         for (let tIndex = 0; tIndex < numTrees; tIndex++) {
-            treeList.push(<img src={imageSrc} alt={treeType + '-tree'} style={treeStyles(treeType)}/>);
+            treeList.push(<img src={imageSrc}
+                               alt={treeType + '-tree'}
+                               key={treeType + '-tree' + '-index-' + tIndex}
+                               style={treeStyles(treeType)}/>);
         }
         return treeList;
+    }
+
+    function getColumns() {
+        let answer = [];
+        for (let index = 0; index < 100; index++) {
+            answer.push(<img src='src/assets/project_assets/column.png'
+                             alt={'column #' + index}
+                             key={'column #' + index}
+                             className='column'/>);
+        }
+        return answer;
     }
 
     /**
@@ -73,6 +88,15 @@ export default function Projects() {
         scrollSection.style.transform = `translate3d(${-percentage}vw, 0, 0)`;
     }
 
+    const handleClick = (event) => {
+        if (event.target.id === 'close') {
+            setWindowVisibility(false);
+        }
+        else {
+            setWindowVisibility(true);
+        }
+    }
+
 
     return (
         <div className='no-overscroll' style={{backgroundColor: '#C3F1FF'}}>
@@ -88,7 +112,17 @@ export default function Projects() {
                             <img src='src/assets/project_assets/front-train-car.svg' className='front-car' alt='Bullet Train'/>
                         </div>
                         <div className='scroll-section'>
-                            <img src={Pillars} className='pillars' alt='Pillars'/>
+                            {/* TODO: Why does this <Window/> cause all the trees to disappear??? */}
+                            {/*<div className='stations'>*/}
+                            {/*    <Window mode={'projects'} func={handleClick} isVisible={windowVisibility}/>*/}
+                                <img src='src/assets/project_assets/project-one-station.png'
+                                     className='project-one-station'
+                                     alt='project-one-station'
+                                     onClick={handleClick}/>
+                            {/*</div>*/}
+                            <div className='pillars'>
+                                {getColumns()}
+                            </div>
                             <div className='trees'>
                                 <div className='background-trees'>
                                     {getTrees('background')}

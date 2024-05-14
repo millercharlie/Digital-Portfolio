@@ -51,3 +51,5 @@ the other projects as well. The user also has the option to immediately go to th
 This page is designed to highlight the design aspect of my skills, and features
 a toggle where the user can switch between 4-5 different designs for the elements
 on the screen.
+
+<sub>Special Shoutout to Brant Pan for his horizontal scroll function!</sub>
