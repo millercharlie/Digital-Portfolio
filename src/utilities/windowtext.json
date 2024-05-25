@@ -14,5 +14,12 @@
   "empty": {
     "title": "",
     "body": ""
+  },
+  "project-one": {
+    "title": "Project One - Reversi",
+    "body": ":D"
+  },
+  "project-two": {
+    "title": "Project Two - UI/UX Designs"
   }
 }

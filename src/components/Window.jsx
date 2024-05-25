@@ -16,7 +16,7 @@ function Window({ mode, isVisible, func }) {
     Window.propTypes = {
         isVisible: PropTypes.bool.isRequired,
         mode: PropTypes.string.isRequired,
-        func: PropTypes.func.isRequired
+        func: PropTypes.func.isRequired,
     }
 
     /**
@@ -27,10 +27,12 @@ function Window({ mode, isVisible, func }) {
     };
 
     const windowText = text[mode];
+    console.log(mode);
+    console.log(windowText);
 
     return (
         <div className='window' style={isVisible ? {visibility: 'visible', filter: 'drop-shadow(1, 1, 1, 4)'}
-            : {visibility: 'hidden'}}>
+            : {visibility: 'hidden', display: 'none'}}>
             <div className='window-heading'>
                 <h2 className='window-heading-text'>{windowText.title}</h2>
                 <div className='window-heading-icons'>

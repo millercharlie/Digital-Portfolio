@@ -30,11 +30,11 @@ export default function Home() {
     const handleToggle = () => {
         if (window.colorMode === 'one') {
             window.colorMode = 'two';
-            setToggle('src/assets/sun-icon.png');
+            setToggle('src/assets/navbar_icons/sun-icon.png');
         }
         else {
             window.colorMode = 'one';
-            setToggle('src/assets/moon-icon.png')
+            setToggle('src/assets/navbar_icons/moon-icon.png')
         }
     }
 
@@ -54,13 +54,13 @@ export default function Home() {
                         textColor='#000000'
                 />
             </div>
-            <div className='center'>
-                {windowContent}
-            </div>
-            <div style={{position: 'absolute', marginTop: '-38vh', marginLeft: '2vw'}}>
+            <div style={{position: 'absolute', marginTop: '38vh', marginLeft: '2vw'}}>
                 <AppFolder icon='src/assets/work-icon-new.png' text='Projects' window='projects' func={handleClick}/>
                 <AppFolder icon='src/assets/about-icon-new.png' text='About' window='about' func={handleClick}/>
-                <AppFolder icon='src/assets/sun-icon.png' text='Contact' window='contact' func={handleClick}/>
+                <AppFolder icon='src/assets/navbar_icons/sun-icon.png' text='Contact' window='contact' func={handleClick}/>
+                </div>
+            <div className='center home-window'>
+                {windowContent}
             </div>
         </div>
     );

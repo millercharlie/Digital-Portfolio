@@ -32,6 +32,9 @@ h3 {
   font-family: 'Ubuntu', serif;
   font-size: 16px;
 }
+h3.h3-projects {
+  font-size: 30px;
+}
 h4 {
   display: inline-block;
   position: relative;
@@ -101,8 +104,9 @@ button:focus-visible {
 .window {
   display: flex;
   flex-direction: column;
-  width: 65%;
-  margin: 3.5% auto auto;
+  width: 65vw;
+  position: relative;
+  z-index: 999;
   /* filter: drop-shadow(0px 0px 0.1mm #6D6D6D); */
 }
 .window-heading {
@@ -110,7 +114,7 @@ button:focus-visible {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
-  background-color: rgba(256, 256, 256, 0.70);
+  background-color: rgba(256, 256, 256, 0.50);
   border-radius: 10px 10px 0 0;
 }
 .window-heading-text {
@@ -126,7 +130,7 @@ button:focus-visible {
 
 .main-content {
   height: 50%;
-  background-color: #FFFFFF;
+  background-color: rgba(256, 256, 256, 0.90);
   border-radius: 0 0 10px 10px;
 }
 
@@ -159,6 +163,18 @@ button:focus-visible {
   color: #000000;
 }
 
+.small-z-index {
+  z-index: 0;
+}
+
+.large-z-index {
+  z-index: 999;
+}
+
+.absolute {
+  position: absolute;
+}
+
 /* NavBar.jsx Component Styles */
 .nav-bar {
   display: inline-flex;
@@ -173,10 +189,8 @@ button:focus-visible {
   object-fit: contain;
   width: 70px;
   height: 70px;
-  top: 0;
   right: 0;
   left: 1.5vw;
-  bottom: 0;
   opacity: 0;
   transition: opacity .2s;
 }

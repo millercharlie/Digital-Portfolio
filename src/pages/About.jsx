@@ -12,7 +12,7 @@ import { useState } from 'react';
 export default function About() {
 
     const [colorway, setColorway] = useState(window.colorMode);
-    const [toggle, setToggle] = useState('src/assets/brew-icon.png')
+    const [toggle, setToggle] = useState('src/assets/navbar_icons/brew-icon.png')
 
     /**
      * Creates an unordered list of random bytes (0 or 1) that float down the screen.
@@ -106,12 +106,12 @@ export default function About() {
             case 'one':
                 setColorway('two');
                 window.colorMode = 'two'
-                setToggle('src/assets/sun-icon.png');
+                setToggle('src/assets/navbar_icons/sun-icon.png');
                 break;
             default:
                 setColorway('one');
                 window.colorMode = 'one'
-                setToggle('src/assets/brew-icon.png');
+                setToggle('src/assets/navbar_icons/brew-icon.png');
                 break;
         }
     }
@@ -134,15 +134,15 @@ export default function About() {
                     })}
                 </ul>
             </div>
-            <svg height='1600px' width='100%'>
+            <svg height='1600px' width='100%' className='git-repo'>
                 {git.map((commit, index) => {
                     switch (commit.type) {
                         case 'line':
-                            return (<line x1={commit.x} y1={commit.y} x2={commit.x2} y2={commit.y2}
-                                          stroke={getColors(commit.color)} style={{strokeWidth: '4'}} key={index}/>);
+                            return (<path d={commit.d} fill='none' stroke={getColors(commit.color)}
+                                          strokeWidth='3' className={commit.color} key={index}/>);
                         case 'circle':
                             return (<circle cx={commit.x} cy={commit.y} r='8px' fill={getColors(commit.color)}
-                                            stroke={getColors('stroke')} strokeWidth='3' key={index}/>);
+                                          stroke={getColors('stroke')} strokeWidth='3' key={index}/>);
                         case 'text':
                             return (<text x={commit.x} y={commit.y} fontSize='14' fill={getColors('text')}
                                           key={index}>{commit.text}</text>);

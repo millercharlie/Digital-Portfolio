@@ -29,6 +29,10 @@
   height: 100vh;
 }
 
+.home-window {
+  margin: 7.5% auto auto;
+}
+
 /* About Page Styles */
 .about-one {
   background-color: #FFFFFF;
@@ -54,6 +58,43 @@
   max-height: 70px;
 }
 
+svg.git-repo path.primary {
+  stroke-dashoffset: 1560;
+  stroke-dasharray: 1560;
+  animation: outline 5s 1s forwards;
+}
+svg.git-repo path.secondary {
+  stroke-dashoffset: 1546;
+  stroke-dasharray: 1546;
+  animation: outline 4.5s 1.5s forwards;
+}
+svg.git-repo path.tertiary {
+  stroke-dashoffset: 522.84271247;
+  stroke-dasharray: 522.84271247;
+  animation: outline 3s 3s forwards;
+}
+svg.git-repo path.quaternary {
+  stroke-dashoffset: 1240;
+  stroke-dasharray: 1240;
+  /* Off slightly to account for visual balance */
+  animation: outline 1.78s 3.9s forwards;
+}
+svg.git-repo text {
+  fill-opacity: 0;
+  animation: fill-in 2.5s 2.5s forwards;
+}
+@keyframes outline {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill-in {
+  to {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
+}
+
 /* Project Page Styles */
 .column {
   max-height: 300px;
@@ -65,18 +106,17 @@
   z-index: 3;
 }
 
-.background-scene {
-
-}
-
 .trees {
   display: inline-flex;
+  position: absolute;
+  bottom: 0;
 }
 
 .background-trees {
   position: absolute;
   bottom: 0;
   z-index: 1;
+  height: 200px;
 }
 
 .middleground-trees {
@@ -87,9 +127,10 @@
 }
 
 .foreground-trees {
-  position: absolute;
+  position: relative;
   bottom: 0;
   z-index: 4;
+  height: 200px;
 }
 
 /* TODO: Remove all Hardcoding! */
@@ -97,7 +138,7 @@
 .bullet-train {
   display: inline-flex;
   position: absolute;
-  bottom: 293px;
+  bottom: 292px;
   z-index: 2;
   left: -500px;
 }
@@ -119,21 +160,68 @@
 /*  border: 1px solid green;*/
 /*}*/
 
+.swipe-down {
+  position: absolute;
+  bottom: 50vh;
+  left: 50vw;
+  display: inline-flex;
+  align-items: center;
+}
+
+.down-arrow {
+  height: 30px;
+  margin-left: 10px;
+}
+
 .stations {
   /* TODO: This CSS Style */
+  position: absolute;
+  bottom: 289px;
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.station-group-one {
+  position: relative;
+  left: 300vw;
+  z-index: 1;
+}
+
+.station-group-two {
+  position: relative;
+  left: 600vw;
+  z-index: 1;
+}
+
+.projects-window {
+  position: absolute;
+  transform: translate(-25%, -50%);
+  z-index: 998;
 }
 
 .project-one-station {
-  position: absolute;
-  bottom: 293px;
-  left: 300vw;
   height: 150px;
-  z-index: 0;
   cursor: pointer;
 }
 
+.project-two-station {
+  height: 200px;
+  cursor: pointer;
+}
+
+.mountains {
+  position: absolute;
+  bottom: 0;
+  left: 100vw;
+  z-index: 0;
+}
+
+.mountain-image {
+  height: 700px;
+}
+
 .sticky-parent {
-  height: 500vh;
+  height: 1000vh;
 }
 
 .sticky-content {
