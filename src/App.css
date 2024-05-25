@@ -119,7 +119,6 @@ button:focus-visible {
 }
 .window-heading-text {
   display: flex;
-  width: 50%;
   margin: 0.5rem 1rem;
   color: rgba(0, 0, 0, 0.70);
 }

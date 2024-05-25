@@ -1,7 +1,9 @@
 import NavBar from '../components/NavBar.jsx';
 import PropTypes from 'prop-types';
 import git from '../utilities/gitcommits.json';
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
+import sunIcon from '../assets/navbar_icons/sun-icon.png';
+import brewIcon from '../assets/navbar_icons/brew-icon.png'
 
 /**
  * Represents the About page of this website. This page is meant to look like a Git repository with branches
@@ -11,8 +13,10 @@ import { useState } from 'react';
  */
 export default function About() {
 
-    const [colorway, setColorway] = useState(window.colorMode);
-    const [toggle, setToggle] = useState('src/assets/navbar_icons/brew-icon.png')
+    console.log(decodeURIComponent(document.cookie).split('=')[1]);
+
+    const [colorway, setColorway] = useState(localStorage.getItem('mode') || 'one');
+    const [toggle, setToggle] = useState(localStorage.getItem('mode') === 'two' ? sunIcon : brewIcon)
 
     /**
      * Creates an unordered list of random bytes (0 or 1) that float down the screen.
@@ -102,23 +106,16 @@ export default function About() {
     }
 
     const colorModeSwitch = () => {
-        switch (colorway) {
-            case 'one':
-                setColorway('two');
-                window.colorMode = 'two'
-                setToggle('src/assets/navbar_icons/sun-icon.png');
-                break;
-            default:
-                setColorway('one');
-                window.colorMode = 'one'
-                setToggle('src/assets/navbar_icons/brew-icon.png');
-                break;
-        }
+        let newColorway = colorway === 'one' ? 'two' : 'one';
+        setColorway(colorway === 'one' ? 'two' : 'one');
+        setToggle(colorway === 'one' ? sunIcon : brewIcon);
+        localStorage.setItem('mode', newColorway);
     }
 
-    About.propTypes = {
-        mode: PropTypes.string
-    }
+    useEffect(() => {
+        // Update cookie when colorway changes
+        document.cookie = `mode=${colorway};`;
+    }, [colorway]);
 
     return (
         <div className={'about-' + colorway}>
@@ -151,4 +148,8 @@ export default function About() {
             </svg>
         </div>
     );
+}
+
+About.propTypes = {
+    mode: PropTypes.string
 }
