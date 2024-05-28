@@ -13,10 +13,8 @@ import brewIcon from '../assets/navbar_icons/brew-icon.png'
  */
 export default function About() {
 
-    console.log(decodeURIComponent(document.cookie).split('=')[1]);
-
-    const [colorway, setColorway] = useState(localStorage.getItem('mode') || 'one');
-    const [toggle, setToggle] = useState(localStorage.getItem('mode') === 'two' ? sunIcon : brewIcon)
+    const [colorway, setColorway] = useState(window.colorMode || 'one');
+    const [toggle, setToggle] = useState(window.colorMode === 'two' ? sunIcon : brewIcon)
 
     /**
      * Creates an unordered list of random bytes (0 or 1) that float down the screen.
@@ -107,8 +105,9 @@ export default function About() {
 
     const colorModeSwitch = () => {
         let newColorway = colorway === 'one' ? 'two' : 'one';
-        setColorway(colorway === 'one' ? 'two' : 'one');
-        setToggle(colorway === 'one' ? sunIcon : brewIcon);
+        setColorway(newColorway);
+        window.colorMode = newColorway;
+        setToggle(newColorway === 'one' ? sunIcon : brewIcon);
         localStorage.setItem('mode', newColorway);
     }
 

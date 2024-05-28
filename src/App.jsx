@@ -13,7 +13,7 @@ function App() {
 
     // Initialize a global variable called "colorMode". Can be "one", "two", or "three".
     // TODO: Make this a cookie and saved in local storage to avoid a reset on render
-    window.colorMode = 'one';
+    window.colorMode = localStorage.getItem('mode');
 
     return (
         <BrowserRouter>

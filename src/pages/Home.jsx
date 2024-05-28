@@ -2,6 +2,9 @@ import {useEffect, useState} from 'react';
 import Window from '../components/Window.jsx';
 import NavBar from '../components/NavBar.jsx';
 import AppFolder from '../components/AppFolder.jsx';
+import classicIcon from '../assets/navbar_icons/classic-icon.svg';
+import modernIcon from '../assets/navbar_icons/modern2-icon.svg';
+import ClassicWindow from "../components/ClassicWindow.jsx";
 
 /**
  * Represents the Home page of this website. The Home page is meant to look like a desktop, with options of toggling
@@ -12,7 +15,7 @@ export default function Home() {
     const [visible, setVisible] = useState(false);
     const [mode, setMode] = useState('empty');
     const [windowContent, setWindowContent] = useState(<></>);
-    const [toggle, setToggle] = useState('src/assets/moon-icon.png')
+    const [toggle, setToggle] = useState(window.colorMode === 'one' ? classicIcon : modernIcon)
 
     const handleClick = (event) => {
         if (event.target.id === 'close') {
@@ -25,16 +28,23 @@ export default function Home() {
     }
 
     /**
-     * Switches the global variable and changes the toggle icon
+     * Switches the global variable and changes the toggle icon.
      */
     const handleToggle = () => {
+        window.colorMode = window.colorMode === 'one' ? 'two' : 'one';
+        setToggle(window.colorMode === 'one' ? classicIcon : modernIcon);
+        localStorage.setItem('mode', window.colorMode.toString());
+        setWindowContent(window.colorMode === 'one'
+            ? <Window isVisible={visible} mode={mode} func={handleClick}/>
+            : <ClassicWindow isVisible={visible} mode={mode} func={handleClick}/>);
+    }
+
+    const getIcon = (app) => {
         if (window.colorMode === 'one') {
-            window.colorMode = 'two';
-            setToggle('src/assets/navbar_icons/sun-icon.png');
+            return 'src/assets/app-icons/' + app + '-icon-new.png';
         }
         else {
-            window.colorMode = 'one';
-            setToggle('src/assets/navbar_icons/moon-icon.png')
+            return 'src/assets/app-icons/' + app + '-icon-classic.png';
         }
     }
 
@@ -42,11 +52,13 @@ export default function Home() {
        // It seems to be when you switch too quickly
 
     useEffect(() => {
-        setWindowContent(<Window isVisible={visible} mode={mode} func={handleClick}/>);
+        setWindowContent(window.colorMode === 'one'
+            ? <Window isVisible={visible} mode={mode} func={handleClick}/>
+            : <ClassicWindow isVisible={visible} mode={mode} func={handleClick}/>);
     }, [visible, mode]);
 
     return (
-        <div className='home-one'>
+        <div className={'home-' + window.colorMode}>
             <div>
                 <NavBar background='#FFFFFF'
                         icon={toggle}
@@ -55,11 +67,11 @@ export default function Home() {
                 />
             </div>
             <div style={{position: 'absolute', marginTop: '38vh', marginLeft: '2vw'}}>
-                <AppFolder icon='src/assets/work-icon-new.png' text='Projects' window='projects' func={handleClick}/>
-                <AppFolder icon='src/assets/about-icon-new.png' text='About' window='about' func={handleClick}/>
-                <AppFolder icon='src/assets/navbar_icons/sun-icon.png' text='Contact' window='contact' func={handleClick}/>
+                <AppFolder icon={getIcon('work')} text='Projects' window='projects' func={handleClick}/>
+                <AppFolder icon={getIcon('about')} text='About' window='about' func={handleClick}/>
+                <AppFolder icon={getIcon('contact')} text='Contact' window='contact' func={handleClick}/>
                 </div>
-            <div className='center home-window'>
+            <div className='home-window'>
                 {windowContent}
             </div>
         </div>

@@ -26,7 +26,7 @@ export default function AppFolder({icon, text, func}) {
     return (
         <div className='app-folder'>
             <button style={{backgroundColor: 'rgba(0, 0, 0, 0)'}} onClick={handleClick}>
-                <img src={icon} alt={text} style={{maxWidth: '75%'}}/>
+                <img src={icon} alt={text} style={{maxWidth: '75%'}} className='app-folder-icon'/>
             </button>
             <h3 className='app-folder-text'>{text.toString()}</h3>
         </div>

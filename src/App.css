@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+html, body { height: 100%;   width: 100%; margin: 0; padding: 0; }
+
 .no-overscroll {
   overscroll-behavior: none;
 }
@@ -90,6 +92,7 @@ button:focus-visible {
 
 /* AppFolder.jsx Component Styles */
 .app-folder {
+  min-width: 80px;
   max-width: 8%;
   margin-bottom: 2%;
   text-align: center;
@@ -98,6 +101,12 @@ button:focus-visible {
   margin-top: 0;
   color: #FFFFFF;
   filter: drop-shadow(0 0 4px #777777);
+}
+.app-folder-icon {
+  transition-duration: 0.3s;
+}
+.app-folder-icon:hover {
+  transform: scale(115%);
 }
 
 /* Window.jsx Component Styles */
@@ -174,6 +183,42 @@ button:focus-visible {
   position: absolute;
 }
 
+/* Classic Window */
+.window-classic {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+  position: relative;
+  z-index: 999;
+}
+.window-heading-classic {
+  align-items: center;
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: white;
+  border: 3px solid black;
+  border-bottom: 0;
+  filter: drop-shadow(6px 6px 0px #000000);
+}
+.window-heading-text-classic {
+  display: flex;
+  margin: 0.5rem 1rem;
+  color: black;
+}
+.main-content-classic {
+  height: 50%;
+  background-color: white;
+  border: 3px solid black;
+  filter: drop-shadow(6px 6px 0px #000000);
+}
+hr {
+  height: 3px;
+  width: 40vw;
+  background-color: black;
+  border-color: rgba(0, 0, 0, 0);
+  margin: 5px 0;
+}
+
 /* NavBar.jsx Component Styles */
 .nav-bar {
   display: inline-flex;
@@ -205,13 +250,53 @@ button:focus-visible {
   align-content: center;
 }
 .nav-darktoggle {
+  cursor: pointer;
   vertical-align: middle;
-  max-width: 30px;
+  max-height: 30px;
   padding: 0.6em;
   transition-duration: 0.3s;
 }
 .nav-darktoggle:hover {
   transform: scale(115%);
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 50vw;
+    transform: translate(-50%, 20%);
+    z-index: 999;
+  }
+  .nav-left {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    padding: 0 2%;
+    background-color: rgba(256, 256, 256, 0.80);
+    border-radius: 10px;
+    height: 60px;
+  }
+  .nav-image-hover {
+    padding: 0 2%;
+  }
+  .nav-right {
+    background-color: rgba(256, 256, 256, 0.80);
+    float: right;
+    vertical-align: middle;
+    align-content: center;
+    border-radius: 10px;
+    height: 60px;
+
+  }
+  .hamburger {
+    /* TODO: These Styles */
+  }
 }
 
 /* Footer.jsx Component Styles */
