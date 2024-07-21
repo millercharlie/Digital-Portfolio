@@ -18,6 +18,7 @@ import {useState} from 'react';
 function NavBar({ background, fun, icon, textColor }) {
 
     const [visibility, setVisibility] = useState(window.innerWidth > 600);
+    const [dropdown, setDropdown] = useState(false);
 
     /**
      * Handles the style of the text and logo image.
@@ -42,13 +43,21 @@ function NavBar({ background, fun, icon, textColor }) {
             };
         }
         return styles;
-    }
+    };
+
+    const handleDropdown = () => {
+        setDropdown(!dropdown);
+    };
 
     window.addEventListener('resize', () => {
-        window.innerWidth <= 600
-            ? setVisibility(false)
-            : setVisibility(true);
-    })
+        if (window.innerWidth <= 600) {
+            setVisibility(false);
+        }
+        else {
+            setVisibility(true);
+            setDropdown(false);
+        }
+    });
 
     NavBar.propTypes = {
         background: PropTypes.string,
@@ -58,8 +67,8 @@ function NavBar({ background, fun, icon, textColor }) {
     }
 
     return (
-        <nav className='nav-bar' style={visibility ? background === '' ? {backgroundColor: 'rgba(256, 256, 256, 0)'}
-                 : {backgroundColor: (background)} : {backgroundColor: 'rgba(0, 0, 0, 0)'}}>
+        <nav className='nav-bar' style={visibility ? background === '' ? {backgroundColor: 'rgba(255, 255, 255, 0)'}
+                 : {backgroundColor: background} : {backgroundColor: 'rgba(0, 0, 0, 0)'}}>
             <div className='nav-left'>
                 <a href='/'>
                     <img src={handleStyles().logo.unfilled} style={{maxWidth: '70px'}} className='nav-image'
@@ -81,9 +90,34 @@ function NavBar({ background, fun, icon, textColor }) {
                         <h4 style={{color: textColor || 'rgba(0, 0, 0, 0.70)', cursor: 'pointer'}}>Resume</h4>
                     </a>
                 </div>
-                <img src='src/assets/navbar_icons/hamburger-right.svg' alt='hamburger-right' className='nav-darktoggle hamburger'
-                     style={visibility ? {visibility: 'hidden', display: 'none'} : {visibility: 'visible', display: 'inline-flex'}}/>
+                <div>
+                <img src='src/assets/navbar_icons/hamburger-right.svg'
+                     alt='hamburger-right'
+                     className='nav-darktoggle hamburger'
+                     onClick={handleDropdown}
+                     style={visibility
+                         ? {visibility: 'hidden', display: 'none'}
+                         : {visibility: 'visible', display: 'inline-flex'}}
+                />
+                </div>
             </div>
+            {dropdown &&
+                <div className='dropdown-menu-container'>
+                    <div className='dropdown-menu'>
+                        <a href='projects'>
+                            <h4 style={{color: textColor || 'rgba(0, 0, 0, 0.70)'}}>Projects</h4>
+                        </a>
+                        <a href='about'>
+                            <h4 style={{color: textColor || 'rgba(0, 0, 0, 0.70)'}}>About</h4>
+                        </a>
+                        <a href='contact'>
+                            <h4 style={{color: textColor || 'rgba(0, 0, 0, 0.70)'}}>Contact</h4>
+                        </a>
+                        <a>
+                            <h4 style={{color: textColor || 'rgba(0, 0, 0, 0.70)', cursor: 'pointer'}}>Resume</h4>
+                        </a>
+                    </div>
+                </div>}
             <button onClick={fun} className='nav-right'>
                 <img src={icon} alt={'Colorway Toggle'} className='nav-darktoggle'/>
             </button>

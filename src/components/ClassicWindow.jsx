@@ -35,7 +35,7 @@ function ClassicWindow({ mode, isVisible, func }) {
             : {visibility: 'hidden', display: 'none'}}>
             <div className='window-heading-classic'>
                 <h2 className='window-heading-text-classic'>{windowText.title}</h2>
-                <div>
+                <div className='menu-lines'>
                     <hr/>
                     <hr/>
                     <hr/>

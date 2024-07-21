@@ -5,6 +5,10 @@
 
 html, body { height: 100%;   width: 100%; margin: 0; padding: 0; }
 
+img {
+  background-repeat: no-repeat;
+}
+
 .no-overscroll {
   overscroll-behavior: none;
 }
@@ -30,12 +34,29 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+h1.h1-home {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  animation: fadeIn 2s forwards, fadeOut 1.5s 3s forwards;
+}
 h3 {
-  font-family: 'Ubuntu', serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
 }
 h3.h3-projects {
   font-size: 30px;
+}
+h3.h3-home {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  animation: fadeIn 3s 4s both;
 }
 h4 {
   display: inline-block;
@@ -140,6 +161,16 @@ button:focus-visible {
   height: 50%;
   background-color: rgba(256, 256, 256, 0.90);
   border-radius: 0 0 10px 10px;
+  overflow: scroll;
+}
+
+.window-img {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  display: block;
+  border-radius: 10px
 }
 
 .icon-button {
@@ -169,6 +200,7 @@ button:focus-visible {
   line-height: 24px;
   padding: 0 1rem;
   color: #000000;
+  white-space: pre-line;
 }
 
 .small-z-index {
@@ -210,10 +242,13 @@ button:focus-visible {
   background-color: white;
   border: 3px solid black;
   filter: drop-shadow(6px 6px 0px #000000);
+  overflow: scroll;
+}
+.menu-lines {
+  flex-grow: 3;
 }
 hr {
   height: 3px;
-  width: 40vw;
   background-color: black;
   border-color: rgba(0, 0, 0, 0);
   margin: 5px 0;
@@ -265,7 +300,7 @@ hr {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    width: 60vw;
+    width: 325px;
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
     left: 50vw;
@@ -276,26 +311,46 @@ hr {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    width: 40vw;
+    width: 225px;
     padding: 0 2%;
-    background-color: rgba(256, 256, 256, 0.80);
+    background-color: #FFFFFF;
     border-radius: 10px;
     height: 60px;
+  }
+  .dropdown-menu-container {
+    position: absolute;
+    width: 325px;
+    min-height: 200%;
+    border-radius: 10px;
+    background-color: rgba(256, 256, 256, 0.80);
+    transform: translate(0, 25%);
+    align-content: end;
+    justify-content: center;
+    z-index: -1;
+  }
+  .dropdown-menu {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    z-index: -1;
   }
   .nav-image-hover {
     padding: 0 2%;
   }
   .nav-right {
-    background-color: rgba(256, 256, 256, 0.80);
     float: right;
     vertical-align: middle;
     align-content: center;
     border-radius: 10px;
     height: 60px;
+    background-color: #FFFFFF;
 
   }
   .hamburger {
     /* TODO: These Styles */
+  }
+  .home-window {
+    margin: 7.5% auto auto;
   }
 }
 
@@ -335,14 +390,6 @@ hr {
 }
 
 /* Animations */
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 @keyframes background-bytes{
   from {
     top: -50px;
@@ -351,11 +398,11 @@ hr {
     top: 1000px;
   }
 }
-
-/* Mobile Styling */
-@media screen and (max-width: 500px) {
-  .nav-bar a {
-    display: block;
-    float: none;
-  }
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
