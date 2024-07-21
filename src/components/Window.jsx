@@ -27,19 +27,15 @@ function Window({ mode, isVisible, func }) {
     };
 
     const windowText = text[mode];
-    console.log(mode);
-    console.log(windowText);
+    const windowTitle = (window.innerWidth <= 600) ? windowText.alt : windowText.title;
+    const image = text[mode].image;
 
     return (
         <div className='window' style={isVisible ? {visibility: 'visible', filter: 'drop-shadow(1, 1, 1, 4)'}
             : {visibility: 'hidden', display: 'none'}}>
             <div className='window-heading'>
-                <h2 className='window-heading-text'>{windowText.title}</h2>
+                <h2 className='window-heading-text'>{windowTitle}</h2>
                 <div className='window-heading-icons'>
-                    <div className='icon-button'>
-                        <img src='src/assets/menu_icons/minimize-icon.png' alt='Minimize'
-                             className='icon-image-minimize'/>
-                    </div>
                     <a href={mode !== 'Home' ? mode.toLowerCase() : '/'} className='window-link'>
                         <div className='icon-button'>
                             <img src='src/assets/menu_icons/expand-icon.png' alt='Expand' className='icon-image'/>
@@ -53,6 +49,7 @@ function Window({ mode, isVisible, func }) {
             </div>
             <div className='main-content' style={{height: '60vh', marginTop: '0'}}>
                 <h3 className='window-main-text'>{windowText.body}</h3>
+                {image && <img src={image} alt={`${windowTitle}-image`} className='window-img'/>}
             </div>
         </div>
     );
