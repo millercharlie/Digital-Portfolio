@@ -1,14 +1,17 @@
 {
   "projects": {
     "title": "Projects",
-    "body": "Welcome to the projects window! I am passionate about many things, and enjoy leveraging' my knowledge of both computer science and design to create projects that are functional, beautiful, and serve a particular purpose. I have decided to showcase three of my recent' projects in this portfolio, which each have icons below. The first is my congress.gov website redesign concept. The second is my ___, and finally the third is ___. When you click on one of the icons, it will take you directly to your chosen project's respective section in the \"Projects\" page. If you'd prefer the full experience of the projects page, click the square icon in the menu bar of this window!"
+    "alt": "Projects",
+    "body": "Welcome to the projects window! I am passionate about many things, and enjoy leveraging' my knowledge of both computer science and design to create projects that are functional, beautiful, and serve a particular purpose. I have decided to showcase three of my recent' projects in this portfolio. The first is my congress.gov website redesign concept. The second is my Markdown-style notes application, and the third includes various UI designs I've worked on. When you click on one of the icons, it will take you directly to your chosen project's respective section in the \"Projects\" page. If you'd prefer the full experience of the projects page, click the square icon in the menu bar of this window!"
   },
   "about": {
     "title": "About Me",
+    "alt": "About Me",
     "body": "o canada"
   },
   "contact": {
     "title": "Contact Me",
+    "alt": "Contact Me",
     "body": "aint no way"
   },
   "empty": {
@@ -16,10 +19,21 @@
     "body": ""
   },
   "project-one": {
-    "title": "Project One - Reversi",
-    "body": ":D"
+    "title": "congress.gov Redesign",
+    "alt": "Project 1",
+    "body": "Taking a look at the current congress.gov website, it looks more outdated. For this personal project, I redesigned the website to modernize the look as well as to ensure greater accessibility and user-intuitiveness.\n\nFor more information, click the 🔲 at the top of the window.",
+    "image": "src/assets/window_images/congress_website_redesign.png"
   },
   "project-two": {
-    "title": "Project Two - UI/UX Designs"
+    "title": "Markdown Notes Application",
+    "alt": "Project 2",
+    "body": "In this project, I'm creating a notes app that uses the widespread Markdown syntax to determine text style (heading, paragraph, code, etc). This project is being created with HTML/CSS/JS with Electron.\n\nFor more information, click the 🔲 at the top of the window.",
+    "image": "src/assets/window_images/md_editor.png"
+  },
+  "project-three": {
+    "title": "UI Designs",
+    "alt": "Project 3",
+    "body": "\n\nFor more information, click the 🔲 at the top of the window.",
+    "image": "src/assets/window_images/md_editor.png"
   }
 }
