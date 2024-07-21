@@ -1,77 +1,29 @@
 import NavBar from '../components/NavBar.jsx';
 import react from '../assets/navbar_icons/react.svg'
-import {useState} from 'react';
+import {useRef, useState} from 'react';
 import Window from "../components/Window.jsx";
 
 export default function Projects() {
 
-    // TODO: Add support for multiple screen sizes
-    // TODO: Are three useState() calls necessary for each window?
-    const [windowVisibility, setWindowVisibility] = useState(false);
+    const totalVisibility = {one: false, two: false, three: false};
+    const [windowVisibility, setWindowVisibility] = useState(totalVisibility);
     const [windowMode, setWindowMode] = useState('empty');
 
-//    /**
-//    * Sets the animation and colorway for all trees in the scene.
-//    * @returns {{cursor: string, height: number}}
-//    */
-//    const treeStyles = (treeType) => {
-//        let margin = 0;
-//        (treeType === 'foreground') ? (margin = Math.floor(Math.random() * 60) - 50)
-//            : (margin = Math.floor(Math.random() * 100) - 120)
-//
-//        return {
-//            'height': Math.floor(Math.random() * 150) + 90,
-//            'cursor': 'default',
-//            'opacity': Math.floor(Math.random() * 55) + 10,
-//            'margin-left': margin,
-//            };
-//    }
+    localStorage.setItem('mode', 'one');
 
-//    const getTrees = (treeType) => {
-//        let imageSrc;
-//        let numTrees;
-//        let treeList = [];
-//
-//        switch(treeType) {
-//            case 'background':
-//                numTrees = 100;
-//                imageSrc = 'src/assets/project_assets/background-tree.svg'
-//                break;
-//            case 'middleground':
-//                numTrees = 80;
-//                imageSrc = 'src/assets/project_assets/middleground-tree.svg'
-//                break;
-//            case 'foreground':
-//                numTrees = 50;
-//                imageSrc = 'src/assets/project_assets/foreground-tree.svg'
-//                break;
-//            }
-//
-//        for (let tIndex = 0; tIndex < numTrees; tIndex++) {
-//            treeList.push(<img src={imageSrc}
-//                               alt={treeType + '-tree'}
-//                               key={treeType + '-tree' + '-index-' + tIndex}
-//                               style={treeStyles(treeType)}/>);
-//        }
-//        return treeList;
-//    }
 
-    function getColumns() {
-        let answer = [];
-        for (let index = 0; index < 100; index++) {
-            answer.push(<img src='src/assets/project_assets/column.png'
-                             alt={'column #' + index}
-                             key={'column #' + index}
-                             className='column'/>);
-        }
-        return answer;
-    }
+    const trains = [
+        'src/assets/project_assets/trains/bullet_train.png',
+        'src/assets/project_assets/trains/commuter_rail.png',
+        'src/assets/project_assets/trains/avelia_liberty.png'
+    ];
+    const randomizedTrain = useRef(trains[~~(Math.random() * 3)]);
 
     /**
      * Handles randomization of background
      */
     const randomizeSetting = () => {
-        // nah bro
+        // later
     }
 
     window.addEventListener('scroll', () => {
@@ -91,7 +43,6 @@ export default function Projects() {
     }
 
     const handleClick = (event) => {
-        console.log(event.target.alt);
 
         if (event.target.alt === 'project-one-station') {
             setWindowMode('project-one');
@@ -99,13 +50,33 @@ export default function Projects() {
         else if (event.target.alt === 'project-two-station') {
             setWindowMode('project-two');
         }
+        else if (event.target.alt === 'project-three-station') {
+            setWindowMode('project-three');
+        }
 
         if (event.target.id === 'close') {
-            setWindowVisibility(false);
+            if (event.target.alt.includes('one')) {
+                totalVisibility.one = false;
+            }
+            else if (event.target.alt.includes('two')) {
+                totalVisibility.two = false;
+            }
+            else {
+                totalVisibility.three = false;
+            }
         }
         else {
-            setWindowVisibility(true);
+            if (event.target.alt.includes('one')) {
+                totalVisibility.one = true;
+            }
+            else if (event.target.alt.includes('two')) {
+                totalVisibility.two = true;
+            }
+            else {
+                totalVisibility.three = true;
+            }
         }
+        setWindowVisibility(totalVisibility);
     }
 
 
@@ -116,12 +87,9 @@ export default function Projects() {
                 <div className='sticky-content'>
                     <NavBar background='#FFFFFF' fun={randomizeSetting} icon={react}/>
                     <div className='background-scene'>
-                        <div className='bullet-train'>
-                            <img src='src/assets/project_assets/train-car.svg' className='train-car' alt='bt-car'/>
-                            <img src='src/assets/project_assets/train-car.svg' className='train-car' alt='bt-car'/>
-                            <img src='src/assets/project_assets/train-car.svg' className='train-car' alt='bt-car'/>
-                            <img src='src/assets/project_assets/front-train-car.svg' className='front-car' alt='bt-front-car'/>
-                        </div>
+                        <img src={randomizedTrain.current} className='bullet-train' alt='train'
+                             style={(randomizedTrain.current.includes('commuter_rail'))
+                                 ? {maxHeight: '80px'} : {maxHeight: '60px'}} />
                         <div className='scroll-section'>
                             <div className='swipe-down'>
                                 <h3 className='h3-projects'>Swipe</h3>
@@ -131,10 +99,11 @@ export default function Projects() {
                             </div>
                             <div className='stations'>
                                 <div className='station-group-one'>
+                                    <h3 className='h3-projects' style={{textAlign: 'center'}}>Click on this Station!</h3>
                                     <div className='projects-window'>
                                         <Window mode={windowMode}
                                                 func={handleClick}
-                                                isVisible={windowVisibility}/>
+                                                isVisible={windowVisibility.one}/>
                                     </div>
                                     <img src='src/assets/project_assets/project-one-station.png'
                                         className='project-one-station'
@@ -145,7 +114,7 @@ export default function Projects() {
                                     <div className='projects-window'>
                                         <Window mode={windowMode}
                                                 func={handleClick}
-                                                isVisible={windowVisibility}/>
+                                                isVisible={windowVisibility.two}/>
                                     </div>
                                     <img src='src/assets/project_assets/project-two-station.png'
                                         className='project-two-station'
@@ -153,9 +122,7 @@ export default function Projects() {
                                         onClick={handleClick}/>
                                 </div>
                             </div>
-                            <div className='pillars'>
-                                {getColumns()}
-                            </div>
+                            <img src='src/assets/project_assets/columns.svg' alt='pillars' className='pillars'/>
                             <div className='trees'>
                                 <img src='src/assets/project_assets/foreground-trees.png'
                                      alt='foreground-trees'
