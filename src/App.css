@@ -3,10 +3,13 @@
   padding: 0;
 }
 
-html, body { height: 100%;   width: 100%; margin: 0; padding: 0; }
+html, body { height: 100vh;   width: 100vw; margin: 0; padding: 0; }
 
 img {
   background-repeat: no-repeat;
+}
+.tool-icon {
+  max-width: 12px;
 }
 
 .no-overscroll {
@@ -41,7 +44,16 @@ h1.h1-home {
   transform: translate(-50%, -50%);
   font-family: 'Ubuntu', sans-serif;
   font-size: 50px;
-  animation: fadeIn 2s forwards, fadeOut 1.5s 3s forwards;
+  animation: fadeIn 3s forwards, fadeOut 1.5s 4s forwards;
+}
+h1.h1-home-2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  animation: fadeIn 3s 5s both, fadeOut 1.5s 9s forwards;
 }
 h3 {
   font-family: 'Ubuntu', sans-serif;
@@ -56,7 +68,7 @@ h3.h3-home {
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
-  animation: fadeIn 3s 4s both;
+  animation: fadeIn 3s 10s both;
 }
 h4 {
   display: inline-block;
@@ -333,6 +345,7 @@ hr {
     align-content: center;
     justify-content: center;
     z-index: -1;
+    transition-duration: 0.5s;
   }
   .nav-image-hover {
     padding: 0 2%;
@@ -352,21 +365,42 @@ hr {
   .home-window {
     margin: 7.5% auto auto;
   }
+  h3.h3-home {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    animation: fadeIn 3s 10s both;
+  }
 }
 
 /* Footer.jsx Component Styles */
 .footer {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
+  position: sticky;
   width: 100%;
   bottom: 0;
   background-color: rgba(256, 256, 256, 0.80);
   border-radius: 10px 10px 0 0;
+  line-height: 4rem;
 }
 .row {
   width: 100%;
   margin: 0 auto;
+  padding-left: 12px;
+}
+.website-background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("src/assets/website-background-v2.png");
+  background-size: 100vw auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.website-background-fill {
+  background-image: url("src/assets/website-background-v2.png");
+  background-position: center bottom;
+  background-size: contain;
 }
 .extra-padding {
   padding-top: 1.2vw;
