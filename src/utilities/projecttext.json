@@ -1,0 +1,52 @@
+{
+  "1": {
+    "title": "Congress Website Redesign",
+    "description": "The inspiration for this project came when I took a look at the current United States Congress website (congress.gov). In its current form, the website looks outdated, unbalanced, and mismatched. I thought that I could do it better myself, and set off to do so. I primarily used Figma as my tool for this website design, and created something I believe looks more balanced, user-friendly, and intuitive. I made sure to think of top priorities and goals a user may have when visiting this website, and incorporated all of these into my own design. I separated information into separate modules, ensuring to add quick links that users may use. The side bar allows users to learn more information about how Congress functions, along with granting access to other useful links. The House of Representatives and Senate hearings are all marked in their respective calendars, which I believe helps user confidence in knowing that they can watch any session when it is live. Overall, this project taught me a lot about user interface design, and, by putting myself into users shoes, I was able to design a product I think could better suit the needs of Americans when they choose to visit congress.gov.",
+    "img": {
+      "src": "src/assets/window_images/congress_website_redesign.png",
+      "alt": "congress_website_redesign"
+    },
+    "highlights": [
+      "Designed a clean, intuitive interface",
+      "Incorporated User Experience principles into this design"
+    ],
+    "tools": [
+      "Figma"
+    ]
+  },
+  "2": {
+    "title": "Markdown-Style Notes",
+    "description": "This ongoing project involves creating a note application that allows a user to format text based on Markdown syntax. This project is my first to employ Electron for HTML/CSS/JS conversion to a desktop application. In addition, users will be able to employ certain macros (such as [K] for a key point and [TOC] for a table of contents) to add additional functionality that doesn't currently exist in Markdown. So far, the design is complete, as you can see in the picture below, and I have begun the process of coding. The HTML code is complete, but I still need to add CSS styling and JavaScript code.",
+    "img": {
+      "src": "src/assets/window_images/md_editor.png",
+      "alt": "markdown_editor"
+    },
+    "highlights": [
+      "Creating a notes application that uses Markdown syntax",
+      "Employing Electron to allow HTML/CSS/JS code to be transcribed automatically"
+    ],
+    "tools": [
+      "Electron",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Figma"
+    ]
+  },
+  "3": {
+    "title": "UI Designs",
+    "description": "As an individual interested in front-end development, I create UI designs for fictional applications and websites. I primarily design in Figma, with some Adobe Illustrator for certain asset creations. The photo shows some designs I did for a fictional application called Plant Pal created for a school project. The app allows users to manage their collection of plants digitally with health and watering reminders, sickness diagnoses, and more. If you wish to see more of my design work, you can check out my Behance profile in the \"Contact\" page!",
+    "img": {
+      "src": "src/assets/window_images/ui_designs.png",
+      "alt": "ui_designs"
+    },
+    "highlights": [
+      "Created app and website designs",
+      "Used Figma for UI designs and Adobe Illustrator for asset creation"
+    ],
+    "tools": [
+      "Figma",
+      "Adobe Illustrator"
+    ]
+  }
+}
