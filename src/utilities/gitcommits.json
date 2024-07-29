@@ -233,13 +233,15 @@
   "x": 90,
   "y": 355,
   "text": "School: Northeastern University",
-    "type": "text"
+    "type": "text",
+    "expand": true
   },
   {
     "x": 90,
     "y": 415,
     "text": "Major: Computer Science and Design",
-    "type": "text"
+    "type": "text",
+    "expand": true
   },
   {
     "x": 90,
@@ -251,13 +253,15 @@
     "x": 90,
     "y": 575,
     "text": "Code Coach — theCoderSchool",
-    "type": "text"
+    "type": "text",
+    "expand": true
   },
   {
     "x": 90,
     "y": 635,
-    "text": "Human-Computer Interaction Engineer",
-    "type": "text"
+    "text": "Human-Computer Interaction Engineer — MORSE Corp",
+    "type": "text",
+    "expand": true
   },
   {
     "x": 90,
@@ -275,7 +279,8 @@
     "x": 90,
     "y": 855,
     "text": "Software Engineering",
-    "type": "text"
+    "type": "text",
+    "expand": true
   },
   {
     "x": 140,
@@ -293,7 +298,8 @@
     "x": 140,
     "y": 1125,
     "text": "Eco-Friendly Innovations",
-    "type": "text"
+    "type": "text",
+    "expand": true
   },
 
   {
@@ -306,13 +312,15 @@
     "x": 140,
     "y": 1285,
     "text": "1492-1921",
-    "type": "text"
+    "type": "text",
+    "expand": true
   },
   {
     "x": 140,
     "y": 1345,
     "text": "Interwar Period (WW1-WW2)",
-    "type": "text"
+    "type": "text",
+    "expand": true
   },
   {
     "x": 90,
@@ -335,7 +343,7 @@
   {
     "x": 40,
     "y": 185,
-    "text": "Click on the hamburger menu next to each commit to read more about it!",
+    "text": "Click on the underlined text to read more about me!",
     "type": "text"
   },
 
