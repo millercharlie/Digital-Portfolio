@@ -2,17 +2,17 @@
   "projects": {
     "title": "Projects",
     "alt": "Projects",
-    "body": "Welcome to the projects window! I am passionate about many things, and enjoy leveraging' my knowledge of both computer science and design to create projects that are functional, beautiful, and serve a particular purpose. I have decided to showcase three of my recent' projects in this portfolio. The first is my congress.gov website redesign concept. The second is my Markdown-style notes application, and the third includes various UI designs I've worked on. When you click on one of the icons, it will take you directly to your chosen project's respective section in the \"Projects\" page. If you'd prefer the full experience of the projects page, click the square icon in the menu bar of this window!"
+    "body": "Welcome to the projects window! I am passionate about many things, and enjoy leveraging' my knowledge of both computer science and design to create projects that are functional, beautiful, and serve a particular purpose. I have decided to showcase three of my recent' projects in this portfolio. The first is my congress.gov website redesign concept. The second is my Markdown-style notes application, and the third includes various UI designs I've worked on. To enter the projects page experience, click the 🔲 icon at the top-right corner of this window. Your task will to be to swipe/scroll downwards!"
   },
   "about": {
     "title": "About Me",
     "alt": "About Me",
-    "body": "o canada"
+    "body": "This page will give you a quick introduction to who I am and what my passions are! I styled it to look like a Git repository graph. Each \"branch\" represents a certain aspect of myself. For instance, the \"Work Experience\" branch will detail information about the various jobs I've had and about the work I've done at each. Every underlined piece of text is clickable, and will popup a window with more information. To explore, click the 🔲 icon in this window to open up the page!"
   },
   "contact": {
     "title": "Contact Me",
     "alt": "Contact Me",
-    "body": "aint no way"
+    "body": "This page houses all of my contact information should you want to get in touch with me! It includes various other sources if you want to see my other work, such as my design portfolio and my GitHub profile. This page highlights how my design language has shifted throughout my years designing, from creating a custom Roblox logo in 2017 in Google Drawings to performing design work to establish a brand identity for myself. To see my design language in each era, there will be a button near the top of the screen that is clickable. This will re-style the page to fit with my design language at the time. If you wish to see this, click the 🔲 icon at the top of this window!"
   },
   "empty": {
     "title": "",
