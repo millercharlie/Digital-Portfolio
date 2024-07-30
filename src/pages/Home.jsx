@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import Window from "../components/Window.jsx";
 import NavBar from "../components/NavBar.jsx";
 import AppFolder from "../components/AppFolder.jsx";
-import classicIcon from "../assets/navbar_icons/classic-icon.svg";
-import modernIcon from "../assets/navbar_icons/modern2-icon.svg";
+import classicIcon from "../assets/navbar_icons/classic_icon.svg";
+import modernIcon from "../assets/navbar_icons/modern2_icon.svg";
 import ClassicWindow from "../components/ClassicWindow.jsx";
 
 /**
@@ -46,9 +46,9 @@ export default function Home() {
 
   const getIcon = (app) => {
     if (window.colorMode === "one") {
-      return "src/assets/app-icons/" + app + "-icon-new.png";
+      return `../assets/app_icons/${app}_icon_new.png`;
     } else {
-      return "src/assets/app-icons/" + app + "-icon-classic.png";
+      return `../assets/app_icons/${app}_icon_classic.png`;
     }
   };
 

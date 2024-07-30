@@ -43,7 +43,7 @@ export default function Contact() {
               className="social-group"
             >
               <img
-                src="src/assets/social_icons/linkedin-icon.svg"
+                src="../assets/social_icons/linkedin_icon.svg"
                 className="social-icon"
                 alt="linkedin-icon"
               />
@@ -54,7 +54,7 @@ export default function Contact() {
               className="social-group"
             >
               <img
-                src="src/assets/social_icons/envelope.svg"
+                src="../assets/social_icons/envelope.svg"
                 className="social-icon"
                 alt="envelope-icon"
               />
@@ -62,7 +62,7 @@ export default function Contact() {
             </a>
             <a href="https://github.com/millercharlie" className="social-group">
               <img
-                src="src/assets/social_icons/github-icon.svg"
+                src="../assets/social_icons/github_icon.svg"
                 className="social-icon"
                 alt="github-icon"
               />
@@ -73,7 +73,7 @@ export default function Contact() {
               className="social-group"
             >
               <img
-                src="src/assets/social_icons/behance-icon.svg"
+                src="../assets/social_icons/behance_icon.svg"
                 className="social-icon"
                 alt="behance-icon"
               />
@@ -117,25 +117,25 @@ export default function Contact() {
           <p>
             Created with &#128156; using HTML
             <img
-              src="src/assets/tool_icons/html.svg"
+              src="../assets/tool_icons/html.svg"
               alt="html-icon"
               className="tool-icon"
             />
             , CSS
             <img
-              src="src/assets/tool_icons/css.svg"
+              src="../assets/tool_icons/css.svg"
               alt="css-icon"
               className="tool-icon"
             />
             , and{" "}
             <img
-              src="src/assets/tool_icons/javascript.svg"
+              src="../assets/tool_icons/javascript.svg"
               alt="javascript-icon"
               className="tool-icon"
             />{" "}
             with React{" "}
             <img
-              src="src/assets/tool_icons/react.svg"
+              src="../assets/tool_icons/react.svg"
               alt="react-icon"
               className="tool-icon"
             />

@@ -392,13 +392,13 @@ hr {
 .website-background {
   width: 100vw;
   height: 100vh;
-  background-image: url("src/assets/website-background-v2.png");
+  background-image: url("assets/website_background_v2.png");
   background-size: 100vw auto;
   background-position: center bottom;
   background-repeat: no-repeat;
 }
 .website-background-fill {
-  background-image: url("src/assets/website-background-v2.png");
+  background-image: url("assets/website_background_v2.png");
   background-position: center bottom;
   background-size: contain;
 }

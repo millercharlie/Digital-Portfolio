@@ -48,7 +48,7 @@ function Window({ mode, isVisible, func }) {
           >
             <div className="icon-button">
               <img
-                src="src/assets/menu_icons/expand-icon.png"
+                src="../assets/menu_icons/expand_icon.png"
                 alt="Expand"
                 className="icon-image"
               />
@@ -56,7 +56,7 @@ function Window({ mode, isVisible, func }) {
           </a>
           <div className="icon-button">
             <img
-              src="src/assets/menu_icons/close-icon.png"
+              src="../assets/menu_icons/close_icon.png"
               alt="Close"
               className="icon-image"
               id="close"

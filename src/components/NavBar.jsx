@@ -54,7 +54,7 @@ function NavBar({ background, fun, icon, textColor }) {
      * Opens my resume when the user clicks on the "Resume" button in the navigation bar.
      */
   const openPDF = () => {
-      const pdf = 'src/assets/resume.pdf'
+      const pdf = '../assets/resume.pdf'
       window.open(pdf, "_blank");
       console.log('called')
   }
@@ -137,7 +137,7 @@ function NavBar({ background, fun, icon, textColor }) {
         </div>
         <div>
           <img
-            src="src/assets/navbar_icons/hamburger-right.svg"
+            src="../assets/navbar_icons/hamburger_right.svg"
             alt="hamburger-right"
             className="nav-darktoggle hamburger"
             onClick={handleDropdown}

@@ -1,8 +1,8 @@
 import NavBar from "../components/NavBar.jsx";
 import git from "../utilities/gitcommits.json";
 import { useEffect, useState } from "react";
-import sunIcon from "../assets/navbar_icons/sun-icon.png";
-import brewIcon from "../assets/navbar_icons/brew-icon.png";
+import sunIcon from "../assets/navbar_icons/sun_icon.png";
+import brewIcon from "../assets/navbar_icons/brew_icon.png";
 import Window from "../components/Window.jsx";
 
 /**

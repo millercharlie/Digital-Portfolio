@@ -1,5 +1,4 @@
 import NavBar from "../components/NavBar.jsx";
-import react from "../assets/navbar_icons/react.svg";
 import { useRef, useState } from "react";
 import Window from "../components/Window.jsx";
 
@@ -11,9 +10,9 @@ export default function Projects() {
   localStorage.setItem("mode", "one");
 
   const trains = [
-    "src/assets/project_assets/trains/bullet_train.png",
-    "src/assets/project_assets/trains/commuter_rail.png",
-    "src/assets/project_assets/trains/avelia_liberty.png",
+    "../assets/project_assets/trains/bullet_train.png",
+    "../assets/project_assets/trains/commuter_rail.png",
+    "../assets/project_assets/trains/avelia_liberty.png",
   ];
   const randomizedTrain = useRef(trains[~~(Math.random() * 3)]);
 
@@ -90,7 +89,7 @@ export default function Projects() {
               <div className="swipe-down">
                 <h3 className="h3-projects">Swipe/Scroll</h3>
                 <img
-                  src="src/assets/project_assets/down-arrow.png"
+                  src="../assets/project_assets/down_arrow.png"
                   alt="down-arrow"
                   className="down-arrow"
                 />
@@ -108,7 +107,7 @@ export default function Projects() {
                     />
                   </div>
                   <img
-                    src="src/assets/project_assets/project-one-station.png"
+                    src="../assets/project_assets/project_one_station.png"
                     className="project-one-station"
                     alt="project-one-station"
                     onClick={handleClick}
@@ -123,7 +122,7 @@ export default function Projects() {
                     />
                   </div>
                   <img
-                    src="src/assets/project_assets/project-two-station.png"
+                    src="../assets/project_assets/project_two_station.png"
                     className="project-two-station"
                     alt="project-two-station"
                     onClick={handleClick}
@@ -131,18 +130,18 @@ export default function Projects() {
                 </div>
               </div>
               <img
-                src="src/assets/project_assets/columns.svg"
+                src="../assets/project_assets/columns.svg"
                 alt="pillars"
                 className="pillars"
               />
               <div className="trees">
                 <img
-                  src="src/assets/project_assets/foreground-trees.png"
+                  src="../assets/project_assets/foreground_trees.png"
                   alt="foreground-trees"
                   className="foreground-trees"
                 />
                 <img
-                  src="src/assets/project_assets/background-trees.png"
+                  src="../assets/project_assets/background_trees.png"
                   alt="background-trees"
                   className="background-trees"
                 />

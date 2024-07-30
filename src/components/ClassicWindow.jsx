@@ -43,12 +43,12 @@ function ClassicWindow({ mode, isVisible, func }) {
                 <div className='window-heading-icons'>
                     <a href={mode !== 'Home' ? mode.toLowerCase() : '/'} className='window-link'>
                         <div className='icon-button'>
-                            <img src='src/assets/menu_icons/expand-icon-classic.png' alt='Expand' className='icon-image'/>
+                            <img src='../assets/menu_icons/expand_icon_classic.png' alt='Expand' className='icon-image'/>
                         </div>
                     </a>
                     <div className='icon-button'>
-                        <img src='src/assets/menu_icons/close-icon-classic.png' alt='Close' className='icon-image' id='close'
-                            onClick={handleClick}/>
+                        <img src='../assets/menu_icons/close_icon_classic.png' alt='Close' className='icon-image' id='close'
+                             onClick={handleClick}/>
                     </div>
                 </div>
             </div>
