@@ -43,7 +43,13 @@ function Window({ mode, isVisible, func }) {
         <h2 className="window-heading-text">{windowTitle}</h2>
         <div className="window-heading-icons">
           <a
-            href={mode !== "Home" ? mode.toLowerCase() : "/"}
+            href={
+              mode !== "Home"
+                ? mode.includes("project-") || mode === "design-portfolio"
+                  ? `projects/${mode.toLowerCase()}`
+                  : mode.toLowerCase()
+                : "/"
+            }
             className="window-link"
           >
             <div className="icon-button">

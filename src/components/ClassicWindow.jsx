@@ -27,8 +27,6 @@ function ClassicWindow({ mode, isVisible, func }) {
     };
 
     const windowText = text[mode];
-    console.log(mode);
-    console.log(windowText);
 
     return (
         <div className='window-classic' style={isVisible ? {visibility: 'visible', filter: 'drop-shadow(1, 1, 1, 4)'}

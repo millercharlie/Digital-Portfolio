@@ -89,7 +89,10 @@ function NavBar({ background, fun, icon, textColor }) {
           : { backgroundColor: "rgba(0, 0, 0, 0)" }
       }
     >
-      <div className="nav-left">
+      <div
+        className="nav-left"
+        style={(window.innerWidth < 600 && !icon) ? { width: "325px" } : {visibility: "visible"}}
+      >
         <a href="/">
           <img
             src={handleStyles().logo.unfilled}

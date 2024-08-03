@@ -1,4 +1,5 @@
 import NavBar from "../components/NavBar.jsx";
+import React from "react";
 
 /**
  * Represents a contact page. This page has a form users can fill out to email me. In addition, contact information is
@@ -6,18 +7,17 @@ import NavBar from "../components/NavBar.jsx";
  * @returns {JSX.Element} Contact page.
  */
 export default function Contact() {
-
   /**
    * Sends an email with the various parameters automatically filled in.
    */
   const handleSubmit = () => {
-    const subject = document.querySelector('#subject').value;
-    const email = document.querySelector('#email').value;
-    const message = document.querySelector('#message').value;
+    const subject = document.querySelector("#subject").value;
+    const email = document.querySelector("#email").value;
+    const message = document.querySelector("#message").value;
     window.location.href = `mailto:onecharliemiller@gmail.com?subject=${subject}&email=${email}&body=${message}`;
 
     const submitButton = document.getElementById("submit-button");
-    submitButton.innerHTML = 'Submitted!'
+    submitButton.innerHTML = "Submitted!";
     submitButton.style.backgroundColor = "#F2873B";
   };
 
@@ -26,6 +26,15 @@ export default function Contact() {
       <div>
         <NavBar background="#FFFFFF" fun={() => {}} />
       </div>
+      <svg width="100%" height="100px" className="rect">
+        <rect
+          x={0}
+          y={0}
+          width="100%"
+          height="100px"
+          fill={window.colorMode === "one" ? "white" : "black"}
+        />
+      </svg>
       <div className="contact-content">
         <div className="left">
           <h1 className="contact-title">
@@ -87,7 +96,12 @@ export default function Contact() {
               Subject
             </label>
             <br />
-            <input type="text" id="subject" name="subject" className="text-input" />
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              className="text-input"
+            />
             <br />
             <label htmlFor="email" className="contact-label">
               Email Address
@@ -109,37 +123,66 @@ export default function Contact() {
             <br />
             {/*<input type="submit" value="Submit" className="contact-btn" />*/}
           </form>
-          <button onClick={handleSubmit} id="submit-button" className="contact-btn">Submit</button>
+          <button
+            onClick={handleSubmit}
+            id="submit-button"
+            className="contact-btn"
+          >
+            Submit
+          </button>
         </div>
       </div>
       <div className="footer">
         <footer className="row">
-          <p>
-            Created with &#128156; using HTML
-            <img
-              src="../assets/tool_icons/html.svg"
-              alt="html-icon"
-              className="tool-icon"
-            />
-            , CSS
-            <img
-              src="../assets/tool_icons/css.svg"
-              alt="css-icon"
-              className="tool-icon"
-            />
-            , and{" "}
-            <img
-              src="../assets/tool_icons/javascript.svg"
-              alt="javascript-icon"
-              className="tool-icon"
-            />{" "}
-            with React{" "}
-            <img
-              src="../assets/tool_icons/react.svg"
-              alt="react-icon"
-              className="tool-icon"
-            />
-          </p>
+          {window.innerWidth <= 600 ? (
+            <p>
+              Created with HTML
+              <img
+                src="../assets/tool_icons/html.svg"
+                alt="html-icon"
+                className="tool-icon"
+              />
+              , CSS
+              <img
+                src="../assets/tool_icons/css.svg"
+                alt="css-icon"
+                className="tool-icon"
+              />
+              , and{" "}
+              <img
+                src="../assets/tool_icons/javascript.svg"
+                alt="javascript-icon"
+                className="tool-icon"
+              />
+            </p>
+          ) : (
+            <p>
+              Created with &#128156; using HTML
+              <img
+                src="../assets/tool_icons/html.svg"
+                alt="html-icon"
+                className="tool-icon"
+              />
+              , CSS
+              <img
+                src="../assets/tool_icons/css.svg"
+                alt="css-icon"
+                className="tool-icon"
+              />
+              , and{" "}
+              <img
+                src="../assets/tool_icons/javascript.svg"
+                alt="javascript-icon"
+                className="tool-icon"
+              />{" "}
+              with React{" "}
+              <img
+                src="../assets/tool_icons/react.svg"
+                alt="react-icon"
+                className="tool-icon"
+              />
+            </p>
+          )}
         </footer>
       </div>
     </div>
