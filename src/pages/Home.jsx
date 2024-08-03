@@ -3,7 +3,11 @@ import Window from "../components/Window.jsx";
 import NavBar from "../components/NavBar.jsx";
 import AppFolder from "../components/AppFolder.jsx";
 import classicIcon from "../assets/navbar_icons/classic_icon.svg";
-import modernIcon from "../assets/navbar_icons/modern2_icon.svg";
+import modernIcon1 from "../assets/navbar_icons/modern1_icon.svg";
+import modernIcon2 from "../assets/navbar_icons/modern2_icon.svg";
+import modernIcon3 from "../assets/navbar_icons/modern3_icon.svg";
+import modernIcon4 from "../assets/navbar_icons/modern4_icon.svg";
+import modernIcon5 from "../assets/navbar_icons/modern5_icon.svg";
 import ClassicWindow from "../components/ClassicWindow.jsx";
 
 /**
@@ -15,6 +19,10 @@ export default function Home() {
   const [visible, setVisible] = useState(false);
   const [mode, setMode] = useState("empty");
   const [windowContent, setWindowContent] = useState(<></>);
+
+  const allIcons = [modernIcon1, modernIcon2, modernIcon3, modernIcon4, modernIcon5];
+  const modernIcon = allIcons[~~(Math.random() * allIcons.length)];
+
   const [toggle, setToggle] = useState(
     window.colorMode === "one" ? classicIcon : modernIcon,
   );
