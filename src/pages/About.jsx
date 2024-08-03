@@ -1,9 +1,9 @@
 import NavBar from "../components/NavBar.jsx";
 import git from "../utilities/gitcommits.json";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import sunIcon from "../assets/navbar_icons/sun_icon.png";
 import brewIcon from "../assets/navbar_icons/brew_icon.png";
-import Window from "../components/Window.jsx";
+import hamburgerIcon from "../assets/navbar_icons/hamburger_right.svg";
 
 /**
  * Represents the About page of this website. This page is meant to look like a Git repository with branches
@@ -16,7 +16,6 @@ export default function About() {
   const [toggle, setToggle] = useState(
     window.colorMode === "two" ? sunIcon : brewIcon,
   );
-  const [visible, setVisible] = useState(false);
 
   /**
    * Creates an unordered list of random bytes (0 or 1) that float down the screen.
@@ -116,12 +115,17 @@ export default function About() {
     localStorage.setItem("mode", newColorway);
   };
 
-  const handleWindowClick = (event) => {
-    if (event.target.id === "close") {
-      setVisible(false);
-    } else {
-      setVisible(true);
-    }
+  const handlePopup = (event, text) => {
+    console.log(`(${event.clientX}, ${event.clientY})`);
+
+    const reactPopup = React.createElement('p', text);
+
+    const popup = document.createElement('p', text);
+    popup.className = "popup";
+    popup.style.position = "absolute";
+    popup.style.left = event.clientX;
+    popup.style.top = event.clientY;
+    console.log(popup);
   };
 
   useEffect(() => {
@@ -131,12 +135,22 @@ export default function About() {
 
   return (
     <div className={"about-" + colorway}>
+      <p className="popup" style={{position: "absolute", top: 419, left: 397}} onClick={() => {/* Make Invisible */}}>{git[42].popup}</p>
       <NavBar
         background={getColors("background")}
         fun={colorModeSwitch}
         icon={toggle}
         textColor={getColors("nav")}
       />
+      <svg width="100%" height="70px" className="rect">
+        <rect
+          x={0}
+          y={0}
+          width="100%"
+          height="70px"
+          fill={window.colorMode === "one" ? "white" : "black"}
+        />
+      </svg>
       <div className="background-container">
         <ul className="bytes-ul">
           {randomBytes().map((byte, index) => {
@@ -148,10 +162,7 @@ export default function About() {
           })}
         </ul>
       </div>
-      <div className="home-window">
-        <Window isVisible={visible} mode='empty' func={handleWindowClick}/>
-      </div>
-      <svg height="1600px" width="100%" className="git-repo">
+      <svg height="1600px" width={window.innerWidth <= "600px" ? "600px": "100%"} className="git-repo">
         {git.map((commit, index) => {
           switch (commit.type) {
             case "line":
@@ -162,7 +173,7 @@ export default function About() {
                   stroke={getColors(commit.color)}
                   strokeWidth="3"
                   className={commit.color}
-                  key={index}
+                  key={`line-${index}`}
                 />
               );
             case "circle":
@@ -174,24 +185,28 @@ export default function About() {
                   fill={getColors(commit.color)}
                   stroke={getColors("stroke")}
                   strokeWidth="3"
-                  key={index}
+                  key={`circle-${index}`}
                 />
               );
             case "text":
               if (commit.expand) {
                 return (
-                  <text
-                    x={commit.x}
-                    y={commit.y}
-                    fontSize="14"
-                    fill={getColors("text")}
-                    key={index}
-                    textDecoration="underline"
-                    onClick={handleWindowClick}
-                    style={{cursor: 'pointer'}}
-                  >
-                    {commit.text}
-                  </text>
+                  <g>
+                    <text
+                      x={commit.x}
+                      y={commit.y}
+                      fontSize="14"
+                      fill={getColors("text")}
+                      key={`text-${index}`}
+                      textDecoration="underline"
+                      onClick={(event) => handlePopup(event, commit.popup)}
+                      style={{cursor: "pointer"}}
+                      id={`text-${index}`}
+                    >
+                      {commit.text}
+                    </text>
+                    <image href={hamburgerIcon} x={commit.x - 44} y={commit.y - 13} width="18px" height="18px"></image>
+                  </g>
                 );
               }
               return (
@@ -200,7 +215,7 @@ export default function About() {
                   y={commit.y}
                   fontSize="14"
                   fill={getColors("text")}
-                  key={index}
+                  key={`text-${index}`}
                 >
                   {commit.text}
                 </text>

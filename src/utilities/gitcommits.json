@@ -20,8 +20,6 @@
     "color": "quaternary"
   },
 
-
-
   {
     "x": 77,
     "y": 230,
@@ -215,8 +213,6 @@
     "color": "primary"
   },
 
-
-
   {
     "x": 90,
     "y": 235,
@@ -230,18 +226,18 @@
     "type": "text"
   },
   {
-  "x": 90,
-  "y": 355,
-  "text": "School: Northeastern University",
-    "type": "text",
-    "expand": true
+    "x": 90,
+    "y": 355,
+    "text": "College: Northeastern University",
+    "type": "text"
   },
   {
     "x": 90,
     "y": 415,
     "text": "Major: Computer Science and Design",
     "type": "text",
-    "expand": true
+    "expand": true,
+    "popup": "Important Courses:\n- Fundamentals of Computer Science I & II: Learned Racket and Java and gained a solid understanding of both languages and their operations\n- Object-Oriented Design: Exposed to principles of code design, the MVC pattern, and managing workflows\n- Discrete Structures: Learned about logic gates, binary conversion, and inductive reasoning\n- Design Process, Context, and Systems: Used the design process to aid the creation of numerous projects\n- Typography I: Learned typographic principles, history, and terminology"
   },
   {
     "x": 90,
@@ -252,16 +248,18 @@
   {
     "x": 90,
     "y": 575,
-    "text": "Code Coach — theCoderSchool",
+    "text": "Code Coach: theCoderSchool",
     "type": "text",
-    "expand": true
+    "expand": true,
+    "popup": "- Taught younger students how to code in Python\n- Created original lessons, practice, and exercises to further their knowledge"
   },
   {
     "x": 90,
     "y": 635,
-    "text": "Human-Computer Interaction Engineer — MORSE Corp",
+    "text": "Human-Computer Interaction Engineer: MORSE Corp",
     "type": "text",
-    "expand": true
+    "expand": true,
+    "popup": "- Worked on a Web-Application using HTML/CSS/JS with React\n- Gained experience with working in Agile workflows\n- Worked with git Version Control, Jira, and Docker"
   },
   {
     "x": 90,
@@ -280,7 +278,8 @@
     "y": 855,
     "text": "Software Engineering",
     "type": "text",
-    "expand": true
+    "expand": true,
+    "popup": "I am interested in full-stack and front-end software engineering. I specialize in combining aspects of programming with aspects of design, so any software that allows me to work with both is desired."
   },
   {
     "x": 140,
@@ -299,7 +298,8 @@
     "y": 1125,
     "text": "Eco-Friendly Innovations",
     "type": "text",
-    "expand": true
+    "expand": true,
+    "popup": "I've followed the development of environmentally-friendly technological innovations. As the world transfers to renewable energy, I am exposed to more forms of clean energy usage and gathering."
   },
 
   {
@@ -313,14 +313,16 @@
     "y": 1285,
     "text": "1492-1921",
     "type": "text",
-    "expand": true
+    "expand": true,
+    "popup": "The period between 1492-1921 is fascinating to me. Columbus's journey to the New World has shaped the history of many nations, and led to the world as we know it today. I also love learning about the people involved, the rise and fall of nations, and important events that took place during this time."
   },
   {
     "x": 140,
     "y": 1345,
     "text": "Interwar Period (WW1-WW2)",
     "type": "text",
-    "expand": true
+    "expand": true,
+    "popup": "The period in between both World Wars is often overlooked by academic institutions. However, I find this period fascinating, as it explains the rise of modern great powers and the lead-up to World War II."
   },
   {
     "x": 90,

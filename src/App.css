@@ -149,7 +149,6 @@ button:focus-visible {
   width: 65vw;
   position: relative;
   z-index: 999;
-  /* filter: drop-shadow(0px 0px 0.1mm #6D6D6D); */
 }
 .window-heading {
   align-items: center;
@@ -306,6 +305,10 @@ hr {
 .nav-darktoggle:hover {
   transform: scale(115%);
 }
+.rect {
+  display: none;
+  visibility: hidden;
+}
 
 @media only screen and (max-width: 600px) {
   .nav-bar {
@@ -318,6 +321,7 @@ hr {
     left: 50vw;
     transform: translate(-50%, 20%);
     z-index: 999;
+    filter: drop-shadow(0 4px 10px var(--light-gray));
   }
   .nav-left {
     display: inline-flex;
@@ -339,6 +343,7 @@ hr {
     align-content: end;
     justify-content: center;
     z-index: -1;
+    filter: drop-shadow(0 4px 10px var(--light-gray));
   }
   .dropdown-menu {
     display: flex;
@@ -359,8 +364,9 @@ hr {
     background-color: #FFFFFF;
 
   }
-  .hamburger {
-    /* TODO: These Styles */
+  .rect {
+    display: block;
+    visibility: visible;
   }
   .home-window {
     margin: 7.5% auto auto;
@@ -372,6 +378,13 @@ hr {
     transform: translate(-50%, -50%);
     font-size: 20px;
     animation: fadeIn 3s 10s both;
+  }
+  .website-background {
+    height: 100vh;
+    background-image: url("assets/website_background_v2.png");
+    background-size: 100vw auto;
+    background-position: center bottom;
+    background-repeat: no-repeat;
   }
 }
 
