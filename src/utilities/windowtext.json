@@ -21,19 +21,18 @@
   "project-one": {
     "title": "congress.gov Redesign",
     "alt": "Project 1",
-    "body": "Taking a look at the current congress.gov website, it looks more outdated. For this personal project, I redesigned the website to modernize the look as well as to ensure greater accessibility and user-intuitiveness.\n\nFor more information, click the 🔲 at the top of the window.",
+    "body": "Taking a look at the current congress.gov website, it looks more outdated. For this personal project, I redesigned the website to modernize the look as well as to ensure greater accessibility and user-intuitiveness.\n\nFor more information about this project, click the 🔲 at the top of the window.",
     "image": "../assets/window_images/congress_website_redesign.png"
   },
   "project-two": {
     "title": "Markdown Notes Application",
     "alt": "Project 2",
-    "body": "In this project, I'm creating a notes app that uses the widespread Markdown syntax to determine text style (heading, paragraph, code, etc). This project is being created with HTML/CSS/JS with Electron.\n\nFor more information, click the 🔲 at the top of the window.",
+    "body": "In this project, I'm creating a notes app that uses the widespread Markdown syntax to determine text style (heading, paragraph, code, etc). This project is being created with HTML/CSS/JS with Electron.\n\nFor more information about this project, click the 🔲 at the top of the window.",
     "image": "../assets/window_images/md_editor.png"
   },
-  "project-three": {
-    "title": "UI Designs",
-    "alt": "Project 3",
-    "body": "\n\nFor more information, click the 🔲 at the top of the window.",
-    "image": "../assets/window_images/md_editor.png"
+  "design-portfolio": {
+    "title": "Design Portfolio",
+    "alt": "Portfolio",
+    "body": "This section is designed to highlight my design portfolio. Throughout my life, I have worked on many designs, be it for personal or academic reasons. There are a few of these designs which I'm particularly proud of and wish to highlight. In addition, a link will be present to my Behance page, which houses these designs and more!\n\nTo check out my portfolio, click the 🔲 at the top of the window."
   }
 }
