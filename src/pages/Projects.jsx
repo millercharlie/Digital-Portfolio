@@ -13,8 +13,9 @@ export default function Projects() {
     "../assets/project_assets/trains/bullet_train.png",
     "../assets/project_assets/trains/commuter_rail.png",
     "../assets/project_assets/trains/avelia_liberty.png",
+    "../assets/project_assets/trains/cahsr.png"
   ];
-  const randomizedTrain = useRef(trains[~~(Math.random() * 3)]);
+  const randomizedTrain = useRef(trains[~~(Math.random() * trains.length)]);
 
   /**
    * Handles randomization of background
@@ -45,7 +46,7 @@ export default function Projects() {
     } else if (event.target.alt === "project-two-station") {
       setWindowMode("project-two");
     } else if (event.target.alt === "project-three-station") {
-      setWindowMode("project-three");
+      setWindowMode("design-portfolio");
     }
 
     if (event.target.id === "close") {
@@ -81,8 +82,8 @@ export default function Projects() {
               alt="train"
               style={
                 randomizedTrain.current.includes("commuter_rail")
-                  ? { maxHeight: "80px" }
-                  : { maxHeight: "60px" }
+                  ? { maxHeight: "8vh" }
+                  : { maxHeight: "6vh" }
               }
             />
             <div className="scroll-section">
@@ -99,7 +100,7 @@ export default function Projects() {
                   <h3 className="h3-projects" style={{ textAlign: "center" }}>
                     Click on this Station!
                   </h3>
-                  <div className="projects-window">
+                  <div className="projects-window project-one-window">
                     <Window
                       mode={windowMode}
                       func={handleClick}
@@ -107,14 +108,14 @@ export default function Projects() {
                     />
                   </div>
                   <img
-                    src="../assets/project_assets/project_one_station.png"
+                    src="../assets/project_assets/stations/project_one_station.png"
                     className="project-one-station"
                     alt="project-one-station"
                     onClick={handleClick}
                   />
                 </div>
                 <div className="station-group-two">
-                  <div className="projects-window">
+                  <div className="projects-window project-two-window">
                     <Window
                       mode={windowMode}
                       func={handleClick}
@@ -122,9 +123,24 @@ export default function Projects() {
                     />
                   </div>
                   <img
-                    src="../assets/project_assets/project_two_station.png"
+                    src="../assets/project_assets/stations/project_two_station.png"
                     className="project-two-station"
                     alt="project-two-station"
+                    onClick={handleClick}
+                  />
+                </div>
+                <div className="station-group-three">
+                  <div className="projects-window project-three-window">
+                    <Window
+                      mode={windowMode}
+                      func={handleClick}
+                      isVisible={windowVisibility.three}
+                    />
+                  </div>
+                  <img
+                    src="../assets/project_assets/stations/project_three_station.png"
+                    className="project-three-station"
+                    alt="project-three-station"
                     onClick={handleClick}
                   />
                 </div>
@@ -148,7 +164,7 @@ export default function Projects() {
               </div>
               <div className="mountains">
                 <img
-                  src="src/assets/project_assets/mountains.png"
+                  src="../assets/project_assets/mountains.png"
                   alt="mountain-image"
                   className="mountain-image"
                 />
