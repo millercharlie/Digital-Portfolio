@@ -108,15 +108,15 @@ function NavBar({ background, fun, icon, textColor }) {
               : { visibility: "hidden", display: "none" }
           }
         >
-          <a href="projects">
+          <a href="/projects">
             <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
               Projects
             </h4>
           </a>
-          <a href="about">
+          <a href="/about">
             <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>About</h4>
           </a>
-          <a href="contact">
+          <a href="/contact">
             <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
               Contact
             </h4>
@@ -139,17 +139,17 @@ function NavBar({ background, fun, icon, textColor }) {
       {dropdown && (
         <div className="dropdown-menu-container">
           <div className="dropdown-menu">
-            <a href="projects">
+            <a href="/projects">
               <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
                 Projects
               </h4>
             </a>
-            <a href="about">
+            <a href="/about">
               <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
                 About
               </h4>
             </a>
-            <a href="contact">
+            <a href="/contact">
               <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
                 Contact
               </h4>
