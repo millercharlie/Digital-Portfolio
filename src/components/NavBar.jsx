@@ -43,25 +43,16 @@ function NavBar({ background, fun, icon, textColor }) {
     return styles;
   };
 
-    /**
-     * Handles user selection of the dropdown menu.
-     */
+  /**
+   * Handles user selection of the dropdown menu.
+   */
   const handleDropdown = () => {
     setDropdown(!dropdown);
   };
 
-    /**
-     * Opens my resume when the user clicks on the "Resume" button in the navigation bar.
-     */
-  const openPDF = () => {
-      const pdf = '../assets/resume.pdf'
-      window.open(pdf, "_blank");
-      console.log('called')
-  }
-
-    /**
-     * Dynamically updates the website for mobile devices
-     */
+  /**
+   * Dynamically updates the website for mobile devices
+   */
   window.addEventListener("resize", () => {
     if (window.innerWidth <= 600) {
       setVisibility(false);
@@ -91,7 +82,11 @@ function NavBar({ background, fun, icon, textColor }) {
     >
       <div
         className="nav-left"
-        style={(window.innerWidth < 600 && !icon) ? { width: "325px" } : {visibility: "visible"}}
+        style={
+          window.innerWidth < 600 && !icon
+            ? { width: "325px" }
+            : { visibility: "visible" }
+        }
       >
         <a href="/">
           <img
@@ -126,17 +121,6 @@ function NavBar({ background, fun, icon, textColor }) {
               Contact
             </h4>
           </a>
-          <a>
-            <h4
-              style={{
-                color: textColor || "rgba(0, 0, 0, 0.70)",
-                cursor: "pointer",
-              }}
-              onClick={openPDF}
-            >
-              Resume
-            </h4>
-          </a>
         </div>
         <div>
           <img
@@ -168,17 +152,6 @@ function NavBar({ background, fun, icon, textColor }) {
             <a href="contact">
               <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
                 Contact
-              </h4>
-            </a>
-            <a>
-              <h4
-                style={{
-                  color: textColor || "rgba(0, 0, 0, 0.70)",
-                  cursor: "pointer",
-                }}
-                onClick={openPDF}
-              >
-                Resume
               </h4>
             </a>
           </div>
