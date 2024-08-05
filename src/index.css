@@ -99,8 +99,9 @@
   color: white;
   border-radius: 7px;
   white-space: pre-line;
+  transform: translate(0, -110%);
   transition-duration: 0.3s;
-  /* TODO: Point */
+  cursor: pointer;
 }
 
 /* Contact Page Styles */
@@ -269,12 +270,12 @@ svg.git-repo text {
   position: absolute;
   bottom: 0;
   z-index: 2;
-  max-height: 35vh;
+  max-height: 56vh;
 }
 .trees {
   display: inline-flex;
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
 }
 .background-trees {
   position: absolute;
@@ -294,7 +295,6 @@ svg.git-repo text {
   z-index: 3;
   height: 25vh;
 }
-/* TODO: Remove all Hardcoding! */
 .bullet-train {
   display: inline-flex;
   position: absolute;
@@ -315,7 +315,7 @@ svg.git-repo text {
 }
 .stations {
   position: absolute;
-  bottom: 34vh;
+  bottom: 34.2vh;
   max-height: 2vh;
   display: inline-flex;
   align-items: end;
@@ -338,7 +338,8 @@ svg.git-repo text {
 }
 .project-one-window {
   position: absolute;
-  transform: translate(-25%, -50%);
+  bottom: 15vh;
+  left: 300vw;
 }
 .project-one-station {
   height: 17vh;
@@ -346,19 +347,29 @@ svg.git-repo text {
 }
 .project-two-window {
   position: absolute;
-  transform: translate(-25%, -45%);
-}
+  bottom: 15vh;
+  left: 600vw;}
 .project-two-station {
-  height: 23vh;
+  height: 20vh;
   cursor: pointer;
 }
 .project-three-window {
   position: absolute;
-  transform: translate(-25%, -30%);
+  bottom: 15vh;
+  left: 900vw;
 }
 .project-three-station {
   height: 30vh;
   cursor: pointer;
+}
+.railroad-crossing {
+  position: absolute;
+  bottom: 34.75vh;
+  left: 97vw;
+  max-height: 23vh;
+  display: inline-flex;
+  align-items: end;
+  z-index: 3;
 }
 .mountains {
   position: absolute;
@@ -368,6 +379,13 @@ svg.git-repo text {
 }
 .mountain-image {
   height: 80vh;
+}
+.swiss-clock {
+  position: absolute;
+  bottom: 50vh;
+  left: 724vw;
+  width: 9vh;
+  z-index: 1;
 }
 .sticky-parent {
   height: 1300vh;

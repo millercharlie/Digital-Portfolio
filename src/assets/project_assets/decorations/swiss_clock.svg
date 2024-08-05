@@ -1,0 +1,19 @@
+<svg width="701" height="4526" viewBox="0 0 701 4526" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M368 0H332V3789H300L281 3835H346H354H419L400 3789H368V0Z" fill="#707070"/>
+<circle cx="350.5" cy="4175.5" r="338" fill="white" stroke="#999799" stroke-width="25"/>
+<rect x="338.727" y="3866" width="22.7853" height="78.2294" fill="black"/>
+<rect width="22.7853" height="78.2294" transform="matrix(-0.866025 -0.5 -0.5 0.866025 514.539 3913.09)" fill="black"/>
+<rect width="22.7853" height="78.2294" transform="matrix(-0.5 -0.866025 -0.866025 0.5 625.215 4033.08)" fill="black"/>
+<rect width="22.7853" height="78.2294" transform="matrix(-4.37114e-08 1 1 4.37114e-08 581.771 4164.49)" fill="black"/>
+<rect width="22.7853" height="78.2294" transform="matrix(1 0 0 -1 338.727 4485)" fill="black"/>
+<rect x="514.539" y="4437.91" width="22.7853" height="78.2294" transform="rotate(150 514.539 4437.91)" fill="black"/>
+<rect x="625.215" y="4317.92" width="22.7853" height="78.2294" transform="rotate(120 625.215 4317.92)" fill="black"/>
+<rect x="186.461" y="3913.09" width="22.7853" height="78.2294" transform="rotate(-30 186.461 3913.09)" fill="black"/>
+<rect x="75.7852" y="4033.08" width="22.7853" height="78.2294" transform="rotate(-60 75.7852 4033.08)" fill="black"/>
+<rect x="119.229" y="4164.49" width="22.7853" height="78.2294" transform="rotate(90 119.229 4164.49)" fill="black"/>
+<rect width="22.7853" height="78.2294" transform="matrix(0.866025 0.5 0.5 -0.866025 186.461 4437.91)" fill="black"/>
+<rect width="22.7853" height="78.2294" transform="matrix(0.5 0.866025 0.866025 -0.5 75.7852 4317.92)" fill="black"/>
+<rect x="230" y="4042.82" width="35" height="262.236" transform="rotate(-36.4982 230 4042.82)" fill="black"/>
+<rect x="642.25" y="4244.64" width="24.36" height="367.868" transform="rotate(105.712 642.25 4244.64)" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M400.673 4129.47L395.927 4124.79L228.589 4294.62C217.19 4285.7 200.666 4286.57 190.265 4297.12C179.073 4308.48 179.208 4326.76 190.567 4337.95C201.925 4349.14 220.206 4349.01 231.398 4337.65C241.799 4327.1 242.417 4310.56 233.336 4299.29L400.673 4129.47Z" fill="#C82220"/>
+</svg>

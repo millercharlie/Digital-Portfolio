@@ -100,13 +100,6 @@ export default function Projects() {
                   <h3 className="h3-projects" style={{ textAlign: "center" }}>
                     Click on this Station!
                   </h3>
-                  <div className="projects-window project-one-window">
-                    <Window
-                      mode={windowMode}
-                      func={handleClick}
-                      isVisible={windowVisibility.one}
-                    />
-                  </div>
                   <img
                     src="../assets/project_assets/stations/project_one_station.png"
                     className="project-one-station"
@@ -115,13 +108,6 @@ export default function Projects() {
                   />
                 </div>
                 <div className="station-group-two">
-                  <div className="projects-window project-two-window">
-                    <Window
-                      mode={windowMode}
-                      func={handleClick}
-                      isVisible={windowVisibility.two}
-                    />
-                  </div>
                   <img
                     src="../assets/project_assets/stations/project_two_station.png"
                     className="project-two-station"
@@ -130,13 +116,6 @@ export default function Projects() {
                   />
                 </div>
                 <div className="station-group-three">
-                  <div className="projects-window project-three-window">
-                    <Window
-                      mode={windowMode}
-                      func={handleClick}
-                      isVisible={windowVisibility.three}
-                    />
-                  </div>
                   <img
                     src="../assets/project_assets/stations/project_three_station.png"
                     className="project-three-station"
@@ -146,7 +125,7 @@ export default function Projects() {
                 </div>
               </div>
               <img
-                src="../assets/project_assets/columns.svg"
+                src="../assets/project_assets/train_path.png"
                 alt="pillars"
                 className="pillars"
               />
@@ -162,12 +141,45 @@ export default function Projects() {
                   className="background-trees"
                 />
               </div>
+              <img
+                src="../assets/project_assets/decorations/railroad_crossing.png"
+                alt="railroad-crossing"
+                className="railroad-crossing"
+              />
+              <img
+                src="../assets/project_assets/decorations/swiss_clock.svg"
+                alt="swiss-clock"
+                className="swiss-clock"
+              />
               <div className="mountains">
                 <img
-                  src="../assets/project_assets/mountains.png"
+                  src="../assets/project_assets/decorations/mountains.png"
                   alt="mountain-image"
                   className="mountain-image"
                 />
+              </div>
+              <div id="windows">
+                <div className="projects-window project-one-window">
+                  <Window
+                    mode={windowMode}
+                    func={handleClick}
+                    isVisible={windowVisibility.one}
+                  />
+                </div>
+                <div className="projects-window project-two-window">
+                  <Window
+                    mode={windowMode}
+                    func={handleClick}
+                    isVisible={windowVisibility.two}
+                  />
+                </div>
+                <div className="projects-window project-three-window">
+                  <Window
+                    mode={windowMode}
+                    func={handleClick}
+                    isVisible={windowVisibility.three}
+                  />
+                </div>
               </div>
             </div>
           </div>
