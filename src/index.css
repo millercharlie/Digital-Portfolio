@@ -309,7 +309,6 @@ svg.git-repo text {
   bottom: 35vh;
   z-index: 4;
   right: 50vw;
-  width: max-content;
 }
 .swipe-down {
   position: absolute;
