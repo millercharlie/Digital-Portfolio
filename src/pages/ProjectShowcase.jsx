@@ -19,9 +19,10 @@ export default function ProjectShowcase({ project }) {
   return (
     <>
       <div>
-        <NavBar fun={() => {}} />
+        <NavBar fun={() => {
+        }}/>
       </div>
-      <div className="">
+      <div className="ps-container">
         <div className="ps-heading">
           <h1 className="ps-title">
             <strong>{titleText}</strong>
@@ -43,33 +44,30 @@ export default function ProjectShowcase({ project }) {
                 return (
                   <p className="ps-points" key={`${tool} element`}>
                     {`➤ ${tool}`}
-                    <img src="src/assets/tool_icons/html.svg" alt="html_icon" className="tool-icon"/>
+                    <img src="../assets/tool_icons/html.svg" alt="html_icon" className="tool-icon"/>
                   </p>
                 );
-              }
-              else if (tool === "CSS") {
+              } else if (tool === "CSS") {
                 return (
                   <p className="ps-points" key={`${tool} element`}>
                     {`➤ ${tool}`}
-                    <img src="src/assets/tool_icons/css.svg" alt="css_icon" className="tool-icon"/>
+                    <img src="../assets/tool_icons/css.svg" alt="css_icon" className="tool-icon"/>
                   </p>
                 );
-              }
-              else if (tool === "JavaScript") {
-                return (
-                  <p className="ps-points" key={`${tool} element`}>
-                    {`➤ ${tool}`}
-                    {" "}
-                    <img src="src/assets/tool_icons/javascript.svg" alt="javascript_icon" className="tool-icon"/>
-                  </p>
-                );
-              }
-              else if (tool === "Electron") {
+              } else if (tool === "JavaScript") {
                 return (
                   <p className="ps-points" key={`${tool} element`}>
                     {`➤ ${tool}`}
                     {" "}
-                    <img src="src/assets/tool_icons/electron.svg" alt="electron_icon" className="tool-icon"/>
+                    <img src="../assets/tool_icons/javascript.svg" alt="javascript_icon" className="tool-icon"/>
+                  </p>
+                );
+              } else if (tool === "Electron") {
+                return (
+                  <p className="ps-points" key={`${tool} element`}>
+                    {`➤ ${tool}`}
+                    {" "}
+                    <img src="../assets/tool_icons/electron.svg" alt="electron_icon" className="tool-icon"/>
                   </p>
                 );
               }

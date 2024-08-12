@@ -507,6 +507,9 @@ svg.git-repo text {
 }
 
 @media only screen and (max-width: 600px) {
+  .ps-container {
+    padding-top: 60px;
+  }
   .ps-content {
     display: block;
     align-content: center;
