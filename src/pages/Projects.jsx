@@ -7,8 +7,6 @@ export default function Projects() {
   const [windowVisibility, setWindowVisibility] = useState(totalVisibility);
   const [windowMode, setWindowMode] = useState("empty");
 
-  localStorage.setItem("mode", "one");
-
   const trains = [
     "../assets/project_assets/trains/bullet_train.png",
     "../assets/project_assets/trains/commuter_rail.png",
@@ -37,7 +35,7 @@ export default function Projects() {
     let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
     percentage = percentage < 0 ? 0 : percentage;
 
-    scrollSection.style.transform = `translate3d(${-percentage}vw, 0, 0)`;
+    scrollSection.style.transform = `translate3d(${-percentage}vh, 0, 0)`;
   }
 
   const handleClick = (event) => {
