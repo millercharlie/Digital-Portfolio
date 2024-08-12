@@ -1,5 +1,4 @@
 import NavBar from "../components/NavBar.jsx";
-import React from "react";
 
 /**
  * Represents a contact page. This page has a form users can fill out to email me. In addition, contact information is
@@ -16,7 +15,7 @@ export default function Contact() {
     const message = document.querySelector("#message").value;
     window.location.href = `mailto:onecharliemiller@gmail.com?subject=${subject}&email=${email}&body=${message}`;
 
-    const submitButton = document.getElementById("submit-button");
+    const submitButton = document.getElementById("submit-btn");
     submitButton.innerHTML = "Submitted!";
     submitButton.style.backgroundColor = "#F2873B";
   };
@@ -26,19 +25,10 @@ export default function Contact() {
       <div>
         <NavBar background="#FFFFFF" fun={() => {}} />
       </div>
-      <svg width="100%" height="100px" className="rect">
-        <rect
-          x={0}
-          y={0}
-          width="100%"
-          height="100px"
-          fill={window.colorMode === "one" ? "white" : "black"}
-        />
-      </svg>
       <div className="contact-content">
         <div className="left">
           <h1 className="contact-title">
-            <strong>Contact Me</strong>
+            Contact Me
           </h1>
           <p className="contact-description">
             Like what you see or want to get in touch? There are various ways
@@ -125,7 +115,7 @@ export default function Contact() {
           </form>
           <button
             onClick={handleSubmit}
-            id="submit-button"
+            id="submit-btn"
             className="contact-btn"
           >
             Submit

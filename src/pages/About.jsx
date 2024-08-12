@@ -150,17 +150,6 @@ export default function About() {
         icon={toggle}
         textColor={getColors("nav")}
       />
-      {window.innerWidth <= 600 && (
-        <svg width="100%" height="70px" className="rect">
-          <rect
-            x={0}
-            y={0}
-            width="100%"
-            height="70px"
-            fill={window.colorMode === "one" ? "white" : "black"}
-          />
-        </svg>
-      )}
       {popup}
       <div className="background-container">
         <ul className="bytes-ul">

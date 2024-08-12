@@ -212,6 +212,7 @@ button:focus-visible {
   padding: 0 1rem;
   color: #000000;
   white-space: pre-line;
+  font-weight: normal;
 }
 
 .small-z-index {
@@ -390,12 +391,13 @@ hr {
 
 /* Footer.jsx Component Styles */
 .footer {
-  position: sticky;
+  position: fixed;
   width: 100%;
+  left: 0;
   bottom: 0;
   background-color: rgba(256, 256, 256, 0.80);
   border-radius: 10px 10px 0 0;
-  line-height: 4rem;
+  line-height: 2rem;
 }
 .row {
   width: 100%;
