@@ -25,7 +25,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="projects/project-one" element={<ProjectShowcase project={1} />} />
         <Route path="projects/project-two" element={<ProjectShowcase project={2} />} />
-        <Route path="projects/design-portfolio" element={<DesignPortfolio />} />
+        <Route path="design-portfolio" element={<DesignPortfolio />} />
       </Routes>
     </BrowserRouter>
   );

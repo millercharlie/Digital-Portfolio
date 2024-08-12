@@ -27,7 +27,7 @@ function Window({ mode, isVisible, func }) {
 
   const windowText = text[mode];
   const windowTitle =
-    window.innerWidth <= 600 ? windowText.alt : windowText.title;
+    (window.innerWidth <= 600 || window.outerWidth <= 600) ? windowText.alt : windowText.title;
   const image = text[mode].image;
 
   return (
@@ -45,7 +45,7 @@ function Window({ mode, isVisible, func }) {
           <a
             href={
               mode !== "Home"
-                ? mode.includes("project-") || mode === "design-portfolio"
+                ? mode.includes("project-")
                   ? `projects/${mode.toLowerCase()}`
                   : mode.toLowerCase()
                 : "/"

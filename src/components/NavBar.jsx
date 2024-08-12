@@ -83,7 +83,9 @@ function NavBar({ background, fun, icon, textColor }) {
       <div
         className="nav-left"
         style={
-          window.innerWidth < 600 && !icon
+          (window.innerWidth <= 600 ||
+            window.outerWidth <= 600) /* TODO: Check outerWidth */ &&
+          !icon
             ? { width: "325px" }
             : { visibility: "visible" }
         }
@@ -111,6 +113,11 @@ function NavBar({ background, fun, icon, textColor }) {
           <a href="/projects">
             <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
               Projects
+            </h4>
+          </a>
+          <a href="/design-portfolio">
+            <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
+              Designs
             </h4>
           </a>
           <a href="/about">
@@ -142,6 +149,11 @@ function NavBar({ background, fun, icon, textColor }) {
             <a href="/projects">
               <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
                 Projects
+              </h4>
+            </a>
+            <a href="/design-portfolio">
+              <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
+                Designs
               </h4>
             </a>
             <a href="/about">
