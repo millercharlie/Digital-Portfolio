@@ -187,7 +187,7 @@
   cursor: pointer;
   color: var(--medium-gray);
   transition-duration: 0.5s;
-  margin-bottom: 80px;
+  margin-bottom: 110px;
 }
 .contact-btn:hover {
   background-color: rgba(125, 214, 209, 0.6);
@@ -203,6 +203,9 @@
   }
   .contact-title {
     margin-top: 60px;
+  }
+  .contact-description {
+    width: 75vw;
   }
   .text-input {
     width: 75vw;
@@ -228,7 +231,7 @@
   }
   .git-repo {
     overflow-x: scroll;
-    margin-top: 60px;
+    margin-top: 75px;
   }
 }
 
@@ -318,12 +321,12 @@ svg.git-repo text {
   align-items: center;
 }
 .down-arrow {
-  height: 30px;
+  height: 4vh;
   margin-left: 10px;
 }
 .stations {
   position: absolute;
-  bottom: 34.2vh;
+  bottom: 34vh;
   max-height: 2vh;
   display: inline-flex;
   align-items: end;
@@ -331,15 +334,15 @@ svg.git-repo text {
 }
 .station-group-one {
   position: absolute;
-  left: 3000px;
+  left: 350vh;
 }
 .station-group-two {
   position: absolute;
-  left: 7250px;
+  left: 820vh;
 }
 .station-group-three {
   position: absolute;
-  left: 11000px;
+  left: 1250vh;
 }
 .projects-window {
   z-index: 6;
@@ -347,7 +350,7 @@ svg.git-repo text {
 .project-one-window {
   position: absolute;
   bottom: 15vh;
-  left: 3000px;
+  left: 350vh;
   transform: translate(-25%, 0);
 }
 .project-one-station {
@@ -357,7 +360,7 @@ svg.git-repo text {
 .project-two-window {
   position: absolute;
   bottom: 15vh;
-  left: 7250px;
+  left: 820vh;
   transform: translate(-25%, 0);
 }
 .project-two-station {
@@ -367,7 +370,7 @@ svg.git-repo text {
 .project-three-window {
   position: absolute;
   bottom: 15vh;
-  left: 11000px;
+  left: 1250vh;
   transform: translate(-25%, 0);
 }
 .project-three-station {
@@ -377,7 +380,7 @@ svg.git-repo text {
 .railroad-crossing {
   position: absolute;
   bottom: 34.75vh;
-  left: 97vw;
+  left: 120vh;
   max-height: 23vh;
   display: inline-flex;
   align-items: end;
@@ -395,12 +398,12 @@ svg.git-repo text {
 .swiss-clock {
   position: absolute;
   bottom: 50vh;
-  left: 10000px;
+  left: 1100vh;
   width: 9vh;
   z-index: 1;
 }
 .sticky-parent {
-  height: 14000px;
+  height: 1400vh;
 }
 .sticky-content {
   overflow: hidden;
