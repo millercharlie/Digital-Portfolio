@@ -115,11 +115,11 @@ function NavBar({ background, fun, icon, textColor }) {
               Projects
             </h4>
           </a>
-          <a href="/design-portfolio">
-            <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
-              Designs
-            </h4>
-          </a>
+          {/*<a href="/design-portfolio">*/}
+          {/*  <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>*/}
+          {/*    Designs*/}
+          {/*  </h4>*/}
+          {/*</a>*/}
           <a href="/about">
             <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>About</h4>
           </a>
@@ -151,11 +151,11 @@ function NavBar({ background, fun, icon, textColor }) {
                 Projects
               </h4>
             </a>
-            <a href="/design-portfolio">
-              <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
-                Designs
-              </h4>
-            </a>
+            {/*<a href="/design-portfolio">*/}
+            {/*  <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>*/}
+            {/*    Designs*/}
+            {/*  </h4>*/}
+            {/*</a>*/}
             <a href="/about">
               <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
                 About
