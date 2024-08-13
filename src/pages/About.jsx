@@ -102,7 +102,7 @@ export default function About() {
           case "stroke":
             return "#000000";
           case "nav":
-            return "#FFFFFF";
+            return "#4C4C4C";
           case "byte":
             return "rgba(42, 254, 20, 0.50)";
         }
