@@ -523,6 +523,77 @@ svg.git-repo text {
   }
 }
 
+/* Design Portfolio Styles */
+.dp-container {
+  background-color: #0B2747;
+  background-image: url("../assets/design_portfolio/stars_background.png");
+  background-size: cover;
+}
+.dp-img-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  row-gap: 1000px;
+  place-items: start center;
+  scroll-snap-type: y mandatory;
+}
+.dp-img {
+  width: 100%;
+  height: auto;
+  transition-duration: 0.2s;
+  z-index: 1;
+  position: relative;
+}
+.img-with-overlay:hover .dp-img {
+  opacity: 0.15;
+}
+.img-with-overlay {
+  max-width: 30vw;
+  scroll-snap-align: start;
+  position: relative;
+}
+.img-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  transition-duration: 0.2s;
+  color: white;
+  opacity: 0;
+}
+.img-with-overlay:hover .img-overlay {
+  opacity: 1;
+}
+.dp-rect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.jupiter-img {
+  position: absolute;
+  top: 80vh;
+  left: 10vw;
+  width: 30vw;
+}
+.death-star-img {
+  position: absolute;
+  top: 250vh;
+  right: 10vw;
+  width: 10vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .dp-img-container {
+    padding-top: 100px;
+    grid-template-columns: repeat(1, auto);
+    row-gap: 100px;
+  }
+  .img-with-overlay {
+    max-width: 85vw;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
