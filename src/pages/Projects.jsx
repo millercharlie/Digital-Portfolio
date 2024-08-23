@@ -11,7 +11,9 @@ export default function Projects() {
     "../assets/project_assets/trains/bullet_train.png",
     "../assets/project_assets/trains/commuter_rail.png",
     "../assets/project_assets/trains/avelia_liberty.png",
-    "../assets/project_assets/trains/cahsr.png"
+    "../assets/project_assets/trains/cahsr.png",
+    "../assets/project_assets/trains/caltrain.png",
+    "../assets/project_assets/trains/brightline_west.png"
   ];
   const randomizedTrain = useRef(trains[~~(Math.random() * trains.length)]);
 
@@ -79,7 +81,8 @@ export default function Projects() {
               className="bullet-train"
               alt="train"
               style={
-                randomizedTrain.current.includes("commuter_rail")
+                (randomizedTrain.current.includes("commuter_rail")
+                || randomizedTrain.current.includes("caltrain"))
                   ? { maxHeight: "8vh" }
                   : { maxHeight: "6vh" }
               }
