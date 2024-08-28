@@ -4,17 +4,24 @@ export default function DesignPortfolio() {
   return (
     <div className="dp-container">
       <NavBar
-        fun={() => {
-        }}
+        fun={() => {}}
         textColor={window.innerWidth <= 600 ? "#0B2747" : "#FFFFFF"}
       />
       {/*<p>Design Portfolio under construction</p>*/}
-      <img src="../assets/design_portfolio/jupiter.png" alt="jupiter-image" className="jupiter-img"/>
-      <img src="../assets/design_portfolio/death_star.png" alt="death-star-image" className="death-star-img"/>
+      <img
+        src="../assets/design_portfolio/jupiter.png"
+        alt="jupiter-image"
+        className="jupiter-img"
+      />
+      <img
+        src="../assets/design_portfolio/death_star.png"
+        alt="death-star-image"
+        className="death-star-img"
+      />
       <div className="dp-img-container">
         <div className="img-with-overlay">
           <svg width="100%" height="100%" className="dp-rect">
-            <rect width="100%" height="100%" fill="#0B2747"/>
+            <rect width="100%" height="100%" fill="#0B2747" />
           </svg>
           <img
             src="../assets/design_portfolio/images/boston_metro.png"
@@ -31,7 +38,7 @@ export default function DesignPortfolio() {
         </div>
         <div className="img-with-overlay">
           <svg width="100%" height="100%" className="dp-rect">
-            <rect width="100%" height="100%" fill="#0B2747"/>
+            <rect width="100%" height="100%" fill="#0B2747" />
           </svg>
           <img
             src="../assets/design_portfolio/images/metrorail_ad.png"
@@ -48,7 +55,7 @@ export default function DesignPortfolio() {
         </div>
         <div className="img-with-overlay">
           <svg width="100%" height="100%" className="dp-rect">
-            <rect width="100%" height="100%" fill="#0B2747"/>
+            <rect width="100%" height="100%" fill="#0B2747" />
           </svg>
           <img
             src="../assets/design_portfolio/images/lucid-type.gif"
@@ -66,7 +73,7 @@ export default function DesignPortfolio() {
         </div>
         <div className="img-with-overlay">
           <svg width="100%" height="100%" className="dp-rect">
-            <rect width="100%" height="100%" fill="#0B2747"/>
+            <rect width="100%" height="100%" fill="#0B2747" />
           </svg>
           <img
             src="../assets/design_portfolio/images/ussr_propaganda.png"
@@ -84,7 +91,7 @@ export default function DesignPortfolio() {
         </div>
         <div className="img-with-overlay">
           <svg width="100%" height="100%" className="dp-rect">
-            <rect width="100%" height="100%" fill="#0B2747"/>
+            <rect width="100%" height="100%" fill="#0B2747" />
           </svg>
           <img
             src="../assets/design_portfolio/images/shape_and_line.png"
@@ -102,7 +109,7 @@ export default function DesignPortfolio() {
         </div>
         <div className="img-with-overlay">
           <svg width="100%" height="100%" className="dp-rect">
-            <rect width="100%" height="100%" fill="#0B2747"/>
+            <rect width="100%" height="100%" fill="#0B2747" />
           </svg>
           <img
             src="../assets/design_portfolio/images/sus_landing.png"
@@ -120,7 +127,7 @@ export default function DesignPortfolio() {
         </div>
         <div className="img-with-overlay">
           <svg width="100%" height="100%" className="dp-rect">
-            <rect width="100%" height="100%" fill="#0B2747"/>
+            <rect width="100%" height="100%" fill="#0B2747" />
           </svg>
           <img
             src="../assets/design_portfolio/images/linkedin_banners.png"
@@ -137,7 +144,7 @@ export default function DesignPortfolio() {
         </div>
         <div className="img-with-overlay">
           <svg width="100%" height="100%" className="dp-rect">
-            <rect width="100%" height="100%" fill="#0B2747"/>
+            <rect width="100%" height="100%" fill="#0B2747" />
           </svg>
           <img
             src="../assets/navbar_icons/cu.png"
@@ -152,22 +159,23 @@ export default function DesignPortfolio() {
             </p>
           </div>
         </div>
-        {window.innerWidth > 600 && (
-          <div className="img-with-overlay">
-            <svg width="100%" height="100%" className="dp-rect">
-              <rect width="100%" height="100%" fill="#0B2747"/>
-            </svg>
-            <img
-              src="../assets/design_portfolio/images/boston_metro.png"
-              alt="mbta-map-in-la-style"
-              className="dp-img"
-            />
-            <div className="img-overlay">
-              <h3>LA Metro Siemens P2000 Car Ad</h3>
-              <p className="dp">bruh moment!</p>
-            </div>
+        <div className="img-with-overlay">
+          <svg width="100%" height="100%" className="dp-rect">
+            <rect width="100%" height="100%" fill="#0B2747" />
+          </svg>
+          <img
+            src="../assets/design_portfolio/images/rockwell_anatomy.png"
+            alt="mbta-map-in-la-style"
+            className="dp-img"
+          />
+          <div className="img-overlay">
+            <h3>Rockwell Typeface Anatomy</h3>
+            <p className="dp">
+              This project is intended to show the &ldquo;anatomy&rdquo; of the
+              Rockwell typeface. Each of its descriptors are listed in this image.
+            </p>
           </div>
-        )}
+        </div>
       </div>
     </div>
   );
