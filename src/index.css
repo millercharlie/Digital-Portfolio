@@ -54,6 +54,19 @@
   margin-left: 2vw;
 }
 
+.easter-egg {
+  position: absolute;
+  left: 0;
+  top: 20vh;
+}
+
+svg.easter-egg path {
+  stroke-dashoffset: 1100.7;
+  stroke-dasharray: 1100.7;
+  stroke-linejoin: round;
+  animation: outline 8s forwards, un-outline 8s 8s forwards, fadeOut 1s 15s forwards;
+}
+
 @media only screen and (max-width: 600px) {
   .app-folder-container {
     position: absolute;
@@ -264,6 +277,11 @@ svg.git-repo text {
 @keyframes outline {
   to {
     stroke-dashoffset: 0;
+  }
+}
+@keyframes un-outline {
+  to {
+    stroke-dashoffset: 1100;
   }
 }
 @keyframes fill-in {

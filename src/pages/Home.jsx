@@ -19,6 +19,7 @@ export default function Home() {
   const [visible, setVisible] = useState(false);
   const [mode, setMode] = useState("empty");
   const [windowContent, setWindowContent] = useState(<></>);
+  const [easterEgg, setEasterEgg] = useState(false);
 
   const allIcons = [modernIcon1, modernIcon2, modernIcon3, modernIcon4, modernIcon5];
   const modernIcon = allIcons[~~(Math.random() * allIcons.length)];
@@ -26,6 +27,8 @@ export default function Home() {
   const [toggle, setToggle] = useState(
     window.colorMode === "one" ? classicIcon : modernIcon,
   );
+
+  let clickCount = 0;
 
   const handleClick = (event) => {
     if (event.target.id === "close") {
@@ -35,6 +38,19 @@ export default function Home() {
       setMode(event.target.alt.toLowerCase());
     }
   };
+
+  document.addEventListener("click", (event) => {
+    clickCount++;
+    if (clickCount >= 5) {
+      setEasterEgg(true);
+      setTimeout(() => {
+        setEasterEgg(false);
+      }, 16000)
+    }
+    setTimeout(() => {
+      clickCount = 0;
+    }, 5000)
+  });
 
   /**
    * Switches the global variable and changes the toggle icon.
@@ -138,6 +154,9 @@ export default function Home() {
         />
       </div>
       <div className="home-window">{windowContent}</div>
+      <svg width="100%" height="110px" className={easterEgg ? "easter-egg" : undefined} style={easterEgg ? {visibility: "visible"} : {display: "none"}}>
+        <path d={`M0 100 H 100 V 88 L 107 83 107 92 112 92 112 86 118 86 118 95 124 95 124 93 130 93 130 97 135 97 139 93 143 97 148 97 148 81 154 81 154 76 160 76 160 86 166 86 166 72 175 72 175 92 190 92 190 84 180 84 180 76 190 76 190 68 180 68 180 60 190 60 190 52 207 52 207 60 197 60 197 68 207 68 207 76 197 76 197 84 207 84 207 92 197 92 197 100 215 100 215 90 218 90 218 78 225 78 230 75 230 87 235 87 235 65 239 61 245 61 249 65 249 95 253 95 253 98 260 98 260 89 266 89 266 86 276 86 276 81 281 81 281 92 288 92 288 100 295 100 295 93 Q 295 88, 300 88 L 300 88 300 85 Q 300 80, 305 80 L 330 80 Q 335 80, 335, 85 L 335 88 Q 340 88, 340 93 L 340 100 352 100 352 60 Q 342 63, 342 59 Q 328 59, 337 52 Q 333 40, 346 44 Q 348 36, 356 40 Q 364 33, 366 43 Q 375 43, 370 50 Q 379 59, 365 59 Q 362 63, 358 60 L 358 100 458 100`} fill="none" stroke={window.colorMode === "one" ? "#791f52" : "white"} strokeWidth="3" />
+      </svg>
     </div>
   );
 }
