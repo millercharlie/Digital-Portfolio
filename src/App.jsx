@@ -6,6 +6,7 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import ProjectShowcase from "./pages/ProjectShowcase.jsx";
 import DesignPortfolio from "./pages/DesignPortfolio.jsx";
+import Interaction from "./pages/Interaction.jsx";
 
 /**
  * The App Component of this portfolio. This acts as the entry point for the user.
@@ -26,6 +27,7 @@ function App() {
         <Route path="projects/project-one" element={<ProjectShowcase project={1} />} />
         <Route path="projects/project-two" element={<ProjectShowcase project={2} />} />
         <Route path="design-portfolio" element={<DesignPortfolio />} />
+        <Route path="interaction" element={<Interaction />} />
       </Routes>
     </BrowserRouter>
   );
