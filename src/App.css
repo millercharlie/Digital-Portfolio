@@ -92,8 +92,14 @@ h4::before {
 h4:hover::before {
   transform: scaleX(1);
 }
+p {
+  font-family: 'Avenir', Helvetica, sans-serif;
+}
 p.dp {
   font-family: 'Ubuntu', sans-serif;
+}
+p.cm {
+  font-family: 'JetBrains Mono', monospace;
 }
 a {
   display: inline;

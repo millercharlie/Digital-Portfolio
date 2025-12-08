@@ -1,4 +1,3 @@
-import React from 'react';
 import reactLogo from '/Users/charliethegreat/Desktop/Everything/compSciStuff/Portfolio with React/digital-portfolio-2/src/assets/react.svg';
 
 function Footer() {

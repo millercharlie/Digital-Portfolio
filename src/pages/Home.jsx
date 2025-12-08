@@ -39,7 +39,7 @@ export default function Home() {
     }
   };
 
-  document.addEventListener("click", (event) => {
+  document.addEventListener("click", () => {
     clickCount++;
     if (clickCount >= 5) {
       setEasterEgg(true);

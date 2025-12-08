@@ -601,6 +601,100 @@ svg.git-repo text {
   width: 10vw;
 }
 
+/* Transit Projects Page Styles */
+.tp-background {
+  /*background-color: #5C5C5C;*/
+  background: url("assets/showcase/patco/patco_8th_market.jpg") no-repeat;
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tp-card {
+  background-color: rgba(0, 0, 0, 0.84);
+  border: 1px solid;
+  border-color: white white transparent white;
+  border-radius: 20px 20px 0 0;
+  color: white;
+  backdrop-filter: blur(16px);
+  position: sticky;
+  top: 50%;
+  left: 0;
+  animation: 3s linear 1s slide-in;
+  transition: all 3s ease;
+}
+.tp-hr {
+  background-color: white;
+  width: 100%;
+  height: 2px;
+  border: none;
+  margin-top: 12px;
+}
+.tp-title {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  line-height: 0;
+}
+.tp-top-row {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+}
+.train-lines-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.train-lines-bg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.train-line-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+.tp-sub {
+  display: flex;
+  gap: 20%;
+  margin: 5%;
+  justify-content: center;
+}
+.sub-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 450px;
+  perspective: 1000px;
+  height: 250px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+.card-glow {
+  transition-duration: 0.2s;
+}
+
+/* PATCO Showcase Styles */
+.background {
+  background-color: #FFFBF5;
+}
+
 @media only screen and (max-width: 600px) {
   .dp-img-container {
     padding-top: 100px;

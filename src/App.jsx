@@ -7,6 +7,8 @@ import Contact from "./pages/Contact.jsx";
 import ProjectShowcase from "./pages/ProjectShowcase.jsx";
 import DesignPortfolio from "./pages/DesignPortfolio.jsx";
 import Interaction from "./pages/Interaction.jsx";
+import LengthyProjects from "./pages/LengthyProjects.jsx";
+import TransitProjects from "./pages/TransitProjects.jsx";
 
 /**
  * The App Component of this portfolio. This acts as the entry point for the user.
@@ -15,7 +17,7 @@ import Interaction from "./pages/Interaction.jsx";
 function App() {
   // Initialize a global variable called "colorMode". Can be "one", "two", or "three".
   // TODO: Make this a cookie and saved in local storage to avoid a reset on render
-  window.colorMode = localStorage.getItem("mode");
+  window.colorMode = localStorage.getItem("mode") || 'one';
 
   return (
     <BrowserRouter>
@@ -28,6 +30,9 @@ function App() {
         <Route path="projects/project-two" element={<ProjectShowcase project={2} />} />
         <Route path="design-portfolio" element={<DesignPortfolio />} />
         <Route path="interaction" element={<Interaction />} />
+        <Route path="projects/transit/patco" element={<LengthyProjects project={1} />} />
+        <Route path="projects/solomon" element={<LengthyProjects project={2} />} />
+        <Route path="projects/transit" element={<TransitProjects />} />
       </Routes>
     </BrowserRouter>
   );

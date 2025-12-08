@@ -46,7 +46,7 @@ export default function Contact() {
                 className="social-icon"
                 alt="linkedin-icon"
               />
-              <p>/onecharliemiller</p>
+              <p className="cm">/onecharliemiller</p>
             </a>
             <a
               href="mailto:onecharliemiller@gmail.com"
@@ -57,7 +57,7 @@ export default function Contact() {
                 className="social-icon"
                 alt="envelope-icon"
               />
-              <p>onecharliemiller@gmail.com</p>
+              <p className="cm">onecharliemiller@gmail.com</p>
             </a>
             <a href="https://github.com/millercharlie" className="social-group">
               <img
@@ -65,7 +65,7 @@ export default function Contact() {
                 className="social-icon"
                 alt="github-icon"
               />
-              <p>/millercharlie</p>
+              <p className="cm">/millercharlie</p>
             </a>
             <a
               href="https://www.behance.net/onecharliemiller"
@@ -76,7 +76,7 @@ export default function Contact() {
                 className="social-icon"
                 alt="behance-icon"
               />
-              <p>/onecharliemiller</p>
+              <p className="cm">/onecharliemiller</p>
             </a>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function Contact() {
       <div className="footer">
         <footer className="row">
           {window.innerWidth <= 600 ? (
-            <p>
+            <p className="cm">
               Created with HTML
               <img
                 src="../assets/tool_icons/html.svg"
@@ -146,7 +146,7 @@ export default function Contact() {
               />
             </p>
           ) : (
-            <p>
+            <p className="cm">
               Created with &#128156; using HTML
               <img
                 src="../assets/tool_icons/html.svg"

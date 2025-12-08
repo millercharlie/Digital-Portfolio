@@ -1,0 +1,225 @@
+[
+  {
+    "shorthand": "patco",
+    "title": "PATCO Speedline Modernization Project",
+    "image": {
+      "src": "../assets/showcase/patco/patco_8th_market.jpg",
+      "alt": "PATCO Train at 8th and Market Street"
+    },
+    "content": [
+      "When the revenue of American railroad companies declined in the wake of the increased usage of automobiles and the suburbanization of American cities, many companies ended up folding completely. Increasing consolidations and mergers proved to be only speed bumps to total collapse. The old model of dense, streetcar suburbs with short commuting was paving way to increased suburban commuting by car, which saw suburbs sprawl and grow increasingly distant from city centers. As Americans grew more reliant on cars, one railroad agency saw an opportunity in this new landscape. This agency is the Port Authority Transit COrporation, or PATCO, created after ___ to shuttle commuters and travelers from Center City Philadelphia to suburban New Jersey. PATCO sought to fundamentally change the method of railroad commuting by focusing on a previously-ignored sect of American cities–the suburbs.",
+      {
+        "image": {
+          "src": "../assets/window_images/ui_designs.png",
+          "alt": "PATCO train over the Ben Franklin Bridge"
+        }
+      },
+      "As such, PATCO is defined by a few key characteristics that made it unique among railroads at the time. PATCO prioritized speed above all-else, which made train travel extremely competitive with driving. Trains had a top-speed of 80mph (), which certainly made it quicker for commuters to get to Philadelphia than driving, especially factoring in traffic on I-95 (). PATCO’s stations were also few and far between. This allowed trains to reach their top speed for a longer length of the journey, as fewer accelerations and decelerations were required. One legitimate advantage of driving has always been its first/last-mile travel time. While trains require people to walk or cycle to stations, cars offer flexibility to start one’s journey at any time from any place. PATCO took advantage of this flexibility by adding large parking lots to many stations, which allowed suburban commuters to easily drive up to the station and bypass all traffic on the freeway. PATCO also ran 24/7, which was certainly unusual for the time, and even is today ().",
+      {
+        "subheader": "Current State"
+      },
+      "PATCO currently has a ridership of 15,000 () daily, with 15 () stations. However, I’m not here to analyze the PATCO system itself, but rather its design language and modernity. How does it do on this front?\n\nWell, it depends.",
+      {
+        "image": {
+          "src": "",
+          "alt": "PATCO Website"
+        }
+      },
+      "I would argue that much of the system’s design language is stuck in the past. Station signs look rather worn, with the website being in a rather dire and cluttered state. Onboard screens on the system could definitely use a revamp, combined with the design language of the Port Authority. I think the PATCO logo and typeface (which I cannot for the life of me find) are fine as-is, and there isn’t much of a need to change it.",
+      {
+        "subheader": "Motivation"
+      },
+      "Why do this? Well, I unfortunately cannot consider myself to be a daily PATCO rider, but I took a trip to Philadelphia recently. After hearing about the system and its uniqueness, I decided to ride it, and it was an extremely comfortable, pleasant experience overall. However, I couldn’t stop looking at the map of the system, which was a bit cluttered and hard to read.",
+      {
+        "image": {
+          "src": "../assets/showcase/patco/map_on_train.png",
+          "alt": "PATCO Map on Train"
+        }
+      },
+      "I began thinking of ways I would draw the system map out, given some past experience I have redesigning other transit maps for fun. I then proceeded to spiral down a rabbit hole of PATCO’s system design, which also looked rather dated to me. The system was the most modern train line in the world when it was constructed, and I believe a revamp of its design could help it carry on this legacy. Such a unique and trailblazing system deserves a design language that is equally world-class. I redesigned 5 aspects of PATCO–each listed below. Feel free to click to whichever you wish!\n\n000. Design Language\n001. System Map\n010. PATCO Freedom Card\n011. Station Signage\n100. Interior Train Screens\n101. Website",
+      {
+        "subheader": "000: Design Language"
+      },
+      "Before we look at the designs themselves, I want to discuss the design language I have given the system. I may have mentioned above that I have kept the PATCO logo and logo typeface the same. I believe this logo and its typeface are relatively historic, and I want to preserve parts of the system that are more timeless. However, I have chosen a different typeface for the rest of the system’s design. Apparat Semi-Condensed I believe strikes a good balance of being visually interesting while still looking clean and modern. I’ve also chosen Avenir for the website, as it is a more readable typeface for text-heavy paragraphs. For colors, I decided to keep PATCO’s iconic red hue for use, along with pure white as an accent.",
+      {
+        "image": {
+          "src": "../assets/showcase/patco/typefaces.png",
+          "alt": "PATCO Typefaces"
+        }
+      },
+      "What I really wanted though was an easily identifiable icon that represents PATCO aside from the logo. I wanted something that could be used internally for presentations as well as externally to immediately identify the service. People unfamiliar with PATCO may not understand what the current logo represents, which is why I think a supplement is necessary. To that end I created an icon based on the front face of a PATCO train.",
+      {
+        "image": {
+          "src": "../assets/showcase/patco/train_icon.png",
+          "alt": "My PATCO Train Icon"
+        }
+      },
+      "I believe this icon is clear in its intention, clean, and representative of the system. I designed this icon to be reusable with different colors and in different contexts, and I think it is versatile in this approach. You may see it in other redesigns for this project. I think people would immediately recognize this icon as denoting a train, which is more recognizable than the PATCO brand itself. I did go through a few iterations of this icon, which are all below!",
+      {
+        "image": {
+          "src": "../assets/showcase/patco/train_icon_iterations",
+          "alt": "My PATCO Train Icon Iterations"
+        }
+      },
+      {
+        "subheader": "System Map"
+      },
+      "Now for the part that sparked this project. I honestly have no idea what PATCO’s current map actually is, as I’ve seen 4-5 slightly different official maps of the system that are in use across its various websites. I saw one variation in the train itself, which I have put a photo of above. There is also the first map below, which is in use on PATCO’s main website under the “Maps & Schedules” () section. However, the PATCO Perks website has a different, more colorful map, which is also below.",
+      {
+        "image": {
+          "src": "../assets/showcase/patco/grayscale_map",
+          "alt": "Grayscale Original PATCO Map"
+        }
+      },
+      {
+        "image": {
+          "src": "../assets/showcase/patco/colorful_map",
+          "alt": "Colorful Original PATCO Map"
+        }
+      },
+      {
+        "sub_subheader": "The Map"
+      },
+      {
+        "image": {
+          "src": "../assets/showcase/patco/map_first_draft",
+          "alt": "My First Draft of the PATCO Map"
+        }
+      },
+      "When designing my map, I smoothed out corners and right angles, and I believe it looks more modern as well as clear to follow. While the original maps show the routes of SEPTA’s Market-Frankford and Broad Street Lines, in addition to New Jersey Transit’s River LINE and Atlantic City Line, I initially chose to omit them entirely, believing them to clutter the map unnecessarily. I instead marked any connections to other rapid transit with the agency’s logo, as shown on 8th Street Station. I kept the geographic names that the original map has, but decided to change the “Philadelphia” name to “Pennsylvania”, as I believe it equalizes both states. I kept the Delaware River’s color as-is, since it provides a nice contrast to the line and other features. I also omitted parking information, as PATCO’s own website has that information and I believe most people who use the system really only stick to a few stations that they know, making this information unnecessary. I finally simplified station names, as some are unnecessarily long. For instance, my “16th Street” is actually called “15th/16th Street and Locust Street” () on PATCO’s own system. Despite this, there are a few issues with this first draft.\n\n1. While denoting connections to SEPTA and New Jersey Transit is important, I think it’s even more important to keep some semblance of which lines can take people which direction. I don’t want an exact route diagram like the original maps, but I think some sort of indication would be great.\n2. There is no key. While I really meant for these maps to be placed in trains and figured the information present would be recognizable to commuters, I think explicitly pointing out what everything on the map is will help those unfamiliar with the system. In design in general it’s usually good practice to never assume clients have prior knowledge of how something works or looks.\n3. There is one more glaring issue, which I’ll discuss below.",
+      {
+        "image": {
+          "src": "../assets/showcase/patco/map_second_draft",
+          "alt": "My Second Draft of the PATCO Map"
+        }
+      },
+      "PATCO should definitely figure out which of their maps map is updated, because I think it could confuse a lot of people. This made my initial map wrong, as I mistakingly believed that a few stations in the system were not accessible since the map on their website denotes this fact. However, the PATCO Perks map shows that all stations are accessible. While working on a second draft, I marked accessibility information in the map’s new key, since a quick search reveals this to be the case.\n\nThe most notable difference though is the added arrows. As mentioned above, I wanted some way to denote SEPTA and NJT connections, so I added the general path of routes that connect to various PATCO stations. I gave them each a unique, distinct color, if one wasn’t provided by the agency. I also renamed the “8th Street” station to “Market Street”, as PATCO utilizes this name on their own website in one instance.\n\nOne part of the map that I think needs improvement is the connection between 16th Street, 13th Street, and SEPTA’s Walnut-Locust Station via pedestrian tunnels. It’s a complicated service pattern that doesn’t fit cleanly onto the map, and while PATCO’s own oval does a decent job at representing this, I honestly found myself confused what it was denoting while first looking at it."
+    ]
+  },
+  {
+    "shorthand": "solomon",
+    "title": "Solomon",
+    "image": {
+      "src": "/assets/showcase/solomon/website_mockup.png",
+      "alt": "Solomon Mockup"
+    },
+    "content": [
+      {
+        "subheader": "000. A Background"
+      },
+      "As a Christian, I've been consistently surprised by the sheer number of high-quality, truthful, and unbiased resources there are relating to the faith. These sources range in topics from Christian theology, apologetics, or the study of the historic, scientific, and philosophical truth of the Bible, to Biblical commentaries more broadly. These resources have helped me immensely, growing my faith and arming me with incredible information. However, there is a problem, Actually, there are a few.",
+      {
+        "subheader": "001. The Problems"
+      },
+      "So, the problems here relate on resource visibility and discoverability. Once a source is found, the process of finding resources is mostly complete. However, actually discovering these high-quality resources in the first place is difficult. During my research process, I identified three such pain points:",
+      "1: Trustworthiness - I had no idea if these sources were trustworthy on face value. Much more research and digging would be necessary to verify the credibility of a source, such as finding user reviews or their statement of faith.",
+      "2: Discoverability - It was difficult to even know how to search for information! Sometimes, searching up a topic such as Noah's flood wouldn't yield great results right away-I would have to re-word my search and tinker with the algorithm to find relevant information",
+      "3: Aggregators - Currently, there are some Christian aggregators that attempt to accumulate resources from vetted theologians and creators. However, these mostly have atrocious navigation and user interfaces that adds a legitimate barrier in usability.",
+      "Of course, I wouldn't make a project if I was the only one with these problems. So, I conducted research.",
+      {
+        "subheader": "010. Research"
+      },
+      {
+        "image": {
+          "src": "/assets/showcase/solomon/research_1.png",
+          "alt": "Survey Question"
+        }
+      },
+      "To tackle the research, I first decided to narrow down my target audience to younger, newer Christians. I then employed a multifaceted approach leveraging my own Christian communities on campus for information. I created a holistic survey that asked people more broadly if they had issues finding reliable Christian resources, while individual interviews with people were more narrowly focused on specific pain points.",
+      "Through this, I found out that many other people had the exact same issues I did! The surveys highlighted that people felt difficulty immediately trusting resources, while others were frustrated by a tendency of resources to not cite their own sources.",
+      "All this culminated in me reflecting on the process of searching for resources related to other topics, such as history. I realized the process here is fundamentally different. Generally speaking, searching up historical events leads to accessible resources from well-known, reputable authors. Searching up the content itself is frictionless, and relevant information is served right away.",
+      "Therefore, I decided to create an online Christian theological aggregator for younger, newer Christians, where trustworthy, accessible, and reliable resources are gathered together in one convenient, platform. I've named it Solomon in homage to the Israelite king famed for his God-given wisdom.",
+      "Essentially, Solomon acts as a one-stop-shop for younger Christians to find trustworthy resources. It contains a compilation of sources on topics ranging from apologetics, or the study of the truthfulness of the Bible, to theology, or Bible commentary more broadly.",
+      {
+        "subheader": "011. My Iterations"
+      },
+      {
+        "image": {
+          "src": "/assets/showcase/solomon/iterations_2.png",
+          "alt": "Initial Structure of Solomon"
+        }
+      },
+      "Initially, I created some basic wireframes for Solomon on paper. These were extremely rudimentary, but helped in getting a basic interface figured out for the website.",
+      {
+        "image": {
+          "src": "/assets/showcase/solomon/iterations_3.png",
+          "alt": "Initial User Flow"
+        }
+      },
+      "Then, I moved to Figma for my next iterations. On Figma, I created a higher quality, high-fidelity wireframe of Solomon's interface. During this iteration, I also finalized Solomon's brand logo, typography, and colors. The high-fidelity prototype allowed for more extensive testing and feedback.",
+      {
+        "image": {
+          "src": "/assets/showcase/solomon/iterations_4.png",
+          "alt": "Figma High-Fidelity Prototype"
+        }
+      },
+      "The class feedback was extremely helpful in the iteration stage. For instance, initially people believed Solomon to be too text-heavy, so I made the interface more visual. I also tweaked with the layout and navigation of the dashboard.",
+      {
+        "image": {
+          "src": "/assets/showcase/solomon/bookmarks_1.png",
+          "alt": "Initial Bookmark Iterations"
+        }
+      },
+      {
+        "image": {
+          "src": "/assets/showcase/solomon/brand_attempts.png",
+          "alt": "Brand Iterations"
+        }
+      },
+      "At this point, I also focused on the other deliverables relating to Solomon. Through my research process, I realized that many theological aggregators struggle with visibility. I want Solomon to be ubiquitous in the Christian community, so I thought about strategies to further increase the visibility of Solomon. I decided to create two other deliverables relating to this - A bookmark and a business card.",
+      {
+        "subheader": "100. Final Iteration"
+      },
+      {
+        "image": {
+          "src": "/assets/showcase/solomon/dashboard.png",
+          "alt": "Solomon Dashboard"
+        }
+      },
+      "After testing and re-iteration, alongside a lot of coding and debugging, I was able to create Solomon, hosted on wisdomofsolomon.org. There are five main pages, which I'll run through now.",
+      "1. Dashboard - This contains a high-level overview of Solomon's features and content.",
+      "2. Theology - Includes a list of resources pertaining to certain topics, alongside other theological information.",
+      "3. Bible Commentary - Offers a high-level overview of Bible commentary based on book. Study Bibles and further readings are also given.",
+      "4. Apologetics - Houses apologetics resources in curated sections ranging from “Notable Apologists” to “Suggested Topics”.",
+      "5. Glossary - Contains a list of all resources on Solomon, from A-Z.",
+      {
+        "image": {
+          "src": "/assets/showcase/solomon/card.png",
+          "alt": "Expanded Card"
+        }
+      },
+      "Each resource has a “Card” on Solomon, which can be expanded to fill the screen if desired.",
+      {
+        "image": {
+          "src": "/assets/showcase/solomon/bm_mockup.png",
+          "alt": "Bookmark Markup"
+        }
+      },
+      "In the future, Solomon will partner with churches around the United States. In such partnerships, churches will be able to upload their sermons and recommend resouces to their members, who can connect with the church when creating an account on Solomon. The bookmark is meant to co-exist with this partnership, allowing churches to distribute bookmarks to their congregations during announcements or passing them out after a service. The bookmarks have a clean design, and contain a large QR code that immediately takes the scanner to Solomon's homepage.",
+      {
+        "image": {
+          "src": "/assets/showcase/solomon/bc_mockup.png",
+          "alt": "Business Card Mockup"
+        }
+      },
+      "There are many Christian conferences that are run in the United States at various points during the year. To capitalize on this, Solomon also has a business card that can be taken to such events. The business card, like the bookmark, has a simple and clean design, with a QR code also taking the user to the homepage of the website. These business cards are intended to be passed around to Christians who are attending these conferences.",
+      {
+        "subheader": "101. Impact"
+      },
+      "Ideally, Solomon can have a large impact, both for Christians and even non-believers. ",
+      "On the Christian side, Solomon can help grow people's faith by assisting in arming them with intellectual reasons to believe the Bible. While Solomon itself isn't a resource, it acts as an aggregator for high-quality resources that tackle these topics. Solomon could help mitigate doubt by providing good resources to answer tough questions relating to Christianity. With future user accounts, users will be able to save their favorite resources, while a recommendation algorithm can provide them with related resources to their favorite topics. Solomon can also help demystify the Bible by providing people with Bible commentaries from verses that may be confusing at first-glance.",
+      "Even for curious non-believers, Solomon can help by pointing to resources that answer tough questions people may have about Christianity. Christianity as a religion has many different connotations and views from people in different parts of the world, so Solomon can help cut through these biases and show the faith as it is.",
+      {
+        "subheader": "110. Onwards"
+      },
+      "The goal of Solomon is “to educate for the Kingdom,” and while I'm happy with Solomon as it exists now, I have big plans for the website. I want it to eventually be a full-blown platform, where Christians of all denominations and groups can find resources to come back to. Ultimately, Solomon functions as a jumping-off point, and exists to inspire curiosity and clarity for believers.",
+      "To this end, the most powerful feature of Solomon will likely be user accounts in the future. Accounts will unlock a whole new host of possibilities for users. They will be able to favorite and save personal resources, making it easier to come back to them later. Solomon would be able to recommend resources to users based on factors such as denomination, favorite topics, and more.",
+      "Filtering will also be possible. Currently, each resource card contains badges that describe the type of content present. These will be clickable one day, allowing Solomon to filter a page by that specific badge.",
+      "Church partnerships will also be big for Solomon. These would give way for even more powerful features, such as church-user integration allowing for churches to provide their own recommended resources that users can see. Sermons could also be hosted on Solomon, giving people a way to listen to church even while away from it physically.",
+      {
+        "subheader": "111. Conclusions"
+      },
+      "Ultimately, the possibilities are endless for Solomon. I truly believe in this product, and hope that it can indeed help educate people for the Kingdom of God.\n\n\n\n"
+    ]
+  }
+]
