@@ -1,8 +1,8 @@
-import NavBar from "../components/NavBar.jsx";
-import git from "../utilities/gitcommits.json";
-import { useEffect, useState } from "react";
-import sunIcon from "../assets/navbar_icons/sun_icon.svg";
-import brewIcon from "../assets/navbar_icons/brew_icon.png";
+import NavBar from '../components/NavBar.jsx';
+import git from '../utilities/gitcommits.json';
+import { useEffect, useState } from 'react';
+import sunIcon from '../assets/navbar_icons/sun_icon.svg';
+import brewIcon from '../assets/navbar_icons/brew_icon.png';
 
 /**
  * Represents the About page of this website. This page is meant to look like a Git repository with branches
@@ -11,9 +11,9 @@ import brewIcon from "../assets/navbar_icons/brew_icon.png";
  * @returns {JSX.Element} About page
  */
 export default function About() {
-  const [colorway, setColorway] = useState(window.colorMode || "one");
+  const [colorway, setColorway] = useState(window.colorMode || 'one');
   const [toggle, setToggle] = useState(
-    window.colorMode === "two" ? sunIcon : brewIcon,
+    window.colorMode === 'two' ? sunIcon : brewIcon
   );
   const [popup, setPopup] = useState(<></>);
 
@@ -32,7 +32,9 @@ export default function About() {
   // TODO: Add support for multiple screen sizes
 
   // TEMPORARY!
-  console.error = () => {return "Ignore! React is being a bit silly and goofy"};
+  console.error = () => {
+    return 'Ignore! React is being a bit silly and goofy';
+  };
 
   /**
    * Sets the animation and colorway for all bytes in the unordered list.
@@ -40,15 +42,15 @@ export default function About() {
    */
   const handleStyle = () => {
     return {
-      color: getColors("byte"),
-      cursor: "default",
+      color: getColors('byte'),
+      cursor: 'default',
       fontSize: Math.floor(Math.random() * 25) + 8,
       opacity: Math.floor(Math.random() * 55) + 10,
       animation:
-        "background-bytes " +
+        'background-bytes ' +
         Math.floor(Math.random() * 50 + 15) +
-        "s forwards infinite",
-      animationDelay: "-" + Math.floor(Math.random() * 40) + "s",
+        's forwards infinite',
+      animationDelay: '-' + Math.floor(Math.random() * 40) + 's',
     };
   };
 
@@ -67,55 +69,55 @@ export default function About() {
    */
   const getColors = (type) => {
     switch (colorway) {
-      case "one":
+      case 'one':
         switch (type) {
-          case "text":
-            return "#000000";
-          case "primary":
-            return "#F65555";
-          case "secondary":
-            return "#7DD6D1";
-          case "tertiary":
-            return "#BA61FF";
-          case "quaternary":
-            return "#96E765";
-          case "stroke":
-            return "#FFFFFF";
-          case "nav":
-            return "#646cff";
-          case "byte":
-            return "#000000";
+          case 'text':
+            return '#000000';
+          case 'primary':
+            return '#F65555';
+          case 'secondary':
+            return '#7DD6D1';
+          case 'tertiary':
+            return '#BA61FF';
+          case 'quaternary':
+            return '#96E765';
+          case 'stroke':
+            return '#FFFFFF';
+          case 'nav':
+            return '#646cff';
+          case 'byte':
+            return '#000000';
         }
         break;
-      case "two":
+      case 'two':
         switch (type) {
-          case "text":
-            return "#2AFE14";
-          case "primary":
-            return "#970001";
-          case "secondary":
-            return "#5B32F2";
-          case "tertiary":
-            return "#A6A6A6";
-          case "quaternary":
-            return "#2AFE14";
-          case "stroke":
-            return "#000000";
-          case "nav":
-            return "#4C4C4C";
-          case "byte":
-            return "rgba(42, 254, 20, 0.50)";
+          case 'text':
+            return '#2AFE14';
+          case 'primary':
+            return '#970001';
+          case 'secondary':
+            return '#5B32F2';
+          case 'tertiary':
+            return '#A6A6A6';
+          case 'quaternary':
+            return '#2AFE14';
+          case 'stroke':
+            return '#000000';
+          case 'nav':
+            return '#4C4C4C';
+          case 'byte':
+            return 'rgba(42, 254, 20, 0.50)';
         }
         break;
     }
   };
 
   const colorModeSwitch = () => {
-    let newColorway = colorway === "one" ? "two" : "one";
+    let newColorway = colorway === 'one' ? 'two' : 'one';
     setColorway(newColorway);
     window.colorMode = newColorway;
-    setToggle(newColorway === "two" ? sunIcon : brewIcon);
-    localStorage.setItem("mode", newColorway);
+    setToggle(newColorway === 'two' ? sunIcon : brewIcon);
+    localStorage.setItem('mode', newColorway);
   };
 
   const createPopup = (event, text) => {
@@ -125,8 +127,8 @@ export default function About() {
 
     const newPopup = (
       <p
-        className="popup"
-        style={{ position: "absolute", top: offsetY, left: offsetX }}
+        className='popup'
+        style={{ position: 'absolute', top: offsetY, left: offsetX }}
         onClick={() => {
           setPopup(<></>);
         }}
@@ -143,19 +145,19 @@ export default function About() {
   }, [colorway]);
 
   return (
-    <div className={"about-" + colorway}>
+    <div className={'about-' + colorway}>
       <NavBar
-        background={getColors("background")}
+        background={getColors('background')}
         fun={colorModeSwitch}
         icon={toggle}
-        textColor={getColors("nav")}
+        textColor={getColors('nav')}
       />
       {popup}
-      <div className="background-container">
-        <ul className="bytes-ul">
+      <div className='background-container'>
+        <ul className='bytes-ul'>
           {randomBytes().map((byte, index) => {
             return (
-              <li key={"item " + index} style={handleStyle()}>
+              <li key={'item ' + index} style={handleStyle()}>
                 {byte}
               </li>
             );
@@ -163,47 +165,47 @@ export default function About() {
         </ul>
       </div>
       <svg
-        height="1600px"
-        width={window.innerWidth <= "600px" ? "600px" : "100%"}
-        className="git-repo"
+        height='1600px'
+        width={window.innerWidth <= '600px' ? '600px' : '100%'}
+        className='git-repo'
       >
         {git.map((commit, index) => {
           switch (commit.type) {
-            case "line":
+            case 'line':
               return (
                 <path
                   d={commit.d}
-                  fill="none"
+                  fill='none'
                   stroke={getColors(commit.color)}
-                  strokeWidth="3"
+                  strokeWidth='3'
                   className={commit.color}
                   key={`line-${index}`}
                 />
               );
-            case "circle":
+            case 'circle':
               return (
                 <circle
                   cx={commit.x}
                   cy={commit.y}
-                  r="8px"
+                  r='8px'
                   fill={getColors(commit.color)}
-                  stroke={getColors("stroke")}
-                  strokeWidth="3"
+                  stroke={getColors('stroke')}
+                  strokeWidth='3'
                   key={`circle-${index}`}
                 />
               );
-            case "text":
+            case 'text':
               if (commit.expand) {
                 return (
                   <text
                     x={commit.x}
                     y={commit.y}
-                    fontSize="14"
-                    fill={getColors("text")}
+                    fontSize='14'
+                    fill={getColors('text')}
                     key={`text-${index}`}
-                    textDecoration="underline"
+                    textDecoration='underline'
                     onClick={(event) => createPopup(event, commit.popup)}
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: 'pointer' }}
                     id={`text-${index}`}
                   >
                     {commit.text}
@@ -214,8 +216,8 @@ export default function About() {
                 <text
                   x={commit.x}
                   y={commit.y}
-                  fontSize="14"
-                  fill={getColors("text")}
+                  fontSize='14'
+                  fill={getColors('text')}
                   key={`text-${index}`}
                 >
                   {commit.text}

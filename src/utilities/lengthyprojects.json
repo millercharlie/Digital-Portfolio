@@ -2,78 +2,73 @@
   {
     "shorthand": "patco",
     "title": "PATCO Speedline Modernization Project",
+    "accent": "#d20e40",
     "image": {
-      "src": "../assets/showcase/patco/patco_8th_market.jpg",
+      "src": "../../assets/showcase/patco/patco_8th_market.jpg",
       "alt": "PATCO Train at 8th and Market Street"
     },
     "content": [
-      "When the revenue of American railroad companies declined in the wake of the increased usage of automobiles and the suburbanization of American cities, many companies ended up folding completely. Increasing consolidations and mergers proved to be only speed bumps to total collapse. The old model of dense, streetcar suburbs with short commuting was paving way to increased suburban commuting by car, which saw suburbs sprawl and grow increasingly distant from city centers. As Americans grew more reliant on cars, one railroad agency saw an opportunity in this new landscape. This agency is the Port Authority Transit COrporation, or PATCO, created after ___ to shuttle commuters and travelers from Center City Philadelphia to suburban New Jersey. PATCO sought to fundamentally change the method of railroad commuting by focusing on a previously-ignored sect of American cities–the suburbs.",
+      "When the revenue of American railroad companies declined in the wake of the increased usage of automobiles and the suburbanization of American cities, many companies ended up folding completely. Increasing consolidations and mergers proved to be only speed bumps to total collapse. The old model of dense, streetcar suburbs with short commuting was paving way to increased suburban commuting by car, which saw suburbs sprawl and grow increasingly distant from city centers. As Americans grew more reliant on cars, one railroad agency saw an opportunity in this new landscape. This agency is the Port Authority Transit COrporation, or PATCO, was created to shuttle commuters and travelers from Center City Philadelphia to suburban New Jersey. PATCO sought to fundamentally change the method of railroad commuting by focusing on a previously-ignored sect of American cities–the suburbs.",
       {
         "image": {
-          "src": "../assets/window_images/ui_designs.png",
-          "alt": "PATCO train over the Ben Franklin Bridge"
+          "src": "../../assets/showcase/patco/patco_haddonfield.JPG",
+          "alt": "PATCO Haddonfield Station"
         }
       },
-      "As such, PATCO is defined by a few key characteristics that made it unique among railroads at the time. PATCO prioritized speed above all-else, which made train travel extremely competitive with driving. Trains had a top-speed of 80mph (), which certainly made it quicker for commuters to get to Philadelphia than driving, especially factoring in traffic on I-95 (). PATCO’s stations were also few and far between. This allowed trains to reach their top speed for a longer length of the journey, as fewer accelerations and decelerations were required. One legitimate advantage of driving has always been its first/last-mile travel time. While trains require people to walk or cycle to stations, cars offer flexibility to start one’s journey at any time from any place. PATCO took advantage of this flexibility by adding large parking lots to many stations, which allowed suburban commuters to easily drive up to the station and bypass all traffic on the freeway. PATCO also ran 24/7, which was certainly unusual for the time, and even is today ().",
+      "As such, PATCO is defined by a few key characteristics that made it unique among railroads at the time. PATCO prioritized speed above all-else, which made train travel extremely competitive with driving. Trains had a top-speed of 75mph, which certainly made it quicker for commuters to get to Philadelphia than driving, especially factoring in traffic on I-95 (). PATCO's stations were also few and far between. This allowed trains to reach their top speed for a longer length of the journey, as fewer accelerations and decelerations were required. One legitimate advantage of driving has always been its first/last-mile travel time. While trains require people to walk or cycle to stations, cars offer flexibility to start one's journey at any time from any place. PATCO took advantage of this flexibility by adding large parking lots to many stations, which allowed suburban commuters to easily drive up to the station and bypass all traffic on the freeway. PATCO also ran 24/7, which was certainly unusual for the time, and even is today ().",
       {
         "subheader": "Current State"
       },
-      "PATCO currently has a ridership of 15,000 () daily, with 15 () stations. However, I’m not here to analyze the PATCO system itself, but rather its design language and modernity. How does it do on this front?\n\nWell, it depends.",
+      "PATCO currently has a ridership of roughly 20,000 daily, with 14 stations. However, I'm not here to analyze the PATCO system itself, but rather its design language and modernity. How does it do on this front?\n\nWell, it depends.",
       {
         "image": {
-          "src": "",
+          "src": "../../assets/showcase/patco/patco_website.png",
           "alt": "PATCO Website"
         }
       },
-      "I would argue that much of the system’s design language is stuck in the past. Station signs look rather worn, with the website being in a rather dire and cluttered state. Onboard screens on the system could definitely use a revamp, combined with the design language of the Port Authority. I think the PATCO logo and typeface (which I cannot for the life of me find) are fine as-is, and there isn’t much of a need to change it.",
+      "I would argue that much of the system's design language is stuck in the past. Station signs look rather worn, with the website being in a rather dire and cluttered state. Onboard screens on the system could definitely use a revamp, combined with the design language of the Port Authority. I think the PATCO logo and typeface (which I cannot for the life of me find) are fine as-is, and there isn't much of a need to change it.",
       {
         "subheader": "Motivation"
       },
-      "Why do this? Well, I unfortunately cannot consider myself to be a daily PATCO rider, but I took a trip to Philadelphia recently. After hearing about the system and its uniqueness, I decided to ride it, and it was an extremely comfortable, pleasant experience overall. However, I couldn’t stop looking at the map of the system, which was a bit cluttered and hard to read.",
+      "Why do this? Well, I unfortunately cannot consider myself to be a daily PATCO rider, but I took a trip to Philadelphia recently. After hearing about the system and its uniqueness, I decided to ride it, and it was an extremely comfortable, pleasant experience overall. However, I couldn't stop looking at the map of the system, which was a bit cluttered and hard to read.",
       {
         "image": {
-          "src": "../assets/showcase/patco/map_on_train.png",
-          "alt": "PATCO Map on Train"
+          "src": "../../assets/showcase/patco/patco_map_on_train.png",
+          "alt": ""
         }
       },
-      "I began thinking of ways I would draw the system map out, given some past experience I have redesigning other transit maps for fun. I then proceeded to spiral down a rabbit hole of PATCO’s system design, which also looked rather dated to me. The system was the most modern train line in the world when it was constructed, and I believe a revamp of its design could help it carry on this legacy. Such a unique and trailblazing system deserves a design language that is equally world-class. I redesigned 5 aspects of PATCO–each listed below. Feel free to click to whichever you wish!\n\n000. Design Language\n001. System Map\n010. PATCO Freedom Card\n011. Station Signage\n100. Interior Train Screens\n101. Website",
+      "I began thinking of ways I would draw the system map out, given some past experience I have redesigning other transit maps for fun. I then proceeded to spiral down a rabbit hole of PATCO's system design, which also looked rather dated to me. The system was the most modern train line in the world when it was constructed, and I believe a revamp of its design could help it carry on this legacy. Such a unique and trailblazing system deserves a design language that is equally world-class. I redesigned 5 aspects of PATCO–each listed below. Feel free to click to whichever you wish!\n\n000. Design Language\n001. System Map\n010. PATCO Freedom Card\n011. Station Signage\n100. Interior Train Screens\n101. Website",
       {
         "subheader": "000: Design Language"
       },
-      "Before we look at the designs themselves, I want to discuss the design language I have given the system. I may have mentioned above that I have kept the PATCO logo and logo typeface the same. I believe this logo and its typeface are relatively historic, and I want to preserve parts of the system that are more timeless. However, I have chosen a different typeface for the rest of the system’s design. Apparat Semi-Condensed I believe strikes a good balance of being visually interesting while still looking clean and modern. I’ve also chosen Avenir for the website, as it is a more readable typeface for text-heavy paragraphs. For colors, I decided to keep PATCO’s iconic red hue for use, along with pure white as an accent.",
+      "Before we look at the designs themselves, I want to discuss the design language I have given the system. I may have mentioned above that I have kept the PATCO logo and logo typeface the same. I believe this logo and its typeface are relatively historic, and I want to preserve parts of the system that are more timeless. However, I have chosen a different typeface for the rest of the system's design. Apparat Semi-Condensed I believe strikes a good balance of being visually interesting while still looking clean and modern. I've also chosen Avenir for the website, as it is a more readable typeface for text-heavy paragraphs. For colors, I decided to keep PATCO's iconic red hue for use, along with pure white as an accent.",
       {
         "image": {
-          "src": "../assets/showcase/patco/typefaces.png",
+          "src": "../../assets/showcase/patco/typefaces.png",
           "alt": "PATCO Typefaces"
         }
       },
       "What I really wanted though was an easily identifiable icon that represents PATCO aside from the logo. I wanted something that could be used internally for presentations as well as externally to immediately identify the service. People unfamiliar with PATCO may not understand what the current logo represents, which is why I think a supplement is necessary. To that end I created an icon based on the front face of a PATCO train.",
       {
         "image": {
-          "src": "../assets/showcase/patco/train_icon.png",
+          "src": "../../assets/showcase/patco/train_icon.svg",
           "alt": "My PATCO Train Icon"
         }
       },
-      "I believe this icon is clear in its intention, clean, and representative of the system. I designed this icon to be reusable with different colors and in different contexts, and I think it is versatile in this approach. You may see it in other redesigns for this project. I think people would immediately recognize this icon as denoting a train, which is more recognizable than the PATCO brand itself. I did go through a few iterations of this icon, which are all below!",
-      {
-        "image": {
-          "src": "../assets/showcase/patco/train_icon_iterations",
-          "alt": "My PATCO Train Icon Iterations"
-        }
-      },
+      "I believe this icon is clear in its intention, clean, and representative of the system. I designed this icon to be reusable with different colors and in different contexts, and I think it is versatile in this approach. You may see it in other redesigns for this project. I think people would immediately recognize this icon as denoting a train, which is more recognizable than the PATCO brand itself.",
       {
         "subheader": "System Map"
       },
-      "Now for the part that sparked this project. I honestly have no idea what PATCO’s current map actually is, as I’ve seen 4-5 slightly different official maps of the system that are in use across its various websites. I saw one variation in the train itself, which I have put a photo of above. There is also the first map below, which is in use on PATCO’s main website under the “Maps & Schedules” () section. However, the PATCO Perks website has a different, more colorful map, which is also below.",
+      "Now for the part that sparked this project. I honestly have no idea what PATCO's current map actually is, as I've seen 4-5 slightly different official maps of the system that are in use across its various websites. I saw one variation in the train itself, which I have put a photo of above. There is also the first map below, which is in use on PATCO's main website under the “Maps & Stations” section. However, the PATCO Perks website has a different, more colorful map, which is also below.",
       {
         "image": {
-          "src": "../assets/showcase/patco/grayscale_map",
+          "src": "../../assets/showcase/patco/grayscale_map",
           "alt": "Grayscale Original PATCO Map"
         }
       },
       {
         "image": {
-          "src": "../assets/showcase/patco/colorful_map",
+          "src": "../../assets/showcase/patco/colorful_map",
           "alt": "Colorful Original PATCO Map"
         }
       },
@@ -82,23 +77,24 @@
       },
       {
         "image": {
-          "src": "../assets/showcase/patco/map_first_draft",
+          "src": "../../assets/showcase/patco/map_first_draft",
           "alt": "My First Draft of the PATCO Map"
         }
       },
-      "When designing my map, I smoothed out corners and right angles, and I believe it looks more modern as well as clear to follow. While the original maps show the routes of SEPTA’s Market-Frankford and Broad Street Lines, in addition to New Jersey Transit’s River LINE and Atlantic City Line, I initially chose to omit them entirely, believing them to clutter the map unnecessarily. I instead marked any connections to other rapid transit with the agency’s logo, as shown on 8th Street Station. I kept the geographic names that the original map has, but decided to change the “Philadelphia” name to “Pennsylvania”, as I believe it equalizes both states. I kept the Delaware River’s color as-is, since it provides a nice contrast to the line and other features. I also omitted parking information, as PATCO’s own website has that information and I believe most people who use the system really only stick to a few stations that they know, making this information unnecessary. I finally simplified station names, as some are unnecessarily long. For instance, my “16th Street” is actually called “15th/16th Street and Locust Street” () on PATCO’s own system. Despite this, there are a few issues with this first draft.\n\n1. While denoting connections to SEPTA and New Jersey Transit is important, I think it’s even more important to keep some semblance of which lines can take people which direction. I don’t want an exact route diagram like the original maps, but I think some sort of indication would be great.\n2. There is no key. While I really meant for these maps to be placed in trains and figured the information present would be recognizable to commuters, I think explicitly pointing out what everything on the map is will help those unfamiliar with the system. In design in general it’s usually good practice to never assume clients have prior knowledge of how something works or looks.\n3. There is one more glaring issue, which I’ll discuss below.",
+      "When designing my map, I smoothed out corners and right angles, and I believe it looks more modern as well as clear to follow. While the original maps show the routes of SEPTA's Market-Frankford and Broad Street Lines, in addition to New Jersey Transit's River LINE and Atlantic City Line, I initially chose to omit them entirely, believing them to clutter the map unnecessarily. I instead marked any connections to other rapid transit with the agency's logo, as shown on 8th Street Station. I kept the geographic names that the original map has, but decided to change the “Philadelphia” name to “Pennsylvania”, as I believe it equalizes both states. I kept the Delaware River's color as-is, since it provides a nice contrast to the line and other features. I also omitted parking information, as PATCO's own website has that information and I believe most people who use the system really only stick to a few stations that they know, making this information unnecessary. I finally simplified station names, as some are unnecessarily long. For instance, my “16th Street” is actually called “15th/16th Street and Locust Street” () on PATCO's own system. Despite this, there are a few issues with this first draft.\n\n1. While denoting connections to SEPTA and New Jersey Transit is important, I think it's even more important to keep some semblance of which lines can take people which direction. I don't want an exact route diagram like the original maps, but I think some sort of indication would be great.\n2. There is no key. While I really meant for these maps to be placed in trains and figured the information present would be recognizable to commuters, I think explicitly pointing out what everything on the map is will help those unfamiliar with the system. In design in general it's usually good practice to never assume clients have prior knowledge of how something works or looks.\n3. There is one more glaring issue, which I'll discuss below.",
       {
         "image": {
-          "src": "../assets/showcase/patco/map_second_draft",
+          "src": "../../assets/showcase/patco/map_second_draft",
           "alt": "My Second Draft of the PATCO Map"
         }
       },
-      "PATCO should definitely figure out which of their maps map is updated, because I think it could confuse a lot of people. This made my initial map wrong, as I mistakingly believed that a few stations in the system were not accessible since the map on their website denotes this fact. However, the PATCO Perks map shows that all stations are accessible. While working on a second draft, I marked accessibility information in the map’s new key, since a quick search reveals this to be the case.\n\nThe most notable difference though is the added arrows. As mentioned above, I wanted some way to denote SEPTA and NJT connections, so I added the general path of routes that connect to various PATCO stations. I gave them each a unique, distinct color, if one wasn’t provided by the agency. I also renamed the “8th Street” station to “Market Street”, as PATCO utilizes this name on their own website in one instance.\n\nOne part of the map that I think needs improvement is the connection between 16th Street, 13th Street, and SEPTA’s Walnut-Locust Station via pedestrian tunnels. It’s a complicated service pattern that doesn’t fit cleanly onto the map, and while PATCO’s own oval does a decent job at representing this, I honestly found myself confused what it was denoting while first looking at it."
+      "PATCO should definitely figure out which of their maps map is updated, because I think it could confuse a lot of people. This made my initial map wrong, as I mistakingly believed that a few stations in the system were not accessible since the map on their website denotes this fact. However, the PATCO Perks map shows that all stations are accessible. While working on a second draft, I marked accessibility information in the map's new key, since a quick search reveals this to be the case.\n\nThe most notable difference though is the added arrows. As mentioned above, I wanted some way to denote SEPTA and NJT connections, so I added the general path of routes that connect to various PATCO stations. I gave them each a unique, distinct color, if one wasn't provided by the agency. I also renamed the “8th Street” station to “Market Street”, as PATCO utilizes this name on their own website in one instance.\n\nOne part of the map that I think needs improvement is the connection between 16th Street, 13th Street, and SEPTA's Walnut-Locust Station via pedestrian tunnels. It's a complicated service pattern that doesn't fit cleanly onto the map, and while PATCO's own oval does a decent job at representing this, I honestly found myself confused what it was denoting while first looking at it."
     ]
   },
   {
     "shorthand": "solomon",
     "title": "Solomon",
+    "accent": "d20e40",
     "image": {
       "src": "/assets/showcase/solomon/website_mockup.png",
       "alt": "Solomon Mockup"
@@ -220,6 +216,38 @@
         "subheader": "111. Conclusions"
       },
       "Ultimately, the possibilities are endless for Solomon. I truly believe in this product, and hope that it can indeed help educate people for the Kingdom of God.\n\n\n\n"
+    ]
+  },
+  {
+    "shorthand": "ca-rail",
+    "title": "California Intercity Rail Diagram",
+    "accent": "#3086b1",
+    "image": {
+      "src": "/assets/showcase/ca-rail/map.png",
+      "alt": "California Intercity Rail Map"
+    },
+    "content": [
+      {
+        "subheader": "000. A Background"
+      },
+      "Recently I've been thinking more about California's rail system and how it operates with the rather extensive Thruway network. When looking for a comprehensive map of these Amtrak services, I was disappointed to see that they are either non-existent, extremely outdated, or look terrible. I've designed a few maps now, and thought I would try something a little different and work on my own map of California's Amtrak Intercity Rail & Thruway Service.",
+      {
+        "subheader": "001. A Few Notes"
+      },
+      "1: This is the current state of California Intercity Rail & Thruway Service. I did not include CAHSR or the future truncation of the Gold Runner at Merced. Future connections such as the Metro D Line at Westwood/UCLA were also omitted. I would love to make a future version of the map showing these connections and expansions, though!",
+      "2: I did not intend for this to be an official map of any kind. No accessibility information is present, in addition to important phone numbers/other information you would expect in a system diagram.",
+      "3: It took a ton of research–particularly on the Thruway side. There is little and often contradictory information about Thruway service coming from different websites. Defunct stations were commonly listed on Amtrak's website (such as Visalia) and I constantly had to check if listed stations actually existed. This is a large reason why this map took me almost two months to complete.",
+      "4: I'm counting a “Thruway Route” as a route that is bookable on Amtrak's website and/or is present in service timetables. The “Route 67” I have here is not bookable on Amtrak's website, but it is on the Gold Runner's own timetable. I made up the route number here to keep it consistent with other routes.",
+      "5: “Route 21” here is my own creation. When researching this route, I noticed that there was a “21 Express” route from San Jose to Los Angeles listed in tiny font on the Capitol Corridor's timetable that wasn't present anywhere on Apple/Google maps. There was no other mention of this route or the number “21” on any other schedules to my knowledge, but the Pacific Surfliner's website describes a “Route 17” which takes the exact same route and has the exact same bus numbers as the Capitol Corridor's route. I agonized over what to do with this contradiction, but ultimately decided it made the most sense to combine the routes into one continuous route from the Bay Area to Los Angeles.",
+      "6: I renamed some stations. This was mostly for clarity or personal preference (Lathrop-Manteca becoming Lathrop/Manteca for instance) but I also wanted to clean up the various naming conventions for stations across different agencies. In general, if a station was the only one in a city, I would drop other monikers (such as Riverside-Downtown). Stations in close proximity to each other (such as the various Thruway stops in Yosemite) were simplified to one name for clarity, but I added a \"*\" to denote this fact.",
+      "7: Some Thruway routes are operated by other agencies. I chose to make a distinction with ACE and the SouthWest Bus, while combining routes run by other agencies (such as YARTS and the SCMTD) into the generic “Thruway Bus” label. ACE is a rail service, so I wanted to make that distinction clear, and SouthWest operates primarily in Oregon, and thus has little to do with Amtrak California aside from the three stops it makes within California's borders. If you disagree with this labeling, I'm welcome to hear your reasoning!",
+      "8: There are still improvements I can make. I'm still not entirely happy with the key/legend, as there are an absurd number of metro/BRT connections that add clutter to the map. There is also a lot of empty space in parts of California with less service, which isn't ideal.",
+
+      "I hope you enjoy! A full resolution link is below.",
+      {
+        "link": "https://drive.google.com/file/d/1dLLKIBgQqYQaDbX3oOKuNrFlKlv7yKh1/view?usp=sharing"
+      },
+      "\n\n\n\n"
     ]
   }
 ]

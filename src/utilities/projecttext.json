@@ -10,9 +10,7 @@
       "Designed a clean, intuitive interface",
       "Incorporated User Experience principles into this design"
     ],
-    "tools": [
-      "Figma"
-    ]
+    "tools": ["Figma"]
   },
   "2": {
     "title": "Markdown-Style Notes",
@@ -25,13 +23,7 @@
       "Creating a notes application that uses Markdown syntax",
       "Employing Electron to allow HTML/CSS/JS code to be transcribed automatically"
     ],
-    "tools": [
-      "Electron",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Figma"
-    ]
+    "tools": ["Electron", "HTML", "CSS", "JavaScript", "Figma"]
   },
   "3": {
     "title": "UI Designs",
@@ -44,9 +36,6 @@
       "Created app and website designs",
       "Used Figma for UI designs and Adobe Illustrator for asset creation"
     ],
-    "tools": [
-      "Figma",
-      "Adobe Illustrator"
-    ]
+    "tools": ["Figma", "Adobe Illustrator"]
   }
 }

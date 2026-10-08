@@ -1,6 +1,8 @@
-import PropTypes from "prop-types";
-import "/src/index.css";
-import text from "../utilities/windowtext.json";
+import PropTypes from 'prop-types';
+import '/src/index.css';
+import text from '../utilities/windowtext.json';
+import expandIcon from '../assets/menu_icons/expand_icon.png';
+import closeIcon from '../assets/menu_icons/close_icon.png';
 
 /**
  * Represents a window of this website. Each window corresponds with an app folder on the Home screen.
@@ -27,57 +29,59 @@ function Window({ mode, isVisible, func }) {
 
   const windowText = text[mode];
   const windowTitle =
-    (window.innerWidth <= 600 || window.outerWidth <= 600) ? windowText.alt : windowText.title;
-  const image = text[mode].image;
+    window.innerWidth <= 600 || window.outerWidth <= 600
+      ? windowText.alt
+      : windowText.title;
+  const images = import.meta.glob('../assets/window_images/*.png', {
+    eager: true,
+    import: 'default',
+  });
+  const image = images[text[mode].image];
 
   return (
     <div
-      className="window"
+      className='window'
       style={
         isVisible
-          ? { visibility: "visible", filter: "drop-shadow(1 1 1rem black)" }
-          : { visibility: "hidden", display: "none" }
+          ? { visibility: 'visible', filter: 'drop-shadow(1 1 1rem black)' }
+          : { visibility: 'hidden', display: 'none' }
       }
     >
-      <div className="window-heading">
-        <h2 className="window-heading-text">{windowTitle}</h2>
-        <div className="window-heading-icons">
+      <div className='window-heading'>
+        <h2 className='window-heading-text'>{windowTitle}</h2>
+        <div className='window-heading-icons'>
           <a
             href={
-              mode !== "Home"
-                ? mode.includes("project-")
+              mode !== 'Home'
+                ? mode.includes('project-')
                   ? `projects/${mode.toLowerCase()}`
                   : mode.toLowerCase()
-                : "/"
+                : '/'
             }
-            className="window-link"
+            className='window-link'
           >
-            <div className="icon-button">
-              <img
-                src="../assets/menu_icons/expand_icon.png"
-                alt="Expand"
-                className="icon-image"
-              />
+            <div className='icon-button'>
+              <img src={expandIcon} alt='Expand' className='icon-image' />
             </div>
           </a>
-          <div className="icon-button">
+          <div className='icon-button'>
             <img
-              src="../assets/menu_icons/close_icon.png"
-              alt="Close"
-              className="icon-image"
-              id="close"
+              src={closeIcon}
+              alt='Close'
+              className='icon-image'
+              id='close'
               onClick={handleClick}
             />
           </div>
         </div>
       </div>
-      <div className="main-content" style={{ height: "60vh", marginTop: "0" }}>
-        <h3 className="window-main-text">{windowText.body}</h3>
+      <div className='main-content' style={{ height: '60vh', marginTop: '0' }}>
+        <h3 className='window-main-text'>{windowText.body}</h3>
         {image && (
           <img
             src={image}
             alt={`${windowTitle}-image`}
-            className="window-img"
+            className='window-img'
           />
         )}
       </div>

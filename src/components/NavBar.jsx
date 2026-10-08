@@ -1,9 +1,9 @@
-import CULogo from "../assets/navbar_icons/cu.png";
-import GULogo from "../assets/navbar_icons/gu.png";
-import CFLogo from "../assets/navbar_icons/cf.png";
-import GFLogo from "../assets/navbar_icons/gf.png";
-import PropTypes from "prop-types";
-import { useState } from "react";
+import CULogo from '../assets/navbar_icons/cu.png';
+import GULogo from '../assets/navbar_icons/gu.png';
+import CFLogo from '../assets/navbar_icons/cf.png';
+import GFLogo from '../assets/navbar_icons/gf.png';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 /**
  * Represents a navigation bar to be displayed on all pages.
@@ -25,7 +25,7 @@ function NavBar({ background, fun, icon, textColor }) {
    */
   const handleStyles = () => {
     let styles = {};
-    if (window.colorMode === "one") {
+    if (window.colorMode === 'one') {
       styles = {
         logo: {
           unfilled: CULogo,
@@ -53,7 +53,7 @@ function NavBar({ background, fun, icon, textColor }) {
   /**
    * Dynamically updates the website for mobile devices
    */
-  window.addEventListener("resize", () => {
+  window.addEventListener('resize', () => {
     if (window.innerWidth <= 600) {
       setVisibility(false);
     } else {
@@ -71,98 +71,98 @@ function NavBar({ background, fun, icon, textColor }) {
 
   return (
     <nav
-      className="nav-bar"
+      className='nav-bar'
       style={
         visibility
-          ? background === ""
-            ? { backgroundColor: "rgba(255, 255, 255, 0)" }
+          ? background === ''
+            ? { backgroundColor: 'rgba(255, 255, 255, 0)' }
             : { backgroundColor: background }
-          : { backgroundColor: "rgba(0, 0, 0, 0)" }
+          : { backgroundColor: 'rgba(0, 0, 0, 0)' }
       }
     >
       <div
-        className="nav-left"
+        className='nav-left'
         style={
           (window.innerWidth <= 600 ||
             window.outerWidth <= 600) /* TODO: Check outerWidth */ &&
           !icon
-            ? { width: "325px" }
-            : { visibility: "visible" }
+            ? { width: '325px' }
+            : { visibility: 'visible' }
         }
       >
-        <a href="/">
+        <a href='/'>
           <img
             src={handleStyles().logo.unfilled}
-            style={{ maxWidth: "70px" }}
-            className="nav-image"
-            alt={"nav-image-" + window.colorMode}
+            style={{ maxWidth: '70px' }}
+            className='nav-image'
+            alt={'nav-image-' + window.colorMode}
           />
           <img
             src={handleStyles().logo.filled}
-            className={"nav-image-hover"}
-            alt={"nav-image-hover"}
+            className={'nav-image-hover'}
+            alt={'nav-image-hover'}
           />
         </a>
         <div
           style={
             visibility
-              ? { visibility: "visible", display: "inline-flex" }
-              : { visibility: "hidden", display: "none" }
+              ? { visibility: 'visible', display: 'inline-flex' }
+              : { visibility: 'hidden', display: 'none' }
           }
         >
-          <a href="/projects">
-            <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
+          <a href='/projects'>
+            <h4 style={{ color: textColor || 'rgba(0, 0, 0, 0.70)' }}>
               Projects
             </h4>
           </a>
-          <a href="/design-portfolio">
-            <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
+          <a href='/design-portfolio'>
+            <h4 style={{ color: textColor || 'rgba(0, 0, 0, 0.70)' }}>
               Designs
             </h4>
           </a>
-          <a href="/about">
-            <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>About</h4>
+          <a href='/about'>
+            <h4 style={{ color: textColor || 'rgba(0, 0, 0, 0.70)' }}>About</h4>
           </a>
-          <a href="/contact">
-            <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
+          <a href='/contact'>
+            <h4 style={{ color: textColor || 'rgba(0, 0, 0, 0.70)' }}>
               Contact
             </h4>
           </a>
         </div>
         <div>
           <img
-            src="../assets/navbar_icons/hamburger_right.svg"
-            alt="hamburger-right"
-            className="nav-darktoggle hamburger"
+            src='../assets/navbar_icons/hamburger_right.svg'
+            alt='hamburger-right'
+            className='nav-darktoggle hamburger'
             onClick={handleDropdown}
             style={
               visibility
-                ? { visibility: "hidden", display: "none" }
-                : { visibility: "visible", display: "inline-flex" }
+                ? { visibility: 'hidden', display: 'none' }
+                : { visibility: 'visible', display: 'inline-flex' }
             }
           />
         </div>
       </div>
       {dropdown && (
-        <div className="dropdown-menu-container">
-          <div className="dropdown-menu">
-            <a href="/projects">
-              <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
+        <div className='dropdown-menu-container'>
+          <div className='dropdown-menu'>
+            <a href='/projects'>
+              <h4 style={{ color: textColor || 'rgba(0, 0, 0, 0.70)' }}>
                 Projects
               </h4>
             </a>
-            <a href="/design-portfolio">
-              <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
+            <a href='/design-portfolio'>
+              <h4 style={{ color: textColor || 'rgba(0, 0, 0, 0.70)' }}>
                 Designs
               </h4>
             </a>
-            <a href="/about">
-              <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
+            <a href='/about'>
+              <h4 style={{ color: textColor || 'rgba(0, 0, 0, 0.70)' }}>
                 About
               </h4>
             </a>
-            <a href="/contact">
-              <h4 style={{ color: textColor || "rgba(0, 0, 0, 0.70)" }}>
+            <a href='/contact'>
+              <h4 style={{ color: textColor || 'rgba(0, 0, 0, 0.70)' }}>
                 Contact
               </h4>
             </a>
@@ -170,8 +170,8 @@ function NavBar({ background, fun, icon, textColor }) {
         </div>
       )}
       {icon && (
-        <button onClick={fun} className="nav-right">
-          <img src={icon} alt={"Colorway Toggle"} className="nav-darktoggle" />
+        <button onClick={fun} className='nav-right'>
+          <img src={icon} alt={'Colorway Toggle'} className='nav-darktoggle' />
         </button>
       )}
     </nav>

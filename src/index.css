@@ -13,21 +13,21 @@
   /* color-scheme: light dark; */
   background-repeat: no-repeat;
   background-size: auto 100vw;
-  --default-orange: #F2873B;
-  --default-teal: #7DD6D1;
-  --light-gray: #D7D7D7;
-  --medium-gray: #4C4C4C;
+  --default-orange: #f2873b;
+  --default-teal: #7dd6d1;
+  --light-gray: #d7d7d7;
+  --medium-gray: #4c4c4c;
 
   /* Homebrew Color Scheme */
-  --homebrew-color-green: #2AFE14;
-  --homebrew-color-gray: #A6A6A6;
+  --homebrew-color-green: #2afe14;
+  --homebrew-color-gray: #a6a6a6;
   --homebrew-color-red: #970001;
-  --homebrew-color-blue: #5B32F2;
+  --homebrew-color-blue: #5b32f2;
 }
 
 /* Home Page Styles */
 .home-one {
-  background-image: url("assets/init-wallpaper.jpg");
+  background-image: url('assets/init-wallpaper.jpg');
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -64,7 +64,10 @@ svg.easter-egg path {
   stroke-dashoffset: 1100.7;
   stroke-dasharray: 1100.7;
   stroke-linejoin: round;
-  animation: outline 8s forwards, un-outline 8s 8s forwards, fadeOut 1s 15s forwards;
+  animation:
+    outline 8s forwards,
+    un-outline 8s 8s forwards,
+    fadeOut 1s 15s forwards;
 }
 
 @media only screen and (max-width: 600px) {
@@ -77,10 +80,9 @@ svg.easter-egg path {
   }
 }
 
-
 /* About Page Styles */
 .about-one {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .about-two {
   background-color: #000000;
@@ -171,8 +173,8 @@ svg.easter-egg path {
   min-height: 30px;
   margin-bottom: 10px;
   padding: 5px;
-  box-shadow: inset 0 0 3px #D7D7D7;
-  border: 1px solid #D7D7D7;
+  box-shadow: inset 0 0 3px #d7d7d7;
+  border: 1px solid #d7d7d7;
   border-radius: 5px;
   font-family: ubuntu, sans-serif;
   color: var(--medium-gray);
@@ -181,10 +183,10 @@ svg.easter-egg path {
   width: 30vw;
   min-height: 120px;
   padding: 5px;
-  border: 1px solid #D7D7D7;
+  border: 1px solid #d7d7d7;
   border-radius: 5px;
   resize: vertical;
-  box-shadow: inset 0 0 3px #D7D7D7;
+  box-shadow: inset 0 0 3px #d7d7d7;
   font-family: ubuntu, sans-serif;
   color: var(--medium-gray);
 }
@@ -225,8 +227,8 @@ svg.easter-egg path {
     min-height: 30px;
     margin-bottom: 10px;
     padding: 5px;
-    box-shadow: inset 0 0 3px #D7D7D7;
-    border: 1px solid #D7D7D7;
+    box-shadow: inset 0 0 3px #d7d7d7;
+    border: 1px solid #d7d7d7;
     border-radius: 5px;
     font-family: ubuntu, sans-serif;
     color: var(--medium-gray);
@@ -235,8 +237,8 @@ svg.easter-egg path {
     width: 75vw;
     min-height: 120px;
     padding: 5px;
-    box-shadow: inset 0 0 3px #D7D7D7;
-    border: 1px solid #D7D7D7;
+    box-shadow: inset 0 0 3px #d7d7d7;
+    border: 1px solid #d7d7d7;
     border-radius: 5px;
     resize: vertical;
     font-family: ubuntu, sans-serif;
@@ -247,7 +249,6 @@ svg.easter-egg path {
     margin-top: 75px;
   }
 }
-
 
 svg.git-repo path.primary {
   stroke-dashoffset: 1560;
@@ -432,9 +433,8 @@ svg.git-repo text {
 .scroll-section {
   position: absolute;
   bottom: 0;
-  width: 5000vw;
+  width: max-content;
   will-change: transform;
-  scroll-behavior: smooth;
 }
 
 @media only screen and (max-width: 600px) {
@@ -479,7 +479,6 @@ svg.git-repo text {
   }
 }
 
-
 /* Project Showcase Page Styles */
 .ps-heading {
   margin: 50px 0 0 50px;
@@ -487,7 +486,6 @@ svg.git-repo text {
 .ps-title {
   font-family: 'Ubuntu', sans-serif;
   font-size: 60px;
-  color: var(--default-teal);
 }
 .ps-hr {
   width: 50vw;
@@ -543,8 +541,8 @@ svg.git-repo text {
 
 /* Design Portfolio Styles */
 .dp-container {
-  background-color: #0B2747;
-  background-image: url("../assets/design_portfolio/stars_background.png");
+  background-color: #0b2747;
+  background-image: url('../assets/design_portfolio/stars_background.png');
   background-size: cover;
 }
 .dp-img-container {
@@ -604,7 +602,7 @@ svg.git-repo text {
 /* Transit Projects Page Styles */
 .tp-background {
   /*background-color: #5C5C5C;*/
-  background: url("assets/showcase/patco/patco_8th_market.jpg") no-repeat;
+  background: url('assets/showcase/patco/patco_8th_market.jpg') no-repeat;
   background-size: cover;
   width: 100vw;
   min-height: 100vh;
@@ -673,26 +671,37 @@ svg.git-repo text {
   justify-content: center;
 }
 .sub-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0;
   border: 1px solid white;
   border-radius: 10px;
   width: 450px;
   perspective: 1000px;
   height: 250px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
   transform-style: preserve-3d;
   cursor: pointer;
 }
 .card-glow {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition-duration: 0.2s;
+}
+.sub-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* PATCO Showcase Styles */
 .background {
-  background-color: #FFFBF5;
+  background-color: #fffbf5;
 }
 
 @media only screen and (max-width: 600px) {
